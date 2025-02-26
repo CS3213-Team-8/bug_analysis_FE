@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Counter from './pages/Counter';
 import NavBar from './components/NavBar';
+import Visualization from './pages/Visualization';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/counter" element={<Counter />} />
+          <Route path="/visualization" element={<Visualization />} />
         </Routes>
       </Container>
     </Router>
