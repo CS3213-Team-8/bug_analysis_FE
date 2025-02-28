@@ -6,12 +6,8 @@ const NavBar = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          My React App
-        </Typography>
-        <Button color="inherit" component={Link} to="/">Home</Button>
-        <Button color="inherit" component={Link} to="/about">About</Button>
-        <Button color="inherit" component={Link} to="/counter">Counter</Button>
+        <Button color="inherit" component={Link} to="/" sx={{ textTransform: 'none', mr: 3 }}>Visualization</Button>
+        <Button color="inherit" component={Link} to="/bugsList" sx={{ textTransform: 'none' }}>Bugs List</Button>
       </Toolbar>
     </AppBar>
   );
