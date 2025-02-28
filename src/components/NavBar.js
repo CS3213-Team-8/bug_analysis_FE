@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" elevation={0}>
       <Toolbar>
         <Button color="inherit" component={Link} to="/" sx={{ textTransform: 'none', mr: 3 }}>Visualization</Button>
         <Button color="inherit" component={Link} to="/bugsList" sx={{ textTransform: 'none' }}>Bugs List</Button>
