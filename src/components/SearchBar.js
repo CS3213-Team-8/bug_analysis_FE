@@ -37,8 +37,8 @@ const SearchBar = ({
   onChange,
   onSearch,
   placeholder = "Search...",
-  style = {},
   disabled = false,
+  style={}
 }) => {
   const [inputValue, setInputValue] = useState(value);
 
@@ -60,9 +60,9 @@ const SearchBar = ({
 //   };
 
   return (
-    <Box style={style} justifyContent="center" alignItems="center">
+    <Box style={style} display="flex" alignItems="center">
       <SearchIconWrapper>
-        <SearchIcon sx={{ mt: "0.4rem" , fontSize: "40px", color: "white" }} />
+        <SearchIcon sx={{fontSize: "40px", color: "white" }} />
       </SearchIconWrapper>
       <SearchBarContainer>
         <StyledInput
