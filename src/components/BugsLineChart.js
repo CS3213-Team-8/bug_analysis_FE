@@ -1,8 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles'
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -12,12 +12,13 @@ import {
   Label,
 } from 'recharts'
 
-const BugsBarChart = ({ data, xAxisKey, xLabel, yLabel, chartTitle }) => {
+const BugsLineChart = ({ data, xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
+
   const dbmsColors = {
-    TIDB: '#4DB6AC', // Teal for TIDB
-    DuckDB: '#FF7043', // Coral for DuckDB
-    CockroachDB: '#64B5F6', // Light blue for CockroachDB
+    TIDB: '#4DB6AC',
+    DuckDB: '#FF7043',
+    CockroachDB: '#64B5F6',
   }
 
   const dbmsKeys = Array.from(
@@ -31,14 +32,11 @@ const BugsBarChart = ({ data, xAxisKey, xLabel, yLabel, chartTitle }) => {
     return { ...item, values: filteredValues }
   })
 
-  console.log(filteredData)
-  console.log(dbmsKeys)
-
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
       <ResponsiveContainer width='100%' height={400}>
-        <BarChart data={filteredData}>
+        <LineChart data={filteredData}>
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey={xAxisKey} />
           <YAxis>
@@ -53,14 +51,16 @@ const BugsBarChart = ({ data, xAxisKey, xLabel, yLabel, chartTitle }) => {
           <Tooltip />
           {/* <Legend /> */}
           {dbmsKeys.map((key) => (
-            <Bar
+            <Line
               key={key}
-              dataKey={`values.${key}`}
+              type='linear'
               name={key}
-              fill={dbmsColors[key] || '#8884d8'}
+              dataKey={`values.${key}`}
+              stroke={dbmsColors[key] || '#8884d8'}
+              strokeWidth={2.5}
             />
           ))}
-        </BarChart>
+        </LineChart>
       </ResponsiveContainer>
     </div>
   )
@@ -78,4 +78,4 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export default BugsBarChart
+export default BugsLineChart
