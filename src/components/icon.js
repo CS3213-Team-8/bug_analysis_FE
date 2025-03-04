@@ -17,9 +17,9 @@ const MyIcon = ({ variant, ...props }) => {
         <BugReportIcon sx={{ fontSize: 40, color: 'white' }} />
 
         {/* BUGSNAPPER Text */}
-        <Typography fontWeight="bold" color="white" fontSize="10" >
+        {/* <Typography fontWeight="bold" color="white" fontSize="10" >
           BUGSNAPPER
-        </Typography>
+        </Typography> */}
       </Box>
     );
   }
