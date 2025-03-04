@@ -1,27 +1,30 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import { Container } from '@mui/material'
-import Home from './pages/Home'
-import About from './pages/About'
-import Counter from './pages/Counter'
-import NavBar from './components/NavBar'
-import Visualization from './pages/Visualization'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { CssBaseline, Container, ThemeProvider } from '@mui/material';
+import Visualization from './pages/Visualization';
+import BugsList from './pages/BugsList';
+import NavBar from './components/NavBar';
+import theme from './theme';
+import Dummy from './pages/Dummy';
 
 function App() {
   return (
     <Router>
-      <NavBar />
+       <ThemeProvider theme={theme}>
+       <CssBaseline /> 
+        <NavBar />
 
       <Container sx={{ mt: 4 }}>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/counter' element={<Counter />} />
-          <Route path='/visualization' element={<Visualization />} />
+          <Route path="/" element={<Visualization />} />
+          <Route path="/bugsList" element={<BugsList />} />
+          <Route path="/dummy" element={<Dummy />} />
         </Routes>
       </Container>
+      </ThemeProvider>
     </Router>
-  )
+   
+  );
 }
 
-export default App
+export default App;
