@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import GreyContainer from '../components/GreyContainer';
 import MyTabs from '../components/MyTabs';
+import SelectionField from '../components/SelectionField';
 
 const Dummy = () => {
   const demoTabs = [
@@ -9,6 +10,14 @@ const Dummy = () => {
     { label: 'Tab 2', path: 'tab2' },
     { label: 'Tab 3', path: 'tab3' },
   ];
+
+  // Add state for selection fields
+  const [selection, setSelection] = React.useState('');
+
+  // Add handlers
+  const handleSelectionChange = (event) => {
+    setSelection(event.target.value);
+  };
 
   return (
     <>
@@ -34,6 +43,19 @@ const Dummy = () => {
           MyTabs Example
         </Typography>
         <MyTabs tabs={demoTabs} />
+      </GreyContainer>
+
+      <GreyContainer>
+        <Typography variant="h6" sx={{ mb: 2 }}>
+          SelectionField Examples
+        </Typography>
+        <SelectionField
+          label="Selection"
+          selectionArray={['val1', 'val2', 'val3']}
+          displayArray={['Display Option 1', 'Display Option 2', 'Display Option 3']}
+          value={selection}
+          onChange={handleSelectionChange}
+        />
       </GreyContainer>
     </>
   );
