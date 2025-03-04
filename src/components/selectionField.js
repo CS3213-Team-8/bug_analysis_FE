@@ -1,7 +1,21 @@
 import React from 'react';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-const SelectionField = ({ label = "Select", selectionArray = [], value, onChange }) => {
+const SelectionField = ({ 
+  label = "Select", 
+  selectionArray = [], // Array of values
+  displayArray = [], // Array of display labels
+  value, 
+  onChange 
+}) => {
+  // Validate arrays have same length
+  if (displayArray.length > 0 && displayArray.length !== selectionArray.length) {
+    console.warn('SelectionField: displayArray and selectionArray must have the same length');
+    return null;
+  }
+
+
+
   return (
     <FormControl
       fullWidth
@@ -65,7 +79,7 @@ const SelectionField = ({ label = "Select", selectionArray = [], value, onChange
               },
             }}
           >
-            {item}
+            {displayArray[index]}
           </MenuItem>
         ))}
       </Select>
