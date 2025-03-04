@@ -38,19 +38,17 @@ const SearchBar = ({
   onSearch,
   placeholder = "Search...",
   disabled = false,
-  style={}
+  style = {}
 }) => {
-  const [inputValue, setInputValue] = useState(value);
-
   const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-    onChange(e.target.value); // Propagate the change to parent component
-    onSearch(e.target.value); // Perform search in real-time
+    const newValue = e.target.value;
+    onChange(newValue); // Propagate the change to parent component
+    onSearch(newValue); // Consider debouncing this if making API calls
   };
 
   const handleClear = () => {
-    setInputValue(""); // Clear the input
     onChange(""); // Notify parent of the cleared input
+    onSearch(""); // Trigger search with empty string
   };
 
   // used to trigger search on key press
@@ -66,17 +64,12 @@ const SearchBar = ({
       </SearchIconWrapper>
       <SearchBarContainer>
         <StyledInput
-          value={inputValue}
+          value={value}
           onChange={handleInputChange}
           placeholder={placeholder}
           disabled={disabled}
-        //   onKeyDown={(e) => {
-        //     if (e.key === "Enter") {
-        //       handleSearch(); // Trigger search when Enter is pressed
-        //     }
-        //   }}
         />
-        {inputValue && (
+        {value && (
           <IconButton sx={{ mr: "0.5rem" }} onClick={handleClear}>
             <ClearIcon htmlColor="#ffff" />
           </IconButton>

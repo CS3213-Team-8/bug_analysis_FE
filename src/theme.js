@@ -3,10 +3,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#4E9D94', // Mint Green 
-      light: '#98D0C9', 
-      dark: "#2f5e59",
-      contrastText: '#FFFF'
+      main: '#1E2631', // background colour
     },
     secondary: {
       main: '#4F378A', // Purple
