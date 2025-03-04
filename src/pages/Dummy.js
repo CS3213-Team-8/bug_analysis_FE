@@ -4,6 +4,7 @@ import GreyContainer from '../components/GreyContainer';
 import MyTabs from '../components/MyTabs';
 import SelectionField from '../components/selectionField';
 import MyIcon from '../components/icon';
+import CustomizedCard from '../components/card';
 
 const Dummy = () => {
   const demoTabs = [
@@ -83,6 +84,38 @@ const Dummy = () => {
               <Typography variant="body2">Pending Status</Typography>
             </Box>
           </Box>
+        </Box>
+      </GreyContainer>
+
+      <GreyContainer>
+        <Typography variant="h6" sx={{ mb: 2 }}>
+          Card Examples
+        </Typography>
+        
+        <Box display="flex" flexDirection="column" gap={0}>
+          {/* Done status card */}
+          <CustomizedCard
+            iconVariant="done"
+            title="Resolved Bug Example"
+            timeToFix="Fixed in 2 hours"
+            description="This is an example of a resolved bug card. The card uses an accordion component that expands to show more details. It features a purple checkmark icon to indicate completion."
+          />
+
+          {/* Pending status card */}
+          <CustomizedCard
+            iconVariant="pending"
+            title="Pending Issue Example"
+            timeToFix="Estimated: 4 hours"
+            description="This is an example of a pending issue card. It shows how the card looks with a mint green circle icon. The accordion can be expanded to reveal this detailed description."
+          />
+
+          <CustomizedCard
+            iconVariant="pending"
+            title="Pending Issue Example"
+            timeToFix="Estimated: 4 hours"
+            description="This is an example of a pending issue card. It shows how the card looks with a mint green circle icon. The accordion can be expanded to reveal this detailed description."
+          />
+
         </Box>
       </GreyContainer>
     </>
