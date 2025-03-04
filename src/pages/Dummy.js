@@ -2,7 +2,8 @@ import React from 'react';
 import { Typography, Box } from '@mui/material';
 import GreyContainer from '../components/GreyContainer';
 import MyTabs from '../components/MyTabs';
-import SelectionField from '../components/SelectionField';
+import SelectionField from '../components/selectionField';
+import MyIcon from '../components/icon';
 
 const Dummy = () => {
   const demoTabs = [
@@ -56,6 +57,33 @@ const Dummy = () => {
           value={selection}
           onChange={handleSelectionChange}
         />
+      </GreyContainer>
+
+      <GreyContainer>
+        <Typography variant="h6" sx={{ mb: 2 }}>
+          Icon Examples
+        </Typography>
+        
+        <Box display="flex" flexDirection="column" gap={2}>
+          {/* Logo variant */}
+          <Box>
+            <Typography variant="body2" sx={{ mb: 1 }}>Logo:</Typography>
+            <MyIcon variant="logo" />
+          </Box>
+
+          {/* Status icons with labels */}
+          <Box display="flex" gap={4}>
+            <Box display="flex" alignItems="center" gap={1}>
+              <MyIcon variant="done" />
+              <Typography variant="body2">Done Status</Typography>
+            </Box>
+
+            <Box display="flex" alignItems="center" gap={1}>
+              <MyIcon variant="pending" />
+              <Typography variant="body2">Pending Status</Typography>
+            </Box>
+          </Box>
+        </Box>
       </GreyContainer>
     </>
   );
