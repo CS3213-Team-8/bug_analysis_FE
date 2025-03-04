@@ -5,6 +5,7 @@ import MyTabs from '../components/MyTabs';
 import SelectionField from '../components/selectionField';
 import MyIcon from '../components/icon';
 import CustomizedCard from '../components/card';
+import SearchBar from '../components/SearchBar';
 
 const Dummy = () => {
   const demoTabs = [
@@ -16,9 +17,18 @@ const Dummy = () => {
   // Add state for selection fields
   const [selection, setSelection] = React.useState('');
 
+  // Add state for search
+  const [searchValue, setSearchValue] = React.useState('');
+
   // Add handlers
   const handleSelectionChange = (event) => {
     setSelection(event.target.value);
+  };
+
+  // Add search handler
+  const handleSearch = (value) => {
+    console.log('Searching for:', value);
+    // Implement your search logic here
   };
 
   return (
@@ -117,6 +127,18 @@ const Dummy = () => {
           />
 
         </Box>
+      </GreyContainer>
+
+      <GreyContainer>
+        <Typography variant="h6" sx={{ mb: 2 }}>
+          SearchBar Example
+        </Typography>
+        <SearchBar
+          value={searchValue}
+          onChange={setSearchValue}
+          onSearch={handleSearch}
+          placeholder="Search something..."
+        />
       </GreyContainer>
     </>
   );
