@@ -1,5 +1,19 @@
 import React from 'react'
+import BugsBarChart from '../components/BugsBarChart'
 import BugsLineChart from '../components/BugsLineChart'
+
+// Some mock data for testing purpose
+const multiCategorizationData = [
+  { category: 'Critical', values: { TIDB: 10, DuckDB: 8, CockroachDB: 6, Test: 5 } },
+  { category: 'Moderate', values: { TIDB: 15, DuckDB: 10, CockroachDB: 9, Test: 4 } },
+  { category: 'Low', values: { TIDB: 20, DuckDB: 12, CockroachDB: 11, Test: 3 } },
+]
+
+const singleBugsData = [
+  { db: 'TIDB', values: { TIDB: 8} },
+  { db: 'TIDB', values: { TIDB: 10} },
+  { db: 'TIDB', values: { TIDB: 12} },
+]
 
 // Some mock data for testing purpose
 const singleAverageTtfData = [
@@ -29,6 +43,22 @@ const Visualization = () => {
   return (
     <div>
       <h1>Visualization Page</h1>
+      <BugsBarChart
+        data={multiCategorizationData}
+        xAxisKey='category'
+        xLabel='Category'
+        yLabel='Number of Bugs'
+        chartTitle='DBMSs Bugs Distribution Across Categories'
+      />
+
+      <BugsBarChart
+        data={singleBugsData}
+        xAxisKey='db'
+        xLabel='DBMS'
+        yLabel='Number of Bugs'
+        chartTitle='DBMSs Bugs Found'
+      />
+
       <BugsLineChart
         data={multiAverageTtfData}
         xAxisKey='month'
