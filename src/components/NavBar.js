@@ -36,6 +36,20 @@ const NavBar = () => {
         >
           Bugs List
         </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/dummy"
+          sx={{
+            textTransform: 'none',
+            color: location.pathname === '/dummy' ? 'white' : '#546379',
+            '&:hover': {
+              color: 'rgba(255, 255, 255, 0.8)',
+            },
+          }}
+        >
+          Dummy
+        </Button>
       </Toolbar>
     </AppBar>
   );

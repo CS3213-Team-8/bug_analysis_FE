@@ -5,6 +5,7 @@ import Visualization from './pages/Visualization';
 import BugsList from './pages/BugsList';
 import NavBar from './components/NavBar';
 import theme from './theme';
+import Dummy from './pages/Dummy';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Visualization />} />
           <Route path="/bugsList" element={<BugsList />} />
+          <Route path="/dummy" element={<Dummy />} />
         </Routes>
       </Container>
       </ThemeProvider>
