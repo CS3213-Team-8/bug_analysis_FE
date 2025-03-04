@@ -8,11 +8,15 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, description }) => {
     <Accordion
       sx={{
         backgroundColor: "#1A1B26",
-        border: "1px solid rgba(65, 76, 91, 0.58)", // 58% transparent border
-        borderRadius: "50px",
+        border: "1px solid rgba(65, 76, 91, 0.58)",
+        borderRadius: "20px",
         boxShadow: "none",
-        "&:before": { display: "none" }, // Remove default accordion outline
+        "&:before": { display: "none" },
         overflow: "hidden",
+        mb: 1,
+        "&.MuiPaper-root": {
+          borderRadius: "20px",
+        },
       }}
     >
       {/* Header - Status Icon + Title + Time to Fix */}
@@ -21,7 +25,6 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, description }) => {
         sx={{
           display: "flex",
           alignItems: "center",
-          gap: 2,
           padding: "5px 20px",
         }}
       >
