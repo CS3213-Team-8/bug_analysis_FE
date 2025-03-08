@@ -9,12 +9,18 @@ import SearchBar from '../components/SearchBar';
 import { Button } from "@mui/material"
 
 const BugsList = () => {
+  // State for search
+  const [searchValue, setSearchValue] = React.useState('');
+
+  // Search handler
+  const handleSearch = (value) => {
+    console.log('Searching for:', value);
+    // Implement your search logic here
+  };
+
   // States for selection fields
   const [dbmsSelection, setDbmsSelection] = React.useState('');
   const [categorySelection, setCategorySelection] = React.useState('');
-
-  // State for search
-  const [searchValue, setSearchValue] = React.useState('');
 
   // Handlers for selection fields
   const handleDbmsChange = (event) => {
@@ -25,14 +31,9 @@ const BugsList = () => {
     setCategorySelection(event.target.value);
   };
 
-  // Search handler
-  const handleSearch = (value) => {
-    console.log('Searching for:', value);
-    // Implement your search logic here
-  };
 
   return (
-    <Box sx={{ p: 3 }}> {/* Adds padding around the entire content */}
+    <Box sx={{ p: 0 }}> {/* Adds padding around the entire content */}
       {/* SearchBar Component */}
       <Box mb={5}> {/* Adds margin-bottom for spacing */}
         <SearchBar
@@ -44,9 +45,10 @@ const BugsList = () => {
       </Box>
 
       {/* Filter Selection Fields (Side by Side) */}
-      <Box display="flex" gap={3} mb={5} mr={50} alignItems="center">
+      <Box display="flex" gap={3} mb={5} mr={70} alignItems="center">
         <SelectionField
           label="Filter by DBMS"
+          //1. Set DBMS selection fields accordingly 
           selectionArray={['MySQL', 'PostgreSQL', 'SQLite']}
           displayArray={['MySQL', 'PostgreSQL', 'SQLite']}
           value={dbmsSelection}
@@ -54,6 +56,7 @@ const BugsList = () => {
         />
         <SelectionField
           label="Filter by Category"
+          //2. Set Category selection fields accordingly 
           selectionArray={['UI Bug', 'Backend Issue', 'Performance']}
           displayArray={['UI Bug', 'Backend Issue', 'Performance']}
           value={categorySelection}
@@ -66,14 +69,13 @@ const BugsList = () => {
             variant="contained"
             color="primary"
             sx={{
-              height: "50px", // Match height of selection fields
-              width: "150px", // Fixed width
-              // minWidth: "0px", // Ensures it doesn't shrink
+              height: "50px", 
+              width: "150px", 
               backgroundColor: "#705F9B",
-              textTransform: "none", // Prevents text from being uppercase
-              fontSize: "16px", // Adjust font size
+              textTransform: "none", 
+              fontSize: "16px", 
               borderRadius: "20px",
-              "&:hover": { backgroundColor: "#5D4E84" }, // Slightly darker on hover
+              "&:hover": { backgroundColor: "#5D4E84" }, 
             }}
             onClick={() => console.log("Apply Filters Clicked")}
           >
@@ -87,10 +89,16 @@ const BugsList = () => {
       <Box display="flex" flexDirection="column" gap={0}> {/* Adds space between cards */}
         {/* Done status card */}
         <CustomizedCard
+          //3. Fetch github issue status(iconVariant) + title + TTF + Description(markdown form) accordingly
           iconVariant="done"
           title="Resolved Bug Example"
           timeToFix="Fixed in 2 hours"
-          description="This is an example of a resolved bug card. The card uses an accordion component that expands to show more details. It features a purple checkmark icon to indicate completion."
+          description={`This is an example of a **pending issue card**.
+            ### Key Features:
+            - **Markdown Support**
+            - **Lists**
+            - **Links**: [Click here](https://example.com)
+            `}
         />
 
         {/* Pending status card */}

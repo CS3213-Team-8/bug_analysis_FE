@@ -14,8 +14,6 @@ const SelectionField = ({
     return null;
   }
 
-
-
   return (
     <FormControl
       fullWidth
@@ -24,8 +22,7 @@ const SelectionField = ({
         minWidth: 200,
         "& .MuiOutlinedInput-root": {
           borderRadius: "20px", // Rounded corners
-          // backgroundColor: "#414C5B", // Set background color for the field
-          "& fieldset": { borderColor: "#414C5B" }, // Default border color
+          "& fieldset": { borderColor: "#687280" }, // Default border color
           "&:hover fieldset": { borderColor: "#4E9D94" }, // Border on hover
           "&.Mui-focused fieldset": { borderColor: "#4E9D94" }, // Border when focused
         },
