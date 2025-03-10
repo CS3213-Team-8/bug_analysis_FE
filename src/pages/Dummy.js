@@ -1,17 +1,17 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 import GreyContainer from '../components/GreyContainer';
-import MyTabs from '../components/MyTabs';
 import SelectionField from '../components/selectionField';
 import MyIcon from '../components/icon';
 import CustomizedCard from '../components/card';
 import SearchBar from '../components/SearchBar';
+import CustomTabs from '../components/CustomTabs';
 
 const Dummy = () => {
   const demoTabs = [
-    { label: 'Tab 1', path: 'tab1' },
-    { label: 'Tab 2', path: 'tab2' },
-    { label: 'Tab 3', path: 'tab3' },
+    { label: 'Tab 1' },
+    { label: 'Tab 2' },
+    { label: 'Tab 3' },
   ];
 
   // Add state for selection fields
@@ -52,9 +52,9 @@ const Dummy = () => {
 
       <GreyContainer  sx={{ mt: 3 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
-          MyTabs Example
+          Custom Tabs Example
         </Typography>
-        <MyTabs tabs={demoTabs} />
+        <CustomTabs tabs={demoTabs} />
       </GreyContainer>
 
       <GreyContainer sx={{ mt: 3 }} >
