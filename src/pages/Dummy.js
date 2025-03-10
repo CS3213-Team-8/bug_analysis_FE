@@ -41,7 +41,7 @@ const Dummy = () => {
         You can find examples of different UI elements and their implementations here.
       </Typography>
       
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6">
           Grey Container Example
         </Typography>
@@ -50,14 +50,14 @@ const Dummy = () => {
         </Typography>
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer  sx={{ mt: 3 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
           MyTabs Example
         </Typography>
         <MyTabs tabs={demoTabs} />
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           SelectionField Examples
         </Typography>
@@ -70,7 +70,7 @@ const Dummy = () => {
         />
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           Icon Examples
         </Typography>
@@ -97,7 +97,7 @@ const Dummy = () => {
         </Box>
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           Card Examples
         </Typography>
@@ -129,7 +129,7 @@ const Dummy = () => {
         </Box>
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           SearchBar Example
         </Typography>
