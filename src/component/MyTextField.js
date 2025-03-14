@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextField } from '@mui/material';
 
-const MyTextField = ({ name, label, value, onChange, multiline = false, rows = 1 }) => {
+const MyTextField = ({ name, label, value, onChange, multiline = false, rows = 1, disabled = false }) => {
   return (
     <TextField
       margin="dense"
@@ -19,6 +19,7 @@ const MyTextField = ({ name, label, value, onChange, multiline = false, rows = 1
           color: '#000000',
         }
       }}
+      disabled={disabled}
     />
   );
 };

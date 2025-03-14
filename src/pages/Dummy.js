@@ -93,6 +93,16 @@ const Dummy = () => {
               <MyIcon variant="pending" />
               <Typography variant="body2">Pending Status</Typography>
             </Box>
+            
+            <Box display="flex" alignItems="center" gap={1}>
+              <MyIcon variant="edit" />
+              <Typography variant="body2">Edit Action</Typography>
+            </Box>
+            
+            <Box display="flex" alignItems="center" gap={1}>
+              <MyIcon variant="delete" />
+              <Typography variant="body2">Delete Action</Typography>
+            </Box>
           </Box>
         </Box>
       </GreyContainer>
