@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Button, Dialog, DialogTitle, DialogContent, DialogActions, Box, IconButton } from '@mui/material';
-import MyTextField from '../component/MyTextField';
+import { Button, Box, IconButton } from '@mui/material';
 import MyIcon from '../components/icon';
 import CategoryDialog from '../component/CategoryDialog';
+import axiosInstance from '../axios';
 
 const Category = () => {
   const [categories, setCategories] = useState(null);
@@ -31,7 +30,7 @@ const Category = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post("https://bug-analysis-be.onrender.com/api/categories/", newCategory);
+      const response = await axiosInstance.post("/api/categories/", newCategory);
       setCategories([...categories, response.data]);
       handleClose();
       setNewCategory({ category_name: '', category_description: '' });
@@ -65,8 +64,8 @@ const Category = () => {
         // Add any other editable fields here, but not category_name
       };
       
-      const response = await axios.put(
-        `https://bug-analysis-be.onrender.com/api/categories/${editCategory.slug}/`, 
+      const response = await axiosInstance.put(
+        `/api/categories/${editCategory.slug}/`, 
         updateData
       );
       
@@ -83,7 +82,7 @@ const Category = () => {
   const handleDelete = async (slug) => {
     if (window.confirm("Are you sure you want to delete this category?")) {
       try {
-        await axios.delete(`https://bug-analysis-be.onrender.com/api/categories/${slug}/`);
+        await axiosInstance.delete(`/api/categories/${slug}/`);
         setCategories(categories.filter(cat => cat.slug !== slug));
       } catch (error) {
         console.log(error);
@@ -94,7 +93,7 @@ const Category = () => {
 
   const fetchCategories = async () => {
     try {
-        const response = await axios.get("https://bug-analysis-be.onrender.com/api/categories/")
+        const response = await axiosInstance.get("/api/categories/")
         
         console.log(response)
         setCategories(response.data)
