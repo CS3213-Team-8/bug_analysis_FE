@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions, Box, IconButton } from '@mui/material';
 import MyTextField from '../component/MyTextField';
 import MyIcon from '../components/icon';
+import CategoryDialog from '../component/CategoryDialog';
 
 const Category = () => {
   const [categories, setCategories] = useState(null);
@@ -162,58 +163,26 @@ const Category = () => {
       </ul>
 
       {/* Create Category Dialog */}
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle color="#000000">Create New Category</DialogTitle>
-        <DialogContent>
-          <MyTextField
-            name="category_name"
-            label="Category Name"
-            value={newCategory.category_name}
-            onChange={handleChange}
-          />
-          <MyTextField
-            name="category_description"
-            label="Category Description"
-            value={newCategory.category_description}
-            onChange={handleChange}
-            multiline={true}
-            rows={4}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="secondary">Cancel</Button>
-          <Button onClick={handleSubmit} color="success" variant="contained">Submit</Button>
-        </DialogActions>
-      </Dialog>
+      <CategoryDialog
+        open={open}
+        onClose={handleClose}
+        title="Create New Category"
+        category={newCategory}
+        onChange={handleChange}
+        onSubmit={handleSubmit}
+        isEdit={false}
+      />
 
       {/* Edit Category Dialog */}
-      <Dialog open={openEdit} onClose={handleCloseEdit}>
-        <DialogTitle color="#000000">Edit Category</DialogTitle>
-        <DialogContent>
-          {editCategory && (
-            <>
-              <MyTextField
-                name="category_name"
-                label="Category Name"
-                value={editCategory.category_name}
-                disabled={true}
-              />
-              <MyTextField
-                name="category_description"
-                label="Category Description"
-                value={editCategory.category_description}
-                onChange={handleEditChange}
-                multiline={true}
-                rows={4}
-              />
-            </>
-          )}
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseEdit} color="secondary">Cancel</Button>
-          <Button onClick={handleEditSubmit} color="success" variant="contained">Save Changes</Button>
-        </DialogActions>
-      </Dialog>
+      <CategoryDialog
+        open={openEdit}
+        onClose={handleCloseEdit}
+        title="Edit Category"
+        category={editCategory}
+        onChange={handleEditChange}
+        onSubmit={handleEditSubmit}
+        isEdit={true}
+      />
     </div>
   );
 };
