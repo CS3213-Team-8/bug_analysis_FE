@@ -37,8 +37,10 @@ const BugsBarChart = ({ data, xAxisKey, xLabel, yLabel, chartTitle }) => {
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
-      <ResponsiveContainer width='100%' height={400}>
-        <BarChart data={filteredData}>
+      <ResponsiveContainer width="100%" height={250}>
+        <BarChart 
+          data={filteredData}
+          >
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey={xAxisKey} />
           <YAxis>
@@ -73,7 +75,7 @@ const useStyles = makeStyles(() => ({
   },
   chartTitle: {
     marginBottom: '10px',
-    fontSize: '1.5rem',
+    fontSize: '1.rem',
     fontWeight: 600,
   },
 }))

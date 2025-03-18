@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { CssBaseline, Container, ThemeProvider } from '@mui/material';
+import { Box, CssBaseline, Container, ThemeProvider } from '@mui/material';
 import Visualization from './pages/Visualization';
 import BugsList from './pages/BugsList';
 import NavBar from './components/NavBar';
@@ -13,14 +13,13 @@ function App() {
        <ThemeProvider theme={theme}>
        <CssBaseline /> 
         <NavBar />
-
-      <Container sx={{ mt: 4 }}>
+      <Box sx={{ ml: 4 , mr: 4 , mb: 4}} height="100%">
         <Routes>
           <Route path="/" element={<Visualization />} />
           <Route path="/bugsList" element={<BugsList />} />
           <Route path="/dummy" element={<Dummy />} />
         </Routes>
-      </Container>
+      </Box>
       </ThemeProvider>
     </Router>
    
