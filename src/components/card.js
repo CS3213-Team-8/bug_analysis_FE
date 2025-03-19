@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MyIcon from './icon'; 
 import ReactMarkdown from 'react-markdown'; 
 
-const CustomizedCard = ({ iconVariant, title, timeToFix, description }) => {
+const CustomizedCard = ({ iconVariant, title, timeToFix, category, description }) => {
   const processDescription = (text) => {
     if (!text) return '';
     
@@ -60,16 +60,30 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, description }) => {
           <MyIcon variant={iconVariant} />
         </Box>
 
-        {/* Bug Title & Time */}
+        {/* Bug Title, Time, and Category */}
         <Box sx={{ flexGrow: 10 }}>
           <Typography sx={{ color: "white", fontSize: "16px", fontWeight: "bold" }}>
             {title}
           </Typography>
-          <Typography sx={{ color: "rgba(255,255,255,0.6)", fontSize: "12px" }}>
-            {timeToFix}
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <Typography sx={{ color: "rgba(255,255,255,0.6)", fontSize: "12px" }}>
+              {timeToFix}
+            </Typography>
+            {category && (
+              <Typography sx={{ 
+                color: "rgba(255,255,255,0.8)", 
+                fontSize: "12px", 
+                backgroundColor: "rgba(78, 157, 148, 0.2)", 
+                padding: "2px 8px", 
+                borderRadius: "10px" 
+              }}>
+                {category}
+              </Typography>
+            )}
+          </Box>
         </Box>
       </AccordionSummary>
+
 
       {/* Expanded Details */}
       <AccordionDetails

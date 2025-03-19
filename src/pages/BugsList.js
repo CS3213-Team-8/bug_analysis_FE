@@ -92,7 +92,9 @@ const BugsList = () => {
           //3. Fetch github issue status(iconVariant) + title + TTF + Description(markdown form) accordingly
           iconVariant="done"
           title="Resolved Bug Example"
-          timeToFix="Fixed in 2 hours"
+          //eg for TTF: timeToFix={`Fixed in ${timestamp}`}
+          timeToFix={`Fixed in 2 days`}
+          category="category A"
           description={`This is an example of a **pending issue card**.
             ### Key Features:
             - **Markdown Support**
@@ -105,14 +107,16 @@ const BugsList = () => {
         <CustomizedCard
           iconVariant="pending"
           title="Pending Issue Example"
-          timeToFix="Estimated: 4 hours"
+          timeToFix={`Opened for 4 hours`}
+          category="category B"
           description="This is an example of a pending issue card. It shows how the card looks with a mint green circle icon. The accordion can be expanded to reveal this detailed description."
         />
 
         <CustomizedCard
           iconVariant="pending"
           title="Pending Issue Example"
-          timeToFix="Estimated: 4 hours"
+          timeToFix={`Opened for 6 hours`}
+          category="category C"
           description="This is an example of a pending issue card. It shows how the card looks with a mint green circle icon. The accordion can be expanded to reveal this detailed description."
         />
       </Box>
