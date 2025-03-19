@@ -183,6 +183,9 @@ import {
   Label,
 } from 'recharts'
 
+
+
+
 const BugsLineChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
 
@@ -197,7 +200,7 @@ const BugsLineChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
         >
           <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey={xAxisKey}>
+          <XAxis dataKey={xAxisKey} >
             <Label value={xLabel} position='insideBottom' offset={-10} />
           </XAxis>
           <YAxis>

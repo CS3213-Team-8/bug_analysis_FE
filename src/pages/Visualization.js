@@ -247,7 +247,7 @@ const Visualization = () => {
       // const bugsDistributionAcrossDBMS = [].concat(...bugsResults)
       const bugsDistributionAcrossDBMS = bugsResults.map((result) => {
         const [dbmsName, values] = Object.entries(result.values)[0]
-        return { db: dbmsName, values: { values } }
+        return { db: dbmsName, values: { dbmsName: values } }
       })
 
       console.log('Bugs Results:', bugsResults) // Debug computed data
@@ -480,8 +480,8 @@ const Visualization = () => {
   console.log('Data to Display:', dataToDisplay)
 
   return (
-    <>
-      <Box sx={{ mt: 1, mb: 1, ml: 2 }}>
+    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
+      <Box sx={{ mt: 1, mb: 1, ml: 2, }}>
         <CustomTabs
           tabs={tabs}
           selectedTab={selectedTab}
@@ -489,7 +489,7 @@ const Visualization = () => {
         />
       </Box>
       <ChartsGrid data={dataToDisplay} selectedTab={selectedTab} />
-    </>
+    </Box>
   )
 }
 

@@ -148,10 +148,31 @@ import {
   Label,
 } from 'recharts'
 
+
+function CustomizedTick(props) {
+  const { x, y, stroke, payload } = props;
+
+  // Split the payload value into words and create tspans for each word
+  const tspans = payload.value.split(" ").map((value, index) => (
+    <tspan key={index} textAnchor="middle" x="0" dy={index === 0 ? 15 : 15}>
+      {value}
+    </tspan>
+  ));
+
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text x={0} y={0} fill="#666" fontSize="16px" fontWeight={500}>
+        {tspans}
+      </text>
+    </g>
+  );
+}
+
+
 const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
   const dbmsColors = {
-    TIDB: '#4DB6AC', // Teal for TIDB
+    'TIDB': '#4DB6AC', // Teal for TIDB
     'Duck DB': '#FF7043', // Coral for DuckDB
     'Cockroach DB': '#64B5F6', // Light blue for CockroachDB
   }
@@ -163,6 +184,12 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
         [], // Fallback to an empty array if data or item.values is undefined
     ),
   )
+
+  const dbmsNames = data.map((result) => {
+    const [dbmsName] = Object.keys(result.values);
+    return dbmsName;
+  });
+  
 
   // Filter and process data safely
   const filteredData =
@@ -177,48 +204,25 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
 
   console.log('BugsBarChart filteredData: ', filteredData)
   console.log('BugsBarChart dbmsKeys: ', dbmsKeys)
-  console.log('BugsBarChart Data:', data)
-
-  const CustomXAxisTick = ({ x, y, payload }) => {
-    const words = payload.value.split(' ') // Split the label into words
-    return (
-      <text
-        x={x}
-        y={y + 5} // Move the label further down
-        fill='#666'
-        textAnchor='end'
-        transform={`rotate(-30, ${x}, ${y + 5})`} // Rotate at 45 degrees
-        fontSize={14}
-      >
-        {words.map((word, index) => (
-          <tspan key={index} x={x} dy={index === 0 ? 0 : 15}>
-            {word}
-          </tspan>
-        ))}
-      </text>
-    )
-  }
+  console.log('BugsBarChart Data:', data) 
+  
 
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
-      <ResponsiveContainer width='100%' height={250}>
+      <ResponsiveContainer width='100%' height={220}>
         <BarChart
           data={filteredData}
           height='250'
-          margin={{ top: 5, right: 30, left: 20, bottom: 15 }}
+          margin={{ top: 5 }}
+          {...{
+            overflow: 'visible'
+          }}
         >
           <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey={xAxisKey} tick={{ textAnchor: 'end' }} angle={-30} />
-          <YAxis>
-            <Label
-              value={yLabel}
-              offset={18}
-              angle={-90}
-              position='left'
-              style={{ textAnchor: 'middle' }}
-            />
-          </YAxis>
+          <XAxis dataKey={xAxisKey} tick={<CustomizedTick />} angle={-35}/>
+          <YAxis />
+  
           <Tooltip />
           {dbmsKeys.map((key) => (
             <Bar

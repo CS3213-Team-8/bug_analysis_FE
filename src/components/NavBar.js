@@ -7,7 +7,7 @@ const NavBar = () => {
   const location = useLocation();
 
   return (
-    <AppBar position="static" elevation={0}>
+    <AppBar position="static" elevation={0} sx={{ height: 64 }}>
       <Toolbar>
         <MyIcon variant="logo" sx={{ mr: 2 }} />
         <Button color="inherit" 

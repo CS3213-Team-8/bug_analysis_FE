@@ -9,13 +9,14 @@ import Dummy from './pages/Dummy';
 import Category from './pages/Category';
 import Dbms from './pages/Dbms';
 
+
 function App() {
   return (
     <Router>
        <ThemeProvider theme={theme}>
        <CssBaseline /> 
         <NavBar />
-      <Box sx={{ ml: 4 , mr: 4 , mb: 4}} height="100%">
+      <Box sx={{ ml: 4 , mr: 4, mb: 4, height: 'calc(100vh - 100px)'}}>
         <Routes>
           <Route path="/" element={<Visualization />} />
           <Route path="/bugsList" element={<BugsList />} />
