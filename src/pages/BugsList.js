@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Typography, Box } from '@mui/material';
-import GreyContainer from '../components/GreyContainer';
-import MyTabs from '../components/MyTabs';
 import SelectionField from '../components/selectionField';
-import MyIcon from '../components/icon';
 import CustomizedCard from '../components/card';
 import SearchBar from '../components/SearchBar';
 import { Button } from "@mui/material"
