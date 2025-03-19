@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Button } from '@mui/material';
+import { AppBar, Toolbar, Button, Typography } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import MyIcon from './icon';
 
@@ -44,23 +44,6 @@ const NavBar = () => {
         <Button
           color="inherit"
           component={Link}
-          to="/dummy"
-          sx={{
-            textTransform: 'none',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            color: location.pathname === '/dummy' ? 'white' : '#546379',
-            '&:hover': {
-              color: 'rgba(255, 255, 255, 0.8)',
-            },
-          }}
-        >
-          Dummy
-        </Button>
-
-        <Button
-          color="inherit"
-          component={Link}
           to="/category"
           sx={{
             textTransform: 'none',
@@ -73,6 +56,38 @@ const NavBar = () => {
           }}
         >
           Category
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/dbms"
+          sx={{
+            textTransform: 'none',
+            fontSize: '16px',
+            fontWeight: 'bold',
+            color: location.pathname === '/dbms' ? 'white' : '#546379',
+            '&:hover': {
+              color: 'rgba(255, 255, 255, 0.8)',
+            },
+          }}
+        >
+          DBMS
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/dummy"
+          sx={{
+            textTransform: 'none',
+            fontSize: '16px',
+            fontWeight: 'bold',
+            color: location.pathname === '/dummy' ? 'white' : '#546379',
+            '&:hover': {
+              color: 'rgba(255, 255, 255, 0.8)',
+            },
+          }}
+        >
+          Dummy
         </Button>
       </Toolbar>
     </AppBar>
