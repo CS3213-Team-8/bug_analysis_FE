@@ -17,32 +17,19 @@ const BugsList = () => {
   const [error, setError] = useState(null);
 
   // State for search
-  const [searchValue, setSearchValue] = React.useState('');
+  const [searchValue, setSearchValue] = useState('');
 
   // State for DBMS options
   const [dbmsOptions, setDbmsOptions] = useState([]);
   const [dbmsLoading, setDbmsLoading] = useState(false);
 
-  // States for selection fields
-  const [dbmsSelection, setDbmsSelection] = React.useState('');
-  const [categorySelection, setCategorySelection] = React.useState('');
+  // State for category options
+  const [categoryOptions, setCategoryOptions] = useState([]);
+  const [categoryLoading, setCategoryLoading] = useState(false);
 
-  // Search handler
-  const handleSearch = (value) => {
-    console.log('Searching for:', value);
-    setSearchValue(value);
-    
-    if (!value.trim()) {
-      // If search is empty, show all issues
-      setIssues(allIssues);
-    } else {
-      // Filter issues where title contains the search value (case insensitive)
-      const filtered = allIssues.filter(issue => 
-        issue.title.toLowerCase().includes(value.toLowerCase())
-      );
-      setIssues(filtered);
-    }
-  };
+  // States for selection fields
+  const [dbmsSelection, setDbmsSelection] = useState('');
+  const [categorySelection, setCategorySelection] = useState('');
 
   // Handlers for DBMS selection fields
   // Fetch DBMS options when component mounts
@@ -64,24 +51,68 @@ const BugsList = () => {
     fetchDbmsOptions();
   }, []);
 
+  // Handlers for Category selection fields
+  // Fetch category options when component mounts
+  useEffect(() => {
+    const fetchCategoryOptions = async () => {
+      setCategoryLoading(true);
+      try {
+        const response = await axios.get("https://bug-analysis-be.onrender.com/api/categories");
+        // Filter out any entries with empty name or slug
+        const validOptions = response.data.filter(option => option.category_name && option.slug);
+        setCategoryOptions(validOptions);
+      } catch (err) {
+        console.error("Failed to fetch category options:", err);
+      } finally {
+        setCategoryLoading(false);
+      }
+    };
+
+    fetchCategoryOptions();
+  }, []);
+
+  // Apply all filters at once
+  const applyAllFilters = (dbms = dbmsSelection, category = categorySelection, search = searchValue) => {
+    let filteredResults = [...allIssues];
+    
+    // Apply DBMS filter if selected
+    if (dbms) {
+      filteredResults = filteredResults.filter(issue => String(issue.dbms_id) === String(dbms));
+    }
+    
+    // Apply category filter if selected
+    if (category) {
+      filteredResults = filteredResults.filter(issue => String(issue.category_id) === String(category));
+    }
+    
+    // Apply search filter if text is entered
+    if (search.trim()) {
+      filteredResults = filteredResults.filter(issue => 
+        issue.title.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+    
+    // Update the issues state with filtered results
+    setIssues(filteredResults);
+  };
+
   const handleDbmsChange = (event) => {
     const selectedDbms = event.target.value;
     setDbmsSelection(selectedDbms);
-
-    // Filter issues based on selected DBMS
-    if (selectedDbms) {
-      const filteredIssues = allIssues.filter(issue => issue.dbms_id === selectedDbms);
-      setIssues(filteredIssues);
-    } else {
-      // If no DBMS is selected, show all issues
-      setIssues(allIssues);
-    }
+    applyAllFilters(selectedDbms, categorySelection, searchValue);
   };
 
-  // Handlers for Category selection fields
-  //3. TODO fetch issues by Category
   const handleCategoryChange = (event) => {
-    setCategorySelection(event.target.value);
+    const selectedCategory = event.target.value;
+    setCategorySelection(selectedCategory);
+    applyAllFilters(dbmsSelection, selectedCategory, searchValue);
+  };
+
+  // Search handler
+  const handleSearch = (value) => {
+    console.log('Searching for:', value);
+    setSearchValue(value);
+    applyAllFilters(dbmsSelection, categorySelection, value);
   };
 
    // Function to fetch GitHub issues
@@ -91,9 +122,16 @@ const BugsList = () => {
     try {
       const response = await axios.get("https://bug-analysis-be.onrender.com/api/github/issues");
       console.log("GitHub issues fetched:", response.data);
-      setIssues(response.data);
-      setAllIssues(response.data); 
-      setSearchValue(''); // Reset search when fetching new data
+
+      // First set both issues and allIssues to the fetched data
+      const fetchedIssues = response.data;
+      setAllIssues(fetchedIssues);
+      setIssues(fetchedIssues);  // Show all issues initially
+      
+      // Then reset filters
+      setDbmsSelection('');      // Reset DBMS filter
+      setCategorySelection('');  // Reset Category filter
+      setSearchValue('');        // Reset search
     } catch (error) {
       console.error("Failed to fetch GitHub issues:", error);
       setError("Failed to fetch GitHub issues. Please try again later.");
@@ -122,14 +160,22 @@ const BugsList = () => {
     }
   };
 
-    // Helper function to format the time difference message based on issue state
-    const getTimeMessage = (issue) => {
-      if (issue.state === "closed") {
-        return `Fixed in: ${calculateTimeDifference(issue.created_at, issue.closed_at)}`;
-      } else {
-        return `Opened for: ${calculateTimeDifference(issue.created_at)}`;
-      }
-    };
+  // Helper function to format the time difference message based on issue state
+  const getTimeMessage = (issue) => {
+    if (issue.state === "closed") {
+      return `Fixed in: ${calculateTimeDifference(issue.created_at, issue.closed_at)}`;
+    } else {
+      return `Opened for: ${calculateTimeDifference(issue.created_at)}`;
+    }
+  };
+
+  // Helper function to get the category name from category ID
+  const getCategoryName = (categoryId) => {
+    if (!categoryId) return "Uncategorized";
+    
+    const category = categoryOptions.find(option => option.id === categoryId);
+    return category ? category.category_name : "Unknown Category";
+  };
 
   return (
     <Box sx={{ p: 0 }}> {/* Adds padding around the entire content */}
@@ -157,10 +203,11 @@ const BugsList = () => {
         <SelectionField
           label="Filter by Category"
           //2. Set Category selection fields accordingly 
-          selectionArray={['UI Bug', 'Backend Issue', 'Performance']}
-          displayArray={['UI Bug', 'Backend Issue', 'Performance']}
+          selectionArray={categoryOptions.map(option => option.id)}
+          displayArray={categoryOptions.map(option => option.category_name)}
           value={categorySelection}
           onChange={handleCategoryChange}
+          disabled={categoryLoading || categoryOptions.length === 0}
         />
         
         {/* Apply Filters Button */}
@@ -201,12 +248,11 @@ const BugsList = () => {
               iconVariant={issue.state === "closed" ? "done" : "pending"}
               title={issue.title}
               timeToFix={getTimeMessage(issue)}
-              //4. TODO fetch and display category 
-              category="Category A"
+              category={getCategoryName(issue.category_id)}
               description={issue.body || "No description available."}
             />
           ))
-        ) : allIssues.length > 0 && searchValue.trim() !== "" ? (
+        ) : allIssues.length > 0 ? (
           <Box sx={{ textAlign: "center", py: 4 }}>
             <Typography variant="h6">No issues found</Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
