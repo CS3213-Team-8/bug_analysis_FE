@@ -68,7 +68,7 @@ const Category = () => {
         `/api/categories/${editCategory.slug}/`, 
         updateData
       );
-      
+     
       setCategories(categories.map(cat => 
         cat.id === editCategory.id ? response.data : cat
       ));
@@ -94,7 +94,6 @@ const Category = () => {
   const fetchCategories = async () => {
     try {
         const response = await axiosInstance.get("/api/categories/")
-        
         console.log(response)
         setCategories(response.data)
     } catch (error) {
