@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography, Box } from '@mui/material';
 import SelectionField from '../components/selectionField';
 import CustomizedCard from '../components/card';
@@ -19,6 +19,14 @@ const BugsList = () => {
   // State for search
   const [searchValue, setSearchValue] = React.useState('');
 
+  // State for DBMS options
+  const [dbmsOptions, setDbmsOptions] = useState([]);
+  const [dbmsLoading, setDbmsLoading] = useState(false);
+
+  // States for selection fields
+  const [dbmsSelection, setDbmsSelection] = React.useState('');
+  const [categorySelection, setCategorySelection] = React.useState('');
+
   // Search handler
   const handleSearch = (value) => {
     console.log('Searching for:', value);
@@ -36,14 +44,38 @@ const BugsList = () => {
     }
   };
 
-  // States for selection fields
-  const [dbmsSelection, setDbmsSelection] = React.useState('');
-  const [categorySelection, setCategorySelection] = React.useState('');
-
   // Handlers for DBMS selection fields
-  //2. TODO fetch issues by DBMS
+  // Fetch DBMS options when component mounts
+  useEffect(() => {
+    const fetchDbmsOptions = async () => {
+      setDbmsLoading(true);
+      try {
+        const response = await axios.get("https://bug-analysis-be.onrender.com/api/dbms");
+        // Filter out any entries with empty name or slug
+        const validOptions = response.data.filter(option => option.name && option.slug);
+        setDbmsOptions(validOptions);
+      } catch (err) {
+        console.error("Failed to fetch DBMS options:", err);
+      } finally {
+        setDbmsLoading(false);
+      }
+    };
+
+    fetchDbmsOptions();
+  }, []);
+
   const handleDbmsChange = (event) => {
-    setDbmsSelection(event.target.value);
+    const selectedDbms = event.target.value;
+    setDbmsSelection(selectedDbms);
+
+    // Filter issues based on selected DBMS
+    if (selectedDbms) {
+      const filteredIssues = allIssues.filter(issue => issue.dbms_id === selectedDbms);
+      setIssues(filteredIssues);
+    } else {
+      // If no DBMS is selected, show all issues
+      setIssues(allIssues);
+    }
   };
 
   // Handlers for Category selection fields
@@ -116,10 +148,11 @@ const BugsList = () => {
         <SelectionField
           label="Filter by DBMS"
           //1. Set DBMS selection fields accordingly 
-          selectionArray={['MySQL', 'PostgreSQL', 'SQLite']}
-          displayArray={['MySQL', 'PostgreSQL', 'SQLite']}
+          selectionArray={dbmsOptions.map(option => option.id)}
+          displayArray={dbmsOptions.map(option => option.name)}
           value={dbmsSelection}
           onChange={handleDbmsChange}
+          disabled={dbmsLoading || dbmsOptions.length === 0}
         />
         <SelectionField
           label="Filter by Category"
