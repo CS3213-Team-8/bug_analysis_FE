@@ -9,6 +9,8 @@ import axios from 'axios';
 const BugsList = () => {
   // State for issues
   const [issues, setIssues] = useState([]);
+  // State for original issues (unfiltered)
+  const [allIssues, setAllIssues] = useState([]);
   // State for loading
   const [loading, setLoading] = useState(false);
   // State for error
@@ -20,8 +22,18 @@ const BugsList = () => {
   // Search handler
   const handleSearch = (value) => {
     console.log('Searching for:', value);
-    // Implement your search logic here
-    //1. TODO
+    setSearchValue(value);
+    
+    if (!value.trim()) {
+      // If search is empty, show all issues
+      setIssues(allIssues);
+    } else {
+      // Filter issues where title contains the search value (case insensitive)
+      const filtered = allIssues.filter(issue => 
+        issue.title.toLowerCase().includes(value.toLowerCase())
+      );
+      setIssues(filtered);
+    }
   };
 
   // States for selection fields
@@ -48,6 +60,8 @@ const BugsList = () => {
       const response = await axios.get("https://bug-analysis-be.onrender.com/api/github/issues");
       console.log("GitHub issues fetched:", response.data);
       setIssues(response.data);
+      setAllIssues(response.data); 
+      setSearchValue(''); // Reset search when fetching new data
     } catch (error) {
       console.error("Failed to fetch GitHub issues:", error);
       setError("Failed to fetch GitHub issues. Please try again later.");
@@ -159,25 +173,38 @@ const BugsList = () => {
               description={issue.body || "No description available."}
             />
           ))
+        ) : allIssues.length > 0 && searchValue.trim() !== "" ? (
+          <Box sx={{ textAlign: "center", py: 4 }}>
+            <Typography variant="h6">No issues found</Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+              Try a different search term
+            </Typography>
+          </Box>
         ) : !loading && !error ? (
-          <>
-            {/* Placeholder cards when no issues are fetched yet */}
-            <CustomizedCard
-              iconVariant="done"
-              title="Click the 'Bugs' button to fetch GitHub issues"
-              timeToFix="Example"
-              category="Example"
-              description="This is a placeholder card. Click the 'Bugs' button above to fetch real GitHub issues."
-            />
+          <Box sx={{ textAlign: "center", py: 4 }}>
+            <Typography variant="h6">No issues yet...</Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+              Click the 'Bugs' button to fetch GitHub issues
+            </Typography>
+          </Box>
+          // <>
+          //   {/* Placeholder cards when no issues are fetched yet */}
+          //   <CustomizedCard
+          //     iconVariant="done"
+          //     title="Click the 'Bugs' button to fetch GitHub issues"
+          //     timeToFix="Example"
+          //     category="Example"
+          //     description="This is a placeholder card. Click the 'Bugs' button above to fetch real GitHub issues."
+          //   />
             
-            <CustomizedCard
-              iconVariant="pending"
-              title="Example Issue"
-              timeToFix="Example"
-              category="Example"
-              description="This is another placeholder card. The real issues will be displayed here after fetching."
-            />
-          </>
+          //   <CustomizedCard
+          //     iconVariant="pending"
+          //     title="Example Issue"
+          //     timeToFix="Example"
+          //     category="Example"
+          //     description="This is another placeholder card. The real issues will be displayed here after fetching."
+          //   />
+          // </>
         ) : null}
         
         {/* Loading indicator */}
