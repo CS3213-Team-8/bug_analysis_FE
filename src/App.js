@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import theme from './theme';
 import Dummy from './pages/Dummy';
 import Category from './pages/Category';
+import Dbms from './pages/Dbms';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/bugsList" element={<BugsList />} />
           <Route path="/dummy" element={<Dummy />} />
           <Route path="/category" element={<Category />} />
+          <Route path="/dbms" element={<Dbms />} />
         </Routes>
       </Box>
       </ThemeProvider>

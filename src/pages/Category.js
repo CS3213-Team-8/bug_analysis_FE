@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Box, IconButton } from '@mui/material';
 import MyIcon from '../components/icon';
-import CategoryDialog from '../component/CategoryDialog';
+import CategoryDialog from '../admin/CategoryDialog';
 import axiosInstance from '../axios';
 
 const Category = () => {
@@ -107,7 +107,7 @@ const Category = () => {
         fetchCategories()
     }
 
-  }, [categories]);
+  }, []);
   
 
   return (

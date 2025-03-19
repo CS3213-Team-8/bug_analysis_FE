@@ -14,8 +14,6 @@ const SelectionField = ({
     return null;
   }
 
-
-
   return (
     <FormControl
       fullWidth
@@ -23,13 +21,13 @@ const SelectionField = ({
       sx={{
         minWidth: 200,
         "& .MuiOutlinedInput-root": {
-          "& fieldset": { borderColor: "#FFFFFF" }, // Default border color
+          borderRadius: "20px", // Rounded corners
+          "& fieldset": { borderColor: "#687280" }, // Default border color
           "&:hover fieldset": { borderColor: "#4E9D94" }, // Border on hover
           "&.Mui-focused fieldset": { borderColor: "#4E9D94" }, // Border when focused
         },
       }}
     >
-
       {/* Custom Label Style */}
       <InputLabel
         sx={{
@@ -54,6 +52,7 @@ const SelectionField = ({
           color: "#FFFFFF", // Selection text color
           fontSize: 16,
           fontFamily: "Arial, sans-serif",
+          borderRadius: "20px", // Rounded corners for the select field
           "& .MuiSvgIcon-root": { color: "#FFFFFF" }, // Change arrow color
         }}
         MenuProps={{
@@ -61,6 +60,7 @@ const SelectionField = ({
             sx: {
               backgroundColor: "#1E2631", // Dropdown background color
               color: "#FFFFFF", // Text color inside dropdown
+              borderRadius: "20px", // Rounded corners
               fontSize: 14,
             },
           },
