@@ -76,12 +76,12 @@ const BugsList = () => {
     let filteredResults = [...allIssues];
     
     // Apply DBMS filter if selected
-    if (dbms) {
+    if (dbms && dbms !== "all") {
       filteredResults = filteredResults.filter(issue => String(issue.dbms_id) === String(dbms));
     }
     
     // Apply category filter if selected
-    if (category) {
+    if (category && category !== "all") {
       filteredResults = filteredResults.filter(issue => String(issue.category_id) === String(category));
     }
     
@@ -194,8 +194,8 @@ const BugsList = () => {
         <SelectionField
           label="Filter by DBMS"
           //1. Set DBMS selection fields accordingly 
-          selectionArray={dbmsOptions.map(option => option.id)}
-          displayArray={dbmsOptions.map(option => option.name)}
+          selectionArray={["all", ...dbmsOptions.map(option => option.id)]}
+          displayArray={["All", ...dbmsOptions.map(option => option.name)]}
           value={dbmsSelection}
           onChange={handleDbmsChange}
           disabled={dbmsLoading || dbmsOptions.length === 0}
@@ -203,8 +203,8 @@ const BugsList = () => {
         <SelectionField
           label="Filter by Category"
           //2. Set Category selection fields accordingly 
-          selectionArray={categoryOptions.map(option => option.id)}
-          displayArray={categoryOptions.map(option => option.category_name)}
+          selectionArray={["all", ...categoryOptions.map(option => option.id)]}
+          displayArray={["All", ...categoryOptions.map(option => option.category_name)]}
           value={categorySelection}
           onChange={handleCategoryChange}
           disabled={categoryLoading || categoryOptions.length === 0}
