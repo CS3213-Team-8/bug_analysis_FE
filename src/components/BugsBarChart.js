@@ -87,7 +87,7 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           {...{
             overflow: 'visible',
           }}
-          {...(!isMultiBarChart && { barGap: -1 })}
+          barGap={isMultiBarChart ? undefined : -1}
         >
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey={xAxisKey} tick={<CustomizedTick />} angle={-35} />

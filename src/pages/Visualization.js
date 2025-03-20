@@ -47,12 +47,13 @@ const Visualization = () => {
       const bugsResults = await Promise.all(
         dbmsSlugs.map(async (dbmsSlug) => {
           const data = await fetchBugsDistribution(dbmsSlug)
-          return computeBugsDistribution(data, dbmsSlug)
+          return computeBugsDistribution(data)
         }),
       )
-      const bugsDistributionAcrossDBMS = bugsResults.map((result) => ({
-        db: Object.keys(result.values)[0],
-        values: { values: Object.values(result.values)[0] },
+
+      const bugsDistributionAcrossDBMS = dbmsSlugs.map((db, index) => ({
+        db,
+        values: bugsResults[index].values,
       }))
 
       const ttfData = await fetchMeanTTF()
@@ -149,10 +150,8 @@ const Visualization = () => {
 
   /* Helper functions */
 
-  const computeBugsDistribution = (data, dbmsSlug) => {
-    const totalBugs = data.reduce((total, item) => total + item.quantity, 0)
-    const dbmsName = data.length > 0 ? data[0].dbms_name.trim() : dbmsSlug
-    return { values: { [dbmsName]: totalBugs } }
+  const computeBugsDistribution = (data) => {
+    return { values: data.reduce((total, item) => total + item.quantity, 0) }
   }
 
   const transformCategoryDistribution = (data) => {
