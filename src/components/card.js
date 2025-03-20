@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import MyIcon from './icon';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -24,8 +25,10 @@ import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
  * @param {string} props.timeToFix - The time information for the issue
  * @param {string} props.category - The category of the issue
  * @param {string} props.description - The markdown description of the issue
+ * @param {string} props.url - The URL to the GitHub issue
+ * @param {string} props.repoInfo - The repository information (org/repo)
  */
-const CustomizedCard = ({ iconVariant, title, timeToFix, category, description }) => {
+const CustomizedCard = ({ iconVariant, title, timeToFix, category, description, url, repoInfo }) => {
   const [copySuccess, setCopySuccess] = useState(false);
   
   // Process description to improve markdown rendering
@@ -88,7 +91,7 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, category, description }
           expandIcon={<ExpandMoreIcon sx={{ color: "#4E9D94" }} />}
           sx={{
             display: "flex",
-            alignItems: "center",
+            alignItems: "flex-start", // Changed to align-items: flex-start
             padding: "10px 20px",
             '&:hover': {
               backgroundColor: 'rgba(78, 157, 148, 0.05)'
@@ -101,19 +104,63 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, category, description }
             <MyIcon variant={iconVariant} />
           </Box>
 
-          {/* Bug Title, Time, and Category */}
-          <Box sx={{ flexGrow: 10 }}>
+          {/* Content wrapper - contains all text content */}
+          <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+            {/* Bug Title */}
             <Typography 
               sx={{ 
                 color: "white", 
                 fontSize: "16px", 
                 fontWeight: "bold",
-                lineHeight: 1.3
+                lineHeight: 1.3,
+                mb: 1
               }}
             >
               {title}
             </Typography>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 3, mt: 0.5 }}>
+            
+            {/* GitHub icon and repo info */}
+            {url && (
+              <Box sx={{ 
+                display: "flex", 
+                alignItems: "center", 
+                mb: 1
+              }}>
+                {repoInfo && (
+                  <Typography 
+                    component="span"
+                    sx={{ 
+                      color: "rgba(255, 255, 255, 0.6)", 
+                      fontSize: "12px", 
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      mr: 1 // Add margin to the right of text
+                    }}
+                  >
+                    Source: {repoInfo}
+                  </Typography>
+                )}
+                <Tooltip title="View on GitHub">
+                  <IconButton 
+                    component="a"
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="small"
+                    sx={{ 
+                      color: "#4E9D94",
+                      '&:hover': { color: "#6AC0B6" },
+                      p: 0.5
+                    }}
+                  >
+                    <GitHubIcon fontSize="small" />
+                  </IconButton>
+                </Tooltip>
+              </Box>
+            )}
+            
+            {/* Time and category */}
+            <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
               <Typography 
                 sx={{ 
                   color: "rgba(255,255,255,0.6)", 

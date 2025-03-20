@@ -250,6 +250,8 @@ const BugsList = () => {
               timeToFix={getTimeMessage(issue)}
               category={getCategoryName(issue.category_id)}
               description={issue.body || "No description available."}
+              url={issue.html_url} 
+              repoInfo={`${issue.org_name}/${issue.repo_name}`} 
             />
           ))
         ) : allIssues.length > 0 ? (
