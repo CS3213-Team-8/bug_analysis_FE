@@ -240,7 +240,7 @@ const useStyles = makeStyles(() => ({
   },
   chartTitle: {
     marginBottom: '10px',
-    fontSize: '1rem',
+    fontSize: '1.rem',
     fontWeight: 600,
   },
 }))

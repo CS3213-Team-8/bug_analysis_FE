@@ -53,10 +53,23 @@ const fetchAnalysisByDBMS = async (dbmsSlug) => {
   }
 }
 
+const fetchDBMSList = async () => {
+  try {
+      const response = await axiosInstance.get("/api/dbms/");
+      // Filter out any DBMS with an empty slug or name
+      const filteredDb = response.data.filter(dbms => dbms.slug && dbms.name);
+      return filteredDb;
+  } catch (error) {
+      console.error("API Error:", error.response ? error.response.data : error.message);
+      return []
+  }
+};
+
 export {
   fetchCategoryDistribution,
   fetchBugsDistribution,
   fetchMeanTTF,
   fetchCategoryDistributionByDBMS,
   fetchAnalysisByDBMS,
+  fetchDBMSList,
 }

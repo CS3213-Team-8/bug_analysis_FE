@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { Box } from '@mui/material'
 import CustomTabs from '../components/CustomTabs'
 import ChartsGrid from '../components/ChartGrid'
@@ -8,31 +8,35 @@ import {
   fetchMeanTTF,
   fetchCategoryDistributionByDBMS,
   fetchAnalysisByDBMS,
+  fetchDBMSList,
 } from '../visualizationApi'
 
 const Visualization = () => {
-  const dbmsList = ['tidb', 'duck-db']
-  const [chartsData, setChartsData] = useState(() => {
-    const initialData = {
-      allDBs: {
-        categoryDistributionAcrossDBMS: [],
-        bugsDistributionAcrossDBMS: [],
-        meanTTFAcrossDBMS: [],
-      },
-    }
 
-    dbmsList.forEach((dbmsSlug, index) => {
-      const dbKey = `db${index + 1}`
-      initialData[dbKey] = {
-        categoryDistributionTIDB: [],
-        openCloseFrequencyTIDB: [],
-      }
-    })
-
-    return initialData
-  })
-
+  const [tabs, setTabs] = useState([])
+  const [dbmsSlugs, setDbmsSlugs] = useState([])
   const [selectedTab, setSelectedTab] = useState(0)
+  const [chartsData, setChartsData] = useState({});
+
+  const fetchDBMS = async () => {
+    try {
+      const dbms = await fetchDBMSList();
+      const namesArray = dbms.map(db => db.name.trim()).filter(name => name); // Remove empty names
+      const slugsArray = dbms.map(db => db.slug.trim()).filter(slug => slug); // Remove empty slugs
+
+      // Set dbmsSlugs to the slugs
+      setDbmsSlugs(slugsArray);
+
+      // Initialize tabs with 'ALL' and DBMS names
+      setTabs([
+        { label: 'ALL' }, // Initial tab
+        ...namesArray.map((db_name) => ({ label: db_name.trim().replace(/\s+/g, '') })), // Remove spaces anywhere in the db_name
+      ]);
+      
+    } catch (error) {
+      console.error('Error fetching DBMS list:', error);
+    }
+  };
 
   const fetchChartData = async () => {
     try {
@@ -41,7 +45,7 @@ const Visualization = () => {
         transformCategoryDistribution(categoryData)
 
       const bugsResults = await Promise.all(
-        dbmsList.map(async (dbmsSlug) => {
+        dbmsSlugs.map(async (dbmsSlug) => {
           const data = await fetchBugsDistribution(dbmsSlug)
           return computeBugsDistribution(data, dbmsSlug)
         }),
@@ -58,14 +62,14 @@ const Visualization = () => {
       }))
 
       const categoryResults = await Promise.all(
-        dbmsList.map(async (dbmsSlug) => ({
+        dbmsSlugs.map(async (dbmsSlug) => ({
           dbms: dbmsSlug,
           data: await fetchCategoryDistributionByDBMS(dbmsSlug),
         })),
       )
 
       const analysisResults = await Promise.all(
-        dbmsList.map(async (dbmsSlug) => {
+        dbmsSlugs.map(async (dbmsSlug) => {
           const {
             opened_per_month,
             closed_per_month,
@@ -84,26 +88,22 @@ const Visualization = () => {
         }),
       )
 
-      const dbmsMapping = {
-        tidb: {
-          dbKey: 'db1',
-          frequencyKey: 'openCloseFrequencyTIDB',
-          summaryKey: 'summaryTIDB',
-          categoryKey: 'categoryDistributionTIDB',
-        },
-        'duck-db': {
-          dbKey: 'db2',
-          frequencyKey: 'openCloseFrequencyDuckDb',
-          summaryKey: 'summaryDuckDB',
-          categoryKey: 'categoryDistributionDuckDB',
-        },
-        'cockroach-db': {
-          dbKey: 'db3',
-          frequencyKey: 'openCloseFrequencyCockroachDb',
-          summaryKey: 'summaryCockroachDB',
-          categoryKey: 'categoryDistributionCockroachDB',
-        },
-      }
+      /* dynamic dbms mapping */
+      const dbmsMapping = dbmsSlugs.reduce((acc, dbmsSlug, index) => {
+        const dbKey = `db${index + 1}`;
+        const formattedKey = tabs[index + 1]?.label; // Get the 'label' from tabs, skipping the "ALL" tab at index 0
+      
+        if (formattedKey) { // Ensure formattedKey exists before assigning
+          acc[dbmsSlug] = {
+            dbKey,
+            frequencyKey: `openCloseFrequency${formattedKey}`,
+            summaryKey: `summary${formattedKey}`,
+            categoryKey: `categoryDistribution${formattedKey}`,
+          };
+        }
+      
+        return acc;
+      }, {});
 
       const categoryDistributionPerDBMS = categoryResults.reduce(
         (acc, { dbms, data }) => {
@@ -146,6 +146,8 @@ const Visualization = () => {
     }
   }
 
+  /* Helper functions */
+
   const computeBugsDistribution = (data, dbmsSlug) => {
     const totalBugs = data.reduce((total, item) => total + item.quantity, 0)
     const dbmsName = data.length > 0 ? data[0].dbms_name.trim() : dbmsSlug
@@ -170,34 +172,26 @@ const Visualization = () => {
   }
 
   useEffect(() => {
-    fetchChartData()
-  }, [])
+    fetchDBMS();
+  }, []);
+  
+  useEffect(() => {
+    if (dbmsSlugs.length > 0) {
+      fetchChartData();
+    }
+  }, [dbmsSlugs]); // Runs when dbmsSlugs is updated
 
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue)
   }
 
-  const tabs = [
-    { label: 'ALL' },
-    { label: 'TIDB' },
-    { label: 'DuckDB' },
-    { label: 'CockroachDB' },
-  ]
-
   const filterDatabyTab = (data, selectedTab) => {
     if (selectedTab === 0) return data.allDBs
-    const dbKey =
-      selectedTab === 1
-        ? 'db1'
-        : selectedTab === 2
-        ? 'db2'
-        : selectedTab === 3
-        ? 'db3'
-        : ''
-    return data[dbKey]
+    const dbKey = `db${selectedTab}`;
+    return data[dbKey];
   }
 
-  const dataToDisplay = filterDatabyTab(chartsData, selectedTab)
+  const dataToDisplay = useMemo(() => filterDatabyTab(chartsData, selectedTab), [chartsData, selectedTab])
 
   return (
     <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
@@ -208,7 +202,7 @@ const Visualization = () => {
           onTabChange={handleTabChange}
         />
       </Box>
-      <ChartsGrid data={dataToDisplay} selectedTab={selectedTab} />
+      <ChartsGrid data={dataToDisplay} selectedTab={selectedTab} tabs={tabs} />
     </Box>
   )
 }
