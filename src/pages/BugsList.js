@@ -38,8 +38,10 @@ const BugsList = () => {
       setDbmsLoading(true);
       try {
         const response = await axios.get("https://bug-analysis-be.onrender.com/api/dbms");
-        // Filter out any entries with empty name or slug
-        const validOptions = response.data.filter(option => option.name && option.slug);
+        // Filter valid options and sort alphabetically
+        const validOptions = response.data
+        .filter(option => option.name && option.slug)
+        .sort((a, b) => a.name.localeCompare(b.name));
         setDbmsOptions(validOptions);
       } catch (err) {
         console.error("Failed to fetch DBMS options:", err);
@@ -58,8 +60,16 @@ const BugsList = () => {
       setCategoryLoading(true);
       try {
         const response = await axios.get("https://bug-analysis-be.onrender.com/api/categories");
-        // Filter out any entries with empty name or slug
-        const validOptions = response.data.filter(option => option.category_name && option.slug);
+        // Filter valid options and sort alphabetically with "Others" at the end
+        const validOptions = response.data
+        .filter(option => option.category_name && option.slug)
+        .sort((a, b) => {
+          // Always place "Others" at the end
+          if (a.category_name === "Others") return 1;
+          if (b.category_name === "Others") return -1;
+          // Sort other categories alphabetically
+          return a.category_name.localeCompare(b.category_name);
+        });
         setCategoryOptions(validOptions);
       } catch (err) {
         console.error("Failed to fetch category options:", err);
