@@ -32,15 +32,18 @@ function CustomizedTick(props) {
 
 const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
-  const dbmsColors = {
-    TIDB: '#4DB6AC', // Teal for TIDB
+  const multiChartColors = {
+    'TIDB': '#4DB6AC', // Teal for TIDB
     'Duck DB': '#FF7043', // Coral for DuckDB
     'Cockroach DB': '#64B5F6', // Light blue for CockroachDB
   }
 
+  const singleChartColors = ['#4DB6AC', '#FF7043', '#64B5F6']
+
   const isMultiBarChart = data?.some(
     (item) =>
-      item?.values && Object.keys(item.values).some((key) => key in dbmsColors),
+      item?.values &&
+      Object.keys(item.values).some((key) => key in multiChartColors),
   )
   console.log('BugsBarChart isMultiBarChart: ', isMultiBarChart)
 
@@ -55,18 +58,17 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
     : data.map((item) => item[xAxisKey]) // For single-bar chart, use x-axis values as keys
 
   const filteredData =
-    data?.map((item) => {
+    data?.map((item, index) => {
       if (isMultiBarChart) {
-        // Multi-bar chart: no additional transformation needed
         return {
           ...item,
           values: item.values,
         }
       }
-      // Single-bar chart: flatten `values`
       return {
-        ...item,
-        values: { [item[xAxisKey]]: item.values?.values },
+        db: item.db,
+        value: item.values,
+        fill: singleChartColors[index % singleChartColors.length],
       }
     }) || []
 
@@ -85,6 +87,7 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           {...{
             overflow: 'visible',
           }}
+          {...(!isMultiBarChart && { barGap: -1 })}
         >
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey={xAxisKey} tick={<CustomizedTick />} angle={-35} />
@@ -105,15 +108,15 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
                   key={key}
                   dataKey={`values.${key}`}
                   name={key}
-                  fill={dbmsColors[key] || '#8884d8'}
+                  fill={multiChartColors[key] || '#8884d8'}
                 />
               ))
-            : dbmsKeys.map((key, index) => (
+            : filteredData.map((item, index) => (
                 <Bar
                   key={index}
-                  dataKey={`values.${key}`}
-                  name={key}
-                  fill={dbmsColors[key] || '#8884d8'}
+                  dataKey='value'
+                  name={item.db}
+                  fill={item.fill}
                 />
               ))}
         </BarChart>

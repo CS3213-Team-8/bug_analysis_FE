@@ -12,31 +12,31 @@ import {
 } from '../visualizationApi'
 
 const Visualization = () => {
-
   const [tabs, setTabs] = useState([])
   const [dbmsSlugs, setDbmsSlugs] = useState([])
   const [selectedTab, setSelectedTab] = useState(0)
-  const [chartsData, setChartsData] = useState({});
+  const [chartsData, setChartsData] = useState({})
 
   const fetchDBMS = async () => {
     try {
-      const dbms = await fetchDBMSList();
-      const namesArray = dbms.map(db => db.name.trim()).filter(name => name); // Remove empty names
-      const slugsArray = dbms.map(db => db.slug.trim()).filter(slug => slug); // Remove empty slugs
+      const dbms = await fetchDBMSList()
+      const namesArray = dbms.map((db) => db.name.trim()).filter((name) => name) // Remove empty names
+      const slugsArray = dbms.map((db) => db.slug.trim()).filter((slug) => slug) // Remove empty slugs
 
       // Set dbmsSlugs to the slugs
-      setDbmsSlugs(slugsArray);
+      setDbmsSlugs(slugsArray)
 
       // Initialize tabs with 'ALL' and DBMS names
       setTabs([
         { label: 'ALL' }, // Initial tab
-        ...namesArray.map((db_name) => ({ label: db_name.trim().replace(/\s+/g, '') })), // Remove spaces anywhere in the db_name
-      ]);
-      
+        ...namesArray.map((db_name) => ({
+          label: db_name.trim().replace(/\s+/g, ''),
+        })), // Remove spaces anywhere in the db_name
+      ])
     } catch (error) {
-      console.error('Error fetching DBMS list:', error);
+      console.error('Error fetching DBMS list:', error)
     }
-  };
+  }
 
   const fetchChartData = async () => {
     try {
@@ -58,7 +58,7 @@ const Visualization = () => {
       const ttfData = await fetchMeanTTF()
       const meanTTFAcrossDBMS = ttfData.map((item) => ({
         db: item.dbms_name,
-        values: { values: item.mean_TTF },
+        values: item.mean_TTF,
       }))
 
       const categoryResults = await Promise.all(
@@ -90,20 +90,21 @@ const Visualization = () => {
 
       /* dynamic dbms mapping */
       const dbmsMapping = dbmsSlugs.reduce((acc, dbmsSlug, index) => {
-        const dbKey = `db${index + 1}`;
-        const formattedKey = tabs[index + 1]?.label; // Get the 'label' from tabs, skipping the "ALL" tab at index 0
-      
-        if (formattedKey) { // Ensure formattedKey exists before assigning
+        const dbKey = `db${index + 1}`
+        const formattedKey = tabs[index + 1]?.label // Get the 'label' from tabs, skipping the "ALL" tab at index 0
+
+        if (formattedKey) {
+          // Ensure formattedKey exists before assigning
           acc[dbmsSlug] = {
             dbKey,
             frequencyKey: `openCloseFrequency${formattedKey}`,
             summaryKey: `summary${formattedKey}`,
             categoryKey: `categoryDistribution${formattedKey}`,
-          };
+          }
         }
-      
-        return acc;
-      }, {});
+
+        return acc
+      }, {})
 
       const categoryDistributionPerDBMS = categoryResults.reduce(
         (acc, { dbms, data }) => {
@@ -172,14 +173,14 @@ const Visualization = () => {
   }
 
   useEffect(() => {
-    fetchDBMS();
-  }, []);
-  
+    fetchDBMS()
+  }, [])
+
   useEffect(() => {
     if (dbmsSlugs.length > 0) {
-      fetchChartData();
+      fetchChartData()
     }
-  }, [dbmsSlugs]); // Runs when dbmsSlugs is updated
+  }, [dbmsSlugs]) // Runs when dbmsSlugs is updated
 
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue)
@@ -187,15 +188,18 @@ const Visualization = () => {
 
   const filterDatabyTab = (data, selectedTab) => {
     if (selectedTab === 0) return data.allDBs
-    const dbKey = `db${selectedTab}`;
-    return data[dbKey];
+    const dbKey = `db${selectedTab}`
+    return data[dbKey]
   }
 
-  const dataToDisplay = useMemo(() => filterDatabyTab(chartsData, selectedTab), [chartsData, selectedTab])
+  const dataToDisplay = useMemo(
+    () => filterDatabyTab(chartsData, selectedTab),
+    [chartsData, selectedTab],
+  )
 
   return (
-    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
-      <Box sx={{ mt: 1, mb: 1, ml: 2, }}>
+    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <Box sx={{ mt: 1, mb: 1, ml: 2 }}>
         <CustomTabs
           tabs={tabs}
           selectedTab={selectedTab}
