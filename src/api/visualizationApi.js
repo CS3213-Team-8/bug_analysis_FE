@@ -1,4 +1,4 @@
-import axiosInstance from './axios' // Import the axiosInstance
+import axiosInstance from '../axios'
 
 // Fetch category distribution data
 const fetchCategoryDistribution = async () => {
@@ -55,15 +55,18 @@ const fetchAnalysisByDBMS = async (dbmsSlug) => {
 
 const fetchDBMSList = async () => {
   try {
-      const response = await axiosInstance.get("/api/dbms/");
-      // Filter out any DBMS with an empty slug or name
-      const filteredDb = response.data.filter(dbms => dbms.slug && dbms.name);
-      return filteredDb;
+    const response = await axiosInstance.get('/api/dbms/')
+    // Filter out any DBMS with an empty slug or name
+    const filteredDb = response.data.filter((dbms) => dbms.slug && dbms.name)
+    return filteredDb
   } catch (error) {
-      console.error("API Error:", error.response ? error.response.data : error.message);
-      return []
+    console.error(
+      'API Error:',
+      error.response ? error.response.data : error.message,
+    )
+    return []
   }
-};
+}
 
 export {
   fetchCategoryDistribution,

@@ -66,12 +66,12 @@ const CustomTooltip = ({ active, payload, label }) => {
 const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
   const multiChartColors = {
-    TIDB: '#38B5A9', // Teal for TIDB
+    'TIDB': '#38B5A9', // Teal for TIDB
     'Duck DB': '#FF7043', // Coral for DuckDB
     'Cockroach DB': '#3384C4', // Light blue for CockroachDB
   }
 
-  const singleChartColors = ['#38B5A9', '#FF7043', '#3384c4']
+  const singleChartColors = ['#FF7043', '#38B5A9', '#3384c4']
 
   const isMultiBarChart = data?.some(
     (item) =>
