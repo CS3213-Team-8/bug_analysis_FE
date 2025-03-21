@@ -1,17 +1,17 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 import GreyContainer from '../components/GreyContainer';
-import MyTabs from '../components/MyTabs';
 import SelectionField from '../components/selectionField';
 import MyIcon from '../components/icon';
 import CustomizedCard from '../components/card';
 import SearchBar from '../components/SearchBar';
+import CustomTabs from '../components/CustomTabs';
 
 const Dummy = () => {
   const demoTabs = [
-    { label: 'Tab 1', path: 'tab1' },
-    { label: 'Tab 2', path: 'tab2' },
-    { label: 'Tab 3', path: 'tab3' },
+    { label: 'Tab 1' },
+    { label: 'Tab 2' },
+    { label: 'Tab 3' },
   ];
 
   // Add state for selection fields
@@ -41,7 +41,7 @@ const Dummy = () => {
         You can find examples of different UI elements and their implementations here.
       </Typography>
       
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6">
           Grey Container Example
         </Typography>
@@ -50,14 +50,14 @@ const Dummy = () => {
         </Typography>
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer  sx={{ mt: 3 }}>
         <Typography variant="h6" sx={{ mb: 2 }}>
-          MyTabs Example
+          Custom Tabs Example
         </Typography>
-        <MyTabs tabs={demoTabs} />
+        <CustomTabs tabs={demoTabs} />
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           SelectionField Examples
         </Typography>
@@ -70,7 +70,7 @@ const Dummy = () => {
         />
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           Icon Examples
         </Typography>
@@ -93,11 +93,21 @@ const Dummy = () => {
               <MyIcon variant="pending" />
               <Typography variant="body2">Pending Status</Typography>
             </Box>
+            
+            <Box display="flex" alignItems="center" gap={1}>
+              <MyIcon variant="edit" />
+              <Typography variant="body2">Edit Action</Typography>
+            </Box>
+            
+            <Box display="flex" alignItems="center" gap={1}>
+              <MyIcon variant="delete" />
+              <Typography variant="body2">Delete Action</Typography>
+            </Box>
           </Box>
         </Box>
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           Card Examples
         </Typography>
@@ -129,7 +139,7 @@ const Dummy = () => {
         </Box>
       </GreyContainer>
 
-      <GreyContainer>
+      <GreyContainer sx={{ mt: 3 }} >
         <Typography variant="h6" sx={{ mb: 2 }}>
           SearchBar Example
         </Typography>

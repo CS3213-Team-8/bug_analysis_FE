@@ -1,12 +1,14 @@
-import React from 'react';
-import { Container } from '@mui/material';
+import { Box } from '@mui/material'
+import { styled } from '@mui/system'
 
-const GreyContainer = ({ children }) => {
-  return (
-    <Container sx={{ mt: 4, border: '3px solid #414C5B', padding: 2, borderRadius: '12px' }}>
-      {children}
-    </Container>
-  );
-};
+const GreyContainer = styled(Box)(({ theme }) => ({
+  backgroundColor: theme.palette.background.light,
+  borderRadius: '12px',
+  border: '3px solid #414C5B',
+  padding: '1rem',
+//   height: '100%',
+  width: '100%'
+//   height: '100%',
+}))
 
-export default GreyContainer;
+export default GreyContainer

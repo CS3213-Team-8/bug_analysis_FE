@@ -3,10 +3,14 @@ import { Box, Typography } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import AdjustOutlinedIcon from '@mui/icons-material/AdjustOutlined';
 import BugReportIcon from '@mui/icons-material/BugReport';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const iconStyles = {
   done: { color: '#A078FF', fontSize: 30 }, // Purple checkmark
   pending: { color: '#A0E7E5', fontSize: 30 }, // Mint green circle
+  edit: { color: '#FFD166', fontSize: 24 }, // Yellow edit icon
+  delete: { color: '#EF476F', fontSize: 24 }, // Red delete icon
 };
 
 const MyIcon = ({ variant, ...props }) => {
@@ -29,6 +33,10 @@ const MyIcon = ({ variant, ...props }) => {
       return <CheckCircleOutlineIcon sx={iconStyles.done} {...props} />;
     case 'pending':
       return <AdjustOutlinedIcon sx={iconStyles.pending} {...props} />;
+    case 'edit':
+      return <EditIcon sx={iconStyles.edit} {...props} />;
+    case 'delete':
+      return <DeleteIcon sx={iconStyles.delete} {...props} />;
     default:
       return null;
   }
