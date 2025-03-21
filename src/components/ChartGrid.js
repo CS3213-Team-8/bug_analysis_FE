@@ -98,8 +98,8 @@ const ChartGrid = ({ data, selectedTab, tabs }) => {
               data={data.meanTTFAcrossDBMS}
               xAxisKey="db"
               xLabel="DBMS"
-              yLabel="Mean TTF (days)"
-              chartTitle="Mean TTF Across DBMS"
+              yLabel="Mean TTF (hours)"
+              chartTitle="Mean TTF (hours) Across DBMS"
             />
           </GreyContainer>
         </Box>
