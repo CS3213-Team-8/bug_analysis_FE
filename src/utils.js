@@ -1,4 +1,4 @@
-// Visualization Utilities
+// Visualization Utils
 export const computeBugsDistribution = (data) => ({
   values: data.reduce((total, item) => total + item.quantity, 0),
 })
