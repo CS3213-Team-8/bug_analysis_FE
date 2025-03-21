@@ -32,10 +32,10 @@ function CustomizedTick(props) {
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
-    console.log("payload: ", payload);
+    console.log('payload: ', payload)
 
     // Filter out unwanted entries (e.g., DuckDB, CockroachDB)
-    const filteredPayload = payload.filter(item => item.name === label);
+    const filteredPayload = payload.filter((item) => item.name === label)
 
     return (
       <div
@@ -49,27 +49,29 @@ const CustomTooltip = ({ active, payload, label }) => {
           padding: '10px',
         }}
       >
-        <p><strong>{label}</strong></p>
+        <p>
+          <strong>{label}</strong>
+        </p>
         {filteredPayload.map((item, index) => (
           <p key={index} style={{ color: item.color }}>
             {`${item.name}: ${item.value}`}
           </p>
         ))}
       </div>
-    );
+    )
   }
-  return null;
-};
+  return null
+}
 
 const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
   const multiChartColors = {
-    'TIDB': '#4DB6AC', // Teal for TIDB
+    TIDB: '#38B5A9', // Teal for TIDB
     'Duck DB': '#FF7043', // Coral for DuckDB
-    'Cockroach DB': '#64B5F6', // Light blue for CockroachDB
+    'Cockroach DB': '#3384C4', // Light blue for CockroachDB
   }
 
-  const singleChartColors = ['#4DB6AC', '#FF7043', '#64B5F6']
+  const singleChartColors = ['#38B5A9', '#FF7043', '#3384c4']
 
   const isMultiBarChart = data?.some(
     (item) =>
@@ -123,8 +125,8 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey={xAxisKey} tick={<CustomizedTick />} angle={-35} />
           <YAxis />
-          {isMultiBarChart
-          ? <Tooltip
+          {isMultiBarChart ? (
+            <Tooltip
               contentStyle={{
                 backgroundColor: 'rgb(206, 194, 194)',
                 border: 'solid 1px #000',
@@ -134,8 +136,10 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
                 fontWeight: '600',
               }}
             />
-          : <Tooltip content={<CustomTooltip />} />}
-          
+          ) : (
+            <Tooltip content={<CustomTooltip />} />
+          )}
+
           {isMultiBarChart
             ? dbmsKeys.map((key) => (
                 <Bar

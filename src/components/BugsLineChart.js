@@ -53,14 +53,14 @@ const BugsLineChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           <Line
             type='monotone'
             dataKey='opened' // Directly access the 'opened' key from the data
-            stroke='#8884d8'
+            stroke='#7673BF'
             strokeWidth={2.5}
             name='Opened Issues'
           />
           <Line
             type='monotone'
             dataKey='closed' // Directly access the 'closed' key from the data
-            stroke='#82ca9d'
+            stroke='#40A849'
             strokeWidth={2.5}
             name='Closed Issues'
           />
