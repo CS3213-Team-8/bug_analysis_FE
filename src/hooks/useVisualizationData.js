@@ -56,12 +56,6 @@ const useVisualizationData = () => {
         values: bugsResults[index].values,
       }))
 
-      // const ttfData = await fetchMeanTTF()
-      // const meanTTFAcrossDBMS = ttfData.map((item) => ({
-      //   db: item.dbms_name,
-      //   values: item.mean_TTF,
-      // }))
-
       const ttfData = await fetchMeanTTF()
       const meanTTFAcrossDBMS = dbmsSlugs.map((dbSlug) => ({
         db: dbmsMapping[dbSlug] || dbSlug,
