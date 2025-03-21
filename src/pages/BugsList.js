@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Box } from '@mui/material';
+import { Typography, Box, CircularProgress, Divider, List, ListItem, ListItemButton } from '@mui/material';
 import SelectionField from '../components/selectionField';
 import CustomizedCard from '../components/card';
 import SearchBar from '../components/SearchBar';
 import { Button } from "@mui/material"
 import axios from 'axios';
+import axiosInstance from '../axios';
 
 const BugsList = () => {
   // State for issues
-  const [issues, setIssues] = useState([]);
+  const [issues, setIssues] = useState(null);
   // State for original issues (unfiltered)
-  const [allIssues, setAllIssues] = useState([]);
+  const [allIssues, setAllIssues] = useState(null);
   // State for loading
   const [loading, setLoading] = useState(false);
   // State for error
   const [error, setError] = useState(null);
+  // State for current page
+  const [currentPage, setCurrentPage] = useState(1);
+  // State to track if there are more pages to load
+  const [hasMore, setHasMore] = useState(true);
 
   // State for search
   const [searchValue, setSearchValue] = useState('');
@@ -125,23 +130,46 @@ const BugsList = () => {
     applyAllFilters(dbmsSelection, categorySelection, value);
   };
 
-   // Function to fetch GitHub issues
-   const fetchGitHubIssues = async () => {
+  // Function to fetch GitHub issues
+  const fetchGitHubIssues = async (page = 1) => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get("https://bug-analysis-be.onrender.com/api/github/issues");
+      // Save current scroll position before loading new data
+      const scrollPosition = window.scrollY;
+      
+      const response = await axiosInstance.get(`/api/github/issues?page=${page}`);
       console.log("GitHub issues fetched:", response.data);
 
-      // First set both issues and allIssues to the fetched data
       const fetchedIssues = response.data;
-      setAllIssues(fetchedIssues);
-      setIssues(fetchedIssues);  // Show all issues initially
       
-      // Then reset filters
-      setDbmsSelection('');      // Reset DBMS filter
-      setCategorySelection('');  // Reset Category filter
-      setSearchValue('');        // Reset search
+      // If no issues returned or fewer than expected, we've reached the end
+      if (fetchedIssues.length === 0) {
+        setHasMore(false);
+      }
+      
+      if (page === 1) {
+        // First page: replace all issues
+        setAllIssues(fetchedIssues);
+        setIssues(fetchedIssues);
+        
+        // Reset filters
+        setDbmsSelection('');
+        setCategorySelection('');
+        setSearchValue('');
+      } else {
+        // Subsequent pages: append to existing issues
+        setAllIssues(prevIssues => [...prevIssues, ...fetchedIssues]);
+        setIssues(prevIssues => [...prevIssues, ...fetchedIssues]);
+        
+        // Restore scroll position after state update
+        setTimeout(() => {
+          window.scrollTo(0, scrollPosition);
+        }, 100);
+      }
+      
+      // Update current page
+      setCurrentPage(page);
     } catch (error) {
       console.error("Failed to fetch GitHub issues:", error);
       setError("Failed to fetch GitHub issues. Please try again later.");
@@ -149,6 +177,13 @@ const BugsList = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (!allIssues) {
+      console.log("Calling api")
+      fetchGitHubIssues(1);
+    }
+  }, []);
 
   // Helper function to calculate time difference between two dates
   //if issue is open: Display Open for {current_date - issue.created_at}
@@ -219,28 +254,7 @@ const BugsList = () => {
           onChange={handleCategoryChange}
           disabled={categoryLoading || categoryOptions.length === 0}
         />
-        
-        {/* Apply Filters Button */}
-        <Box flexGrow={0}>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              height: "50px", 
-              width: "150px", 
-              backgroundColor: "#705F9B",
-              textTransform: "none", 
-              fontSize: "16px", 
-              borderRadius: "20px",
-              "&:hover": { backgroundColor: "#5D4E84" }, 
-            }}
-
-            onClick={fetchGitHubIssues}
-            disabled={loading}
-          >
-            {loading ? "Loading..." : "Bugs"}
-          </Button>
-        </Box>
+       
       </Box>
       
       {/* Error message */}
@@ -252,19 +266,55 @@ const BugsList = () => {
 
       {/* GitHub Issues List */}
       <Box display="flex" flexDirection="column" gap={0}>
-        {issues.length > 0 ? (
-          issues.map((issue) => (
-            <CustomizedCard
-              iconVariant={issue.state === "closed" ? "done" : "pending"}
-              title={issue.title}
-              timeToFix={getTimeMessage(issue)}
-              category={getCategoryName(issue.category_id)}
-              description={issue.body || "No description available."}
-              url={issue.html_url} 
-              repoInfo={`${issue.org_name}/${issue.repo_name}`} 
-            />
-          ))
-        ) : allIssues.length > 0 ? (
+        {issues && issues.length > 0 ? (
+          <>
+            {issues.map((issue) => (
+              <CustomizedCard
+                key={issue.id}
+                iconVariant={issue.state === "closed" ? "done" : "pending"}
+                title={issue.title}
+                timeToFix={getTimeMessage(issue)}
+                category={getCategoryName(issue.category_id)}
+                description={issue.body || "No description available."}
+                url={issue.html_url} 
+                repoInfo={`${issue.org_name}/${issue.repo_name}`} 
+              />
+            ))}
+            
+            {/* Load More Button */}
+            {hasMore && (
+              <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3, mb: 3 }}>
+                <Button 
+                  variant="contained" 
+                  onClick={() => fetchGitHubIssues(currentPage + 1)}
+                  disabled={loading}
+                  sx={{ minWidth: '200px' }}
+                >
+                  {loading ? (
+                    <>
+                      <CircularProgress size={24} sx={{ mr: 1, color: 'white' }} />
+                      Loading...
+                    </>
+                  ) : (
+                    'Load More'
+                  )}
+                </Button>
+              </Box>
+            )}
+            
+            {/* End of results message */}
+            {!hasMore && !loading && (
+              <Box sx={{ py: 3 }}>
+                <Divider />
+                <Box sx={{ textAlign: 'center', mt: 2 }}>
+                  <Typography variant="body2" color="text.secondary">
+                    You've reached the end of the list
+                  </Typography>
+                </Box>
+              </Box>
+            )}
+          </>
+        ) : allIssues && allIssues.length > 0 ? (
           <Box sx={{ textAlign: "center", py: 4 }}>
             <Typography variant="h6">No issues found</Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
@@ -278,30 +328,15 @@ const BugsList = () => {
               Click the 'Bugs' button to fetch GitHub issues
             </Typography>
           </Box>
-          // <>
-          //   {/* Placeholder cards when no issues are fetched yet */}
-          //   <CustomizedCard
-          //     iconVariant="done"
-          //     title="Click the 'Bugs' button to fetch GitHub issues"
-          //     timeToFix="Example"
-          //     category="Example"
-          //     description="This is a placeholder card. Click the 'Bugs' button above to fetch real GitHub issues."
-          //   />
-            
-          //   <CustomizedCard
-          //     iconVariant="pending"
-          //     title="Example Issue"
-          //     timeToFix="Example"
-          //     category="Example"
-          //     description="This is another placeholder card. The real issues will be displayed here after fetching."
-          //   />
-          // </>
         ) : null}
         
-        {/* Loading indicator */}
-        {loading && (
-          <Box sx={{ textAlign: "center", py: 4 }}>
-            <Typography>Loading issues...</Typography>
+        {/* Loading indicator for initial load */}
+        {loading && !allIssues && (
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', py: 4 }}>
+            <CircularProgress size={40} sx={{ mr: 2 }} />
+            <Typography variant="h6" color="text.secondary">
+              Loading issues...
+            </Typography>
           </Box>
         )}
       </Box>
