@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography, Box } from '@mui/material';
 import SelectionField from '../components/selectionField';
 import CustomizedCard from '../components/card';
@@ -9,35 +9,120 @@ import axios from 'axios';
 const BugsList = () => {
   // State for issues
   const [issues, setIssues] = useState([]);
+  // State for original issues (unfiltered)
+  const [allIssues, setAllIssues] = useState([]);
   // State for loading
   const [loading, setLoading] = useState(false);
   // State for error
   const [error, setError] = useState(null);
 
   // State for search
-  const [searchValue, setSearchValue] = React.useState('');
+  const [searchValue, setSearchValue] = useState('');
+
+  // State for DBMS options
+  const [dbmsOptions, setDbmsOptions] = useState([]);
+  const [dbmsLoading, setDbmsLoading] = useState(false);
+
+  // State for category options
+  const [categoryOptions, setCategoryOptions] = useState([]);
+  const [categoryLoading, setCategoryLoading] = useState(false);
+
+  // States for selection fields
+  const [dbmsSelection, setDbmsSelection] = useState('');
+  const [categorySelection, setCategorySelection] = useState('');
+
+  // Handlers for DBMS selection fields
+  // Fetch DBMS options when component mounts
+  useEffect(() => {
+    const fetchDbmsOptions = async () => {
+      setDbmsLoading(true);
+      try {
+        const response = await axios.get("https://bug-analysis-be.onrender.com/api/dbms");
+        // Filter valid options and sort alphabetically
+        const validOptions = response.data
+        .filter(option => option.name && option.slug)
+        .sort((a, b) => a.name.localeCompare(b.name));
+        setDbmsOptions(validOptions);
+      } catch (err) {
+        console.error("Failed to fetch DBMS options:", err);
+      } finally {
+        setDbmsLoading(false);
+      }
+    };
+
+    fetchDbmsOptions();
+  }, []);
+
+  // Handlers for Category selection fields
+  // Fetch category options when component mounts
+  useEffect(() => {
+    const fetchCategoryOptions = async () => {
+      setCategoryLoading(true);
+      try {
+        const response = await axios.get("https://bug-analysis-be.onrender.com/api/categories");
+        // Filter valid options and sort alphabetically with "Others" at the end
+        const validOptions = response.data
+        .filter(option => option.category_name && option.slug)
+        .sort((a, b) => {
+          // Always place "Others" at the end
+          if (a.category_name === "Others") return 1;
+          if (b.category_name === "Others") return -1;
+          // Sort other categories alphabetically
+          return a.category_name.localeCompare(b.category_name);
+        });
+        setCategoryOptions(validOptions);
+      } catch (err) {
+        console.error("Failed to fetch category options:", err);
+      } finally {
+        setCategoryLoading(false);
+      }
+    };
+
+    fetchCategoryOptions();
+  }, []);
+
+  // Apply all filters at once
+  const applyAllFilters = (dbms = dbmsSelection, category = categorySelection, search = searchValue) => {
+    let filteredResults = [...allIssues];
+    
+    // Apply DBMS filter if selected
+    if (dbms && dbms !== "all") {
+      filteredResults = filteredResults.filter(issue => String(issue.dbms_id) === String(dbms));
+    }
+    
+    // Apply category filter if selected
+    if (category && category !== "all") {
+      filteredResults = filteredResults.filter(issue => String(issue.category_id) === String(category));
+    }
+    
+    // Apply search filter if text is entered
+    if (search.trim()) {
+      filteredResults = filteredResults.filter(issue => 
+        issue.title.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+    
+    // Update the issues state with filtered results
+    setIssues(filteredResults);
+  };
+
+  const handleDbmsChange = (event) => {
+    const selectedDbms = event.target.value;
+    setDbmsSelection(selectedDbms);
+    applyAllFilters(selectedDbms, categorySelection, searchValue);
+  };
+
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    setCategorySelection(selectedCategory);
+    applyAllFilters(dbmsSelection, selectedCategory, searchValue);
+  };
 
   // Search handler
   const handleSearch = (value) => {
     console.log('Searching for:', value);
-    // Implement your search logic here
-    //1. TODO
-  };
-
-  // States for selection fields
-  const [dbmsSelection, setDbmsSelection] = React.useState('');
-  const [categorySelection, setCategorySelection] = React.useState('');
-
-  // Handlers for DBMS selection fields
-  //2. TODO fetch issues by DBMS
-  const handleDbmsChange = (event) => {
-    setDbmsSelection(event.target.value);
-  };
-
-  // Handlers for Category selection fields
-  //3. TODO fetch issues by Category
-  const handleCategoryChange = (event) => {
-    setCategorySelection(event.target.value);
+    setSearchValue(value);
+    applyAllFilters(dbmsSelection, categorySelection, value);
   };
 
    // Function to fetch GitHub issues
@@ -47,7 +132,16 @@ const BugsList = () => {
     try {
       const response = await axios.get("https://bug-analysis-be.onrender.com/api/github/issues");
       console.log("GitHub issues fetched:", response.data);
-      setIssues(response.data);
+
+      // First set both issues and allIssues to the fetched data
+      const fetchedIssues = response.data;
+      setAllIssues(fetchedIssues);
+      setIssues(fetchedIssues);  // Show all issues initially
+      
+      // Then reset filters
+      setDbmsSelection('');      // Reset DBMS filter
+      setCategorySelection('');  // Reset Category filter
+      setSearchValue('');        // Reset search
     } catch (error) {
       console.error("Failed to fetch GitHub issues:", error);
       setError("Failed to fetch GitHub issues. Please try again later.");
@@ -76,14 +170,22 @@ const BugsList = () => {
     }
   };
 
-    // Helper function to format the time difference message based on issue state
-    const getTimeMessage = (issue) => {
-      if (issue.state === "closed") {
-        return `Fixed in: ${calculateTimeDifference(issue.created_at, issue.closed_at)}`;
-      } else {
-        return `Opened for: ${calculateTimeDifference(issue.created_at)}`;
-      }
-    };
+  // Helper function to format the time difference message based on issue state
+  const getTimeMessage = (issue) => {
+    if (issue.state === "closed") {
+      return `Fixed in: ${calculateTimeDifference(issue.created_at, issue.closed_at)}`;
+    } else {
+      return `Opened for: ${calculateTimeDifference(issue.created_at)}`;
+    }
+  };
+
+  // Helper function to get the category name from category ID
+  const getCategoryName = (categoryId) => {
+    if (!categoryId) return "Uncategorized";
+    
+    const category = categoryOptions.find(option => option.id === categoryId);
+    return category ? category.category_name : "Unknown Category";
+  };
 
   return (
     <Box sx={{ p: 0 }}> {/* Adds padding around the entire content */}
@@ -102,18 +204,20 @@ const BugsList = () => {
         <SelectionField
           label="Filter by DBMS"
           //1. Set DBMS selection fields accordingly 
-          selectionArray={['MySQL', 'PostgreSQL', 'SQLite']}
-          displayArray={['MySQL', 'PostgreSQL', 'SQLite']}
+          selectionArray={["all", ...dbmsOptions.map(option => option.id)]}
+          displayArray={["All", ...dbmsOptions.map(option => option.name)]}
           value={dbmsSelection}
           onChange={handleDbmsChange}
+          disabled={dbmsLoading || dbmsOptions.length === 0}
         />
         <SelectionField
           label="Filter by Category"
           //2. Set Category selection fields accordingly 
-          selectionArray={['UI Bug', 'Backend Issue', 'Performance']}
-          displayArray={['UI Bug', 'Backend Issue', 'Performance']}
+          selectionArray={["all", ...categoryOptions.map(option => option.id)]}
+          displayArray={["All", ...categoryOptions.map(option => option.category_name)]}
           value={categorySelection}
           onChange={handleCategoryChange}
+          disabled={categoryLoading || categoryOptions.length === 0}
         />
         
         {/* Apply Filters Button */}
@@ -154,30 +258,44 @@ const BugsList = () => {
               iconVariant={issue.state === "closed" ? "done" : "pending"}
               title={issue.title}
               timeToFix={getTimeMessage(issue)}
-              //4. TODO fetch and display category 
-              category="Category A"
+              category={getCategoryName(issue.category_id)}
               description={issue.body || "No description available."}
+              url={issue.html_url} 
+              repoInfo={`${issue.org_name}/${issue.repo_name}`} 
             />
           ))
+        ) : allIssues.length > 0 ? (
+          <Box sx={{ textAlign: "center", py: 4 }}>
+            <Typography variant="h6">No issues found</Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+              Try a different search term
+            </Typography>
+          </Box>
         ) : !loading && !error ? (
-          <>
-            {/* Placeholder cards when no issues are fetched yet */}
-            <CustomizedCard
-              iconVariant="done"
-              title="Click the 'Bugs' button to fetch GitHub issues"
-              timeToFix="Example"
-              category="Example"
-              description="This is a placeholder card. Click the 'Bugs' button above to fetch real GitHub issues."
-            />
+          <Box sx={{ textAlign: "center", py: 4 }}>
+            <Typography variant="h6">No issues yet...</Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+              Click the 'Bugs' button to fetch GitHub issues
+            </Typography>
+          </Box>
+          // <>
+          //   {/* Placeholder cards when no issues are fetched yet */}
+          //   <CustomizedCard
+          //     iconVariant="done"
+          //     title="Click the 'Bugs' button to fetch GitHub issues"
+          //     timeToFix="Example"
+          //     category="Example"
+          //     description="This is a placeholder card. Click the 'Bugs' button above to fetch real GitHub issues."
+          //   />
             
-            <CustomizedCard
-              iconVariant="pending"
-              title="Example Issue"
-              timeToFix="Example"
-              category="Example"
-              description="This is another placeholder card. The real issues will be displayed here after fetching."
-            />
-          </>
+          //   <CustomizedCard
+          //     iconVariant="pending"
+          //     title="Example Issue"
+          //     timeToFix="Example"
+          //     category="Example"
+          //     description="This is another placeholder card. The real issues will be displayed here after fetching."
+          //   />
+          // </>
         ) : null}
         
         {/* Loading indicator */}
