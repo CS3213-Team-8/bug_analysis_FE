@@ -12,7 +12,24 @@ import {
 } from 'recharts'
 
 
+function CustomizedTick(props) {
+  const { x, y, stroke, payload } = props
 
+  // Split the payload value into words and create tspans for each word
+  const tspans = payload.value.split(' ').map((value, index) => (
+    <tspan key={index} textAnchor='middle' x='0' dy={index === 0 ? 15 : 15}>
+      {value}
+    </tspan>
+  ))
+
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text x={0} y={0} fill='#666' fontSize='16px' fontWeight={500}>
+        {tspans}
+      </text>
+    </g>
+  )
+}
 
 const BugsLineChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
@@ -25,18 +42,18 @@ const BugsLineChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
       <ResponsiveContainer width='100%' height={200}>
         <LineChart
           data={data}
-          margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
+          margin={{ top: 20, right: 20, left: 20, bottom: 30 }}
         >
           <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey={xAxisKey} >
-            <Label value={xLabel} position='insideBottom' offset={-10} />
+          <XAxis dataKey={xAxisKey} tick={<CustomizedTick />}  interval={0} >
+            <Label value={xLabel} position='insideBottom' offset={-30} />
           </XAxis>
           <YAxis>
             <Label
               value={yLabel}
               angle={-90}
               position='insideLeft'
-              style={{ textAnchor: 'middle' }}
+              style={{ textAnchor: 'middle'}}
             />
           </YAxis>
           <Tooltip 

@@ -12,6 +12,21 @@ import {
   transformCategoryDistribution,
 } from '../utils'
 
+const monthAbbreviations = {
+  "01": "Jan",
+  "02": "Feb",
+  "03": "Mar",
+  "04": "Apr",
+  "05": "May",
+  "06": "Jun",
+  "07": "Jul",
+  "08": "Aug",
+  "09": "Sep",
+  "10": "Oct",
+  "11": "Nov",
+  "12": "Dec"
+};
+
 const useVisualizationData = () => {
   const [tabs, setTabs] = useState([{ label: 'ALL' }])
   const [dbmsSlugs, setDbmsSlugs] = useState([])
@@ -86,18 +101,25 @@ const useVisualizationData = () => {
             closed_per_month,
             months_tracked,
             summary,
-          } = await fetchAnalysisByDBMS(dbmsSlug)
+          } = await fetchAnalysisByDBMS(dbmsSlug);
+      
           return {
             dbms: dbmsSlug,
-            data: months_tracked.map((month, index) => ({
-              month,
-              opened: opened_per_month[index] || 0,
-              closed: closed_per_month[index] || 0,
-            })),
+            data: months_tracked.map((month, index) => {
+              const [year, monthNum] = month.split("-");
+              const formattedMonth = `${monthAbbreviations[monthNum] || monthNum} ${year}`;
+      
+              return {
+                month: formattedMonth,
+                opened: opened_per_month[index] || 0,
+                closed: closed_per_month[index] || 0,
+              };
+            }),
             summary,
-          }
-        }),
-      )
+          };
+        })
+      );
+      
 
       const dbmsMappingKeys = dbmsSlugs.reduce((acc, dbmsSlug, index) => {
         const formattedKey = tabs[index + 1]?.label
