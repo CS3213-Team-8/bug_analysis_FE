@@ -17,9 +17,11 @@ const useVisualizationData = () => {
   const [dbmsSlugs, setDbmsSlugs] = useState([])
   const [dbmsMapping, setDbmsMapping] = useState({})
   const [chartsData, setChartsData] = useState({})
+  const [loading, setLoading] = useState(false)
 
   const fetchDBMS = useCallback(async () => {
     try {
+      setLoading(true)
       const dbmsList = await fetchDBMSList()
       const mapping = dbmsList.reduce((acc, db) => {
         acc[db.slug.trim()] = db.name.trim()
@@ -34,13 +36,16 @@ const useVisualizationData = () => {
           label: name.replace(/\s+/g, ''),
         })),
       ])
+      setLoading(false)
     } catch (error) {
+      setLoading(false)
       console.error('Error fetching DBMS list:', error)
     }
   }, [])
 
   const fetchChartData = useCallback(async () => {
     try {
+      setLoading(true)
       const categoryData = await fetchCategoryDistribution()
       const categoryDistributionAcrossDBMS =
         transformCategoryDistribution(categoryData)
@@ -150,7 +155,9 @@ const useVisualizationData = () => {
         ...categoryDistributionPerDBMS,
         ...analysisPerDBMS,
       })
+      setLoading(false)
     } catch (error) {
+      setLoading(false)
       console.error('Error fetching chart data:', error)
     }
   }, [dbmsSlugs, dbmsMapping])
@@ -163,7 +170,7 @@ const useVisualizationData = () => {
     if (dbmsSlugs.length > 0) fetchChartData()
   }, [dbmsSlugs, fetchChartData])
 
-  return { tabs, chartsData }
+  return { tabs, chartsData, loading }
 }
 
 export default useVisualizationData

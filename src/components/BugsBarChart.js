@@ -112,10 +112,10 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
-      <ResponsiveContainer width='100%' height={220}>
+      <ResponsiveContainer width='100%' height="90%">
         <BarChart
           data={filteredData}
-          height='250'
+          height='80%'
           margin={{ top: 5 }}
           {...{
             overflow: 'visible',
@@ -132,7 +132,7 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
                 border: 'solid 1px #000',
                 borderRadius: '8px',
                 color: '#000',
-                fontSize: '18px',
+                fontSize: '2vh',
                 fontWeight: '600',
               }}
             />
@@ -166,10 +166,11 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
 const useStyles = makeStyles(() => ({
   chartContainer: {
     textAlign: 'center',
+    height: "100%"
   },
   chartTitle: {
     marginBottom: '10px',
-    fontSize: '1.rem',
+    fontSize: '0.8rem',
     fontWeight: 600,
   },
 }))
