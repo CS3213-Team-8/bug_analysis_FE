@@ -50,11 +50,11 @@ const ChartGrid = ({ data, selectedTab, tabs }) => {
   console.log('ChartGrid selectedTab: ', selectedTab)
 
   return (
-    <>
+    <Box maxHeight="100vh">
       {selectedTab === 0 ? (
         // Tab 0: Special content (handled separately)
         <Box
-          flexGrow={1}
+          flexGrow={0}
           width="100%"
           height="100%"
           display="grid"
@@ -72,10 +72,10 @@ const ChartGrid = ({ data, selectedTab, tabs }) => {
               md: `"a b" "a b" "d d" "d d"`,
             },
             p: '0rem 1rem',
-            overflow: 'hidden',
+            overflow: "hidden"
           }}
         >
-          <GreyContainer gridArea="a" p="1.5rem 1rem" sx={{ overflow: 'hidden' }}>
+          <GreyContainer height="100%" gridArea="a" p="1.5rem 1rem" sx={{ overflow: 'hidden' }}>
             <BugsBarChart
               data={data.categoryDistributionAcrossDBMS}
               xAxisKey="category"
@@ -154,7 +154,7 @@ const ChartGrid = ({ data, selectedTab, tabs }) => {
           </GreyContainer>
         </Box>
       )}
-    </>
+    </Box>
   );
   
 }
