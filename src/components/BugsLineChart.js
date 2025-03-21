@@ -7,59 +7,63 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  // Legend,
   ResponsiveContainer,
   Label,
 } from 'recharts'
 
-const BugsLineChart = ({ data, xAxisKey, xLabel, yLabel, chartTitle }) => {
+
+
+
+const BugsLineChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
 
-  const dbmsColors = {
-    TIDB: '#4DB6AC',
-    DuckDB: '#FF7043',
-    CockroachDB: '#64B5F6',
-  }
-
-  const dbmsKeys = Array.from(
-    new Set(data.flatMap((item) => Object.keys(item.values))),
-  )
-
-  const filteredData = data.map((item) => {
-    const filteredValues = Object.fromEntries(
-      Object.entries(item.values).filter(([key, value]) => value > 0),
-    )
-    return { ...item, values: filteredValues }
-  })
+  console.log('BugsLineChart Data:', data)
 
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
       <ResponsiveContainer width='100%' height={200}>
-        <LineChart data={filteredData}>
+        <LineChart
+          data={data}
+          margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
+        >
           <CartesianGrid strokeDasharray='3 3' />
-          <XAxis dataKey={xAxisKey} />
+          <XAxis dataKey={xAxisKey} >
+            <Label value={xLabel} position='insideBottom' offset={-10} />
+          </XAxis>
           <YAxis>
             <Label
               value={yLabel}
-              offset={-1}
               angle={-90}
-              position='left'
+              position='insideLeft'
               style={{ textAnchor: 'middle' }}
             />
           </YAxis>
-          <Tooltip />
-          {/* <Legend /> */}
-          {dbmsKeys.map((key) => (
-            <Line
-              key={key}
-              type='linear'
-              name={key}
-              dataKey={`values.${key}`}
-              stroke={dbmsColors[key] || '#8884d8'}
-              strokeWidth={2.5}
-            />
-          ))}
+          <Tooltip 
+            contentStyle={{
+              backgroundColor: 'rgb(206, 194, 194)',
+              border: 'solid 1px #000',
+              borderRadius: '8px',
+              color: '#000',
+              fontSize: '18px',
+              fontWeight: '600',
+            }}
+          />
+          {/* Render one line for 'opened' and one for 'closed' */}
+          <Line
+            type='monotone'
+            dataKey='opened' // Directly access the 'opened' key from the data
+            stroke='#7673BF'
+            strokeWidth={2.5}
+            name='Opened Issues'
+          />
+          <Line
+            type='monotone'
+            dataKey='closed' // Directly access the 'closed' key from the data
+            stroke='#40A849'
+            strokeWidth={2.5}
+            name='Closed Issues'
+          />
         </LineChart>
       </ResponsiveContainer>
     </div>

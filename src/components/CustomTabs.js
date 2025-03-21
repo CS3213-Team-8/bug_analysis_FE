@@ -3,7 +3,7 @@ import { styled } from '@mui/system';
 
 const CustomTabs = ({ tabs, selectedTab, onTabChange }) => {
   return (
-    <Box>
+    <Box >
       <Tabs value={selectedTab} onChange={onTabChange} aria-label="custom tabs">
         {tabs.map((tab, index) => (
           <Tab 
