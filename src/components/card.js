@@ -7,7 +7,8 @@ import {
   Box,
   IconButton,
   Tooltip,
-  Snackbar
+  Snackbar, 
+  Button
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
@@ -158,35 +159,63 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, category, description, 
                 </Tooltip>
               </Box>
             )}
+
+            
             
             {/* Time and category */}
             <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
-              <Typography 
-                sx={{ 
-                  color: "rgba(255,255,255,0.6)", 
-                  fontSize: "12px",
-                  display: 'flex',
-                  alignItems: 'center'
-                }}
-              >
-                {timeToFix}
-              </Typography>
-              {category && (
+              <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
                 <Typography 
-                  component="span"
                   sx={{ 
-                    color: "rgba(255, 255, 255, 0.9)", 
-                    fontSize: "12px", 
-                    backgroundColor: "rgba(78, 157, 148, 0.33)", 
-                    padding: "2px 8px", 
-                    borderRadius: "10px",
-                    display: 'inline-block'
+                    color: "rgba(255,255,255,0.6)", 
+                    fontSize: "12px",
+                    display: 'flex',
+                    alignItems: 'center'
                   }}
                 >
-                  {category}
+                  {timeToFix}
                 </Typography>
-              )}
+                {category && (
+                  <Typography 
+                    component="span"
+                    sx={{ 
+                      color: "rgba(255, 255, 255, 0.9)", 
+                      fontSize: "12px", 
+                      backgroundColor: "rgba(78, 157, 148, 0.33)", 
+                      padding: "2px 8px", 
+                      borderRadius: "10px",
+                      display: 'inline-block'
+                    }}
+                  >
+                    {category}
+                  </Typography>
+                )}
+              </Box>
+
+              {/* Fix Analysis Button - Positioned Properly */}
+              <Box sx={{ ml: "auto"}}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  sx={{
+                    height: "40px", 
+                    width: "120px", 
+                    backgroundColor: "rgba(78, 157, 148, 0.50)",
+                    textTransform: "none", 
+                    fontSize: "14px", 
+                    borderRadius: "20px",
+                    color: "rgba(255, 255, 255, 0.9)", 
+                    "&:hover": { backgroundColor: "#6AC0B6", color: "black" }, 
+                  }}
+                  onClick={(event) => event.stopPropagation()} // Prevents accordion from expanding
+                  // onClick={fetchGitHubIssues}
+                  // disabled={loading}
+                >
+                  Fix Analysis
+                </Button>
+              </Box>
             </Box>
+
           </Box>
         </AccordionSummary>
 
