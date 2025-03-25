@@ -222,6 +222,11 @@ const BugsList = () => {
     return category ? category.category_name : "Unknown Category";
   };
 
+  const getIssueSolution = async (issueId) => {
+    const response = await axiosInstance.get(`/api/github/issues/${issueId}/solution`);
+    return response.data["solution"];
+  }
+
   return (
     <Box sx={{ p: 0 }}> {/* Adds padding around the entire content */}
       {/* SearchBar Component */}
@@ -271,6 +276,7 @@ const BugsList = () => {
             {issues.map((issue) => (
               <CustomizedCard
                 key={issue.id}
+                issueId={issue.id}
                 iconVariant={issue.state === "closed" ? "done" : "pending"}
                 title={issue.title}
                 timeToFix={getTimeMessage(issue)}
@@ -278,6 +284,7 @@ const BugsList = () => {
                 description={issue.body || "No description available."}
                 url={issue.html_url} 
                 repoInfo={`${issue.org_name}/${issue.repo_name}`} 
+                getIssueSolution={getIssueSolution}
               />
             ))}
             
