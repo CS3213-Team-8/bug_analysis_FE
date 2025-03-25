@@ -107,7 +107,7 @@ const ChartGrid = ({ data, selectedTab, tabs }) => {
         // All other tabs (selectedTab !== 0)
         <Box
           width="100%"
-          height="100vh"
+          height="100%"
           display="grid"
           gap="1rem"
           sx={{

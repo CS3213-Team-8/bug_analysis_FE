@@ -23,7 +23,7 @@ function CustomizedTick(props) {
 
   return (
     <g transform={`translate(${x},${y})`}>
-      <text x={0} y={0} fill='#666' fontSize='16px' fontWeight={500}>
+      <text x={0} y={0} fill='#666' fontSize='0.9rem' fontWeight={500}>
         {tspans}
       </text>
     </g>
@@ -112,11 +112,11 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
-      <ResponsiveContainer width='100%' height="90%">
+      <ResponsiveContainer width='100%' height="87%">
         <BarChart
           data={filteredData}
           height='80%'
-          margin={{ top: 5 }}
+          margin={{ top: 5 , bottom: 10}}
           {...{
             overflow: 'visible',
           }}
@@ -170,7 +170,7 @@ const useStyles = makeStyles(() => ({
   },
   chartTitle: {
     marginBottom: '10px',
-    fontSize: '0.8rem',
+    fontSize: '0.9',
     fontWeight: 600,
   },
 }))
