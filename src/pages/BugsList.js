@@ -381,7 +381,7 @@ const BugsList = () => {
         ) : issues && issues.length === 0 && !hasMore ? (
           // All data loaded but no matches
           <Box sx={{ textAlign: "center", py: 4 }}>
-            <Typography variant="h6">No issues found</Typography>
+            <Typography variant="h6">No matching issues found</Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
               Try different filters or search terms
             </Typography>
