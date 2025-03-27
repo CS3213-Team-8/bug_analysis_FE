@@ -64,7 +64,7 @@ const BugsList = () => {
     const fetchCategoryOptions = async () => {
       setCategoryLoading(true);
       try {
-        const response = await axios.get("https://bug-analysis-be.onrender.com/api/categories");
+        const response = await axios.get("http://localhost:8000/api/categories");
         // Filter valid options and sort alphabetically with "Others" at the end
         const validOptions = response.data
         .filter(option => option.category_name && option.slug)
