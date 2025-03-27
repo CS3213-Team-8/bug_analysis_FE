@@ -349,11 +349,41 @@ const BugsList = () => {
               </Box>
             )}
           </>
-        ) : allIssues && allIssues.length > 0 ? (
+        ) : issues && issues.length === 0 && hasMore ? (
+          <>
+            {/* No results yet but more data can be loaded */}
+            <Box sx={{ textAlign: "center", py: 4 }}>
+              <Typography variant="h6">No matching issues found yet</Typography>
+              <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                Try loading more data or adjust your filters
+              </Typography>
+            </Box>
+            
+            {/* Load More Button */}
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3, mb: 3 }}>
+              <Button 
+                variant="contained" 
+                onClick={() => fetchGitHubIssues(currentPage + 1)}
+                disabled={loading}
+                sx={{ minWidth: '200px' }}
+              >
+                {loading ? (
+                  <>
+                    <CircularProgress size={24} sx={{ mr: 1, color: 'white' }} />
+                    Loading...
+                  </>
+                ) : (
+                  'Load More'
+                )}
+              </Button>
+            </Box>
+          </>
+        ) : issues && issues.length === 0 && !hasMore ? (
+          // All data loaded but no matches
           <Box sx={{ textAlign: "center", py: 4 }}>
             <Typography variant="h6">No issues found</Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              Try a different search term
+              Try different filters or search terms
             </Typography>
           </Box>
         ) : !loading && !error ? (
