@@ -160,7 +160,42 @@ const BugsList = () => {
       } else {
         // Subsequent pages: append to existing issues
         setAllIssues(prevIssues => [...prevIssues, ...fetchedIssues]);
-        setIssues(prevIssues => [...prevIssues, ...fetchedIssues]);
+        // Apply current filters to new data before updating issues state
+        const currentFilters = {
+          dbms: dbmsSelection,
+          category: categorySelection,
+          search: searchValue
+        };
+        
+        // Only apply filters if any are active
+        if (currentFilters.dbms || currentFilters.category || currentFilters.search.trim()) {
+          // Apply filters to the newly fetched issues
+          let filteredNewIssues = [...fetchedIssues];
+          
+          if (currentFilters.dbms && currentFilters.dbms !== "all") {
+            filteredNewIssues = filteredNewIssues.filter(issue => 
+              String(issue.dbms_id) === String(currentFilters.dbms)
+            );
+          }
+
+          if (currentFilters.category && currentFilters.category !== "all") {
+            filteredNewIssues = filteredNewIssues.filter(issue => 
+              String(issue.category_id) === String(currentFilters.category)
+            );
+          }
+
+          if (currentFilters.search.trim()) {
+            filteredNewIssues = filteredNewIssues.filter(issue => 
+              issue.title.toLowerCase().includes(currentFilters.search.toLowerCase())
+            );
+          }
+          
+          // Add only the filtered new issues
+          setIssues(prevIssues => [...prevIssues, ...filteredNewIssues]);
+        } else {
+          // No filters active, add all new issues
+          setIssues(prevIssues => [...prevIssues, ...fetchedIssues]);
+        }
         
         // Restore scroll position after state update
         setTimeout(() => {
