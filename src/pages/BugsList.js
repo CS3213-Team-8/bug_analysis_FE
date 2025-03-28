@@ -4,7 +4,6 @@ import SelectionField from '../components/selectionField';
 import CustomizedCard from '../components/card';
 import SearchBar from '../components/SearchBar';
 import { Button } from "@mui/material"
-import axios from 'axios';
 import axiosInstance from '../axios';
 
 const BugsList = () => {
@@ -42,7 +41,7 @@ const BugsList = () => {
     const fetchDbmsOptions = async () => {
       setDbmsLoading(true);
       try {
-        const response = await axios.get("https://bug-analysis-be.onrender.com/api/dbms");
+        const response = await axiosInstance.get("/api/dbms")
         // Filter valid options and sort alphabetically
         const validOptions = response.data
         .filter(option => option.name && option.slug)
@@ -64,7 +63,7 @@ const BugsList = () => {
     const fetchCategoryOptions = async () => {
       setCategoryLoading(true);
       try {
-        const response = await axios.get("http://localhost:8000/api/categories");
+        const response = await axiosInstance.get("/api/categories");
         // Filter valid options and sort alphabetically with "Others" at the end
         const validOptions = response.data
         .filter(option => option.category_name && option.slug)
