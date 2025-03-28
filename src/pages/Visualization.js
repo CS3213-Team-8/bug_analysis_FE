@@ -18,21 +18,19 @@ const Visualization = () => {
 
   return (
     <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      {!loading && <>
       <Box sx={{ mt: 1, mb: 1, ml: 2 }}>
         <CustomTabs
           tabs={tabs}
           selectedTab={selectedTab}
           onTabChange={handleTabChange}
-          />
+        />
       </Box>
       <ChartsGrid data={dataToDisplay} selectedTab={selectedTab} tabs={tabs} />
-      </>}
-      {loading && 
-      <Box height="100vh" mt="40vh" alignSelf="center">
-        <CircularProgress color="white"/>
-      </Box>
-      }
+      {loading && (
+        <Box height='100vh' mt='25vh' alignSelf='center'>
+          <CircularProgress color='white' />
+        </Box>
+      )}
     </Box>
   )
 }
