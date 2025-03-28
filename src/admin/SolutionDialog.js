@@ -52,7 +52,7 @@ const SolutionDialog = ({
           />
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClose} color="secondary">Cancel</Button>
+        <Button onClick={onClose} color="secondary">Close</Button>
       </DialogActions>
     </Dialog>
   );
