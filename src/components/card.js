@@ -7,13 +7,16 @@ import {
   Box,
   IconButton,
   Tooltip,
-  Snackbar
+  Snackbar,
+  Button,
+  CircularProgress
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MyIcon from './icon';
 import ReactMarkdown from 'react-markdown';
+import SolutionDialog from '../admin/SolutionDialog';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -28,8 +31,11 @@ import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
  * @param {string} props.url - The URL to the GitHub issue
  * @param {string} props.repoInfo - The repository information (org/repo)
  */
-const CustomizedCard = ({ iconVariant, title, timeToFix, category, description, url, repoInfo }) => {
+const CustomizedCard = ({ issueId, iconVariant, title, timeToFix, category, description, url, repoInfo, getIssueSolution }) => {
   const [copySuccess, setCopySuccess] = useState(false);
+  const [isSolutionClicked, setIsSolutionClicked] = useState(false);
+  const [solution, setSolution] = useState('');
+  const [loading, setLoading] = useState(false);
   
   // Process description to improve markdown rendering
   const processDescription = (text) => {
@@ -67,6 +73,19 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, category, description, 
     setCopySuccess(true);
     setTimeout(() => setCopySuccess(false), 2000);
   };
+
+  const handleGetIssueSolution = async () => {
+    setLoading(true);
+    const solution = await getIssueSolution(issueId);
+    setSolution(processDescription(solution));
+    setIsSolutionClicked(true);
+    setLoading(false);
+  }
+
+  const handleClose = () => {
+    setIsSolutionClicked(false);
+    setSolution('');
+  }
 
   const processedDescription = processDescription(description);
 
@@ -198,6 +217,23 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, category, description, 
             borderTop: "1px solid rgba(78, 157, 148, 0.2)"
           }}
         >
+          <Box sx={{ display: 'flex', my: 1 }}>
+            <Button
+              onClick={handleGetIssueSolution}
+              variant="outlined"
+              size="small"
+              sx={{ color: "#4E9D94", borderColor: "#4E9D94", ":hover": { backgroundColor: "rgba(78, 157, 148, 0.1)" } }}
+            >
+              Get Solution
+            </Button>
+            {loading && (
+              <CircularProgress 
+                size={24} 
+                sx={{ color: "#4E9D94", ml: 2 }}
+              />
+            )}
+          </Box>
+
           {/* Use ReactMarkdown to render the description as Markdown */}
           <ReactMarkdown
             children={processedDescription}
@@ -343,6 +379,14 @@ const CustomizedCard = ({ iconVariant, title, timeToFix, category, description, 
             color: 'white'
           }
         }}
+      />
+
+      <SolutionDialog
+        open={isSolutionClicked}
+        onClose={handleClose}
+        title={title}
+        solution={solution}
+        isEdit={false}
       />
     </>
   );
