@@ -53,10 +53,8 @@ const Visualization = () => {
   );
 
   return (
-    <Box sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
-      {!dataLoading && (
-        <>
-          <Box
+    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <Box
             sx={{
               mt: 1,
               mb: 1,
@@ -85,14 +83,11 @@ const Visualization = () => {
             selectedTab={selectedTab}
             tabs={tabs}
           />
-        </>
-      )}
       {dataLoading && (
-        <Box height="100vh" mt="40vh" alignSelf="center">
-          <CircularProgress color="white" />
+        <Box height='100vh' mt='25vh' alignSelf='center'>
+          <CircularProgress color='white' />
         </Box>
       )}
-
       <ChatDialog
         open={openDialog}
         onClose={handleCloseDialog}
@@ -110,7 +105,7 @@ const Visualization = () => {
         solution={solution}
       />
     </Box>
-  );
+  )
 };
 
 export default Visualization;
