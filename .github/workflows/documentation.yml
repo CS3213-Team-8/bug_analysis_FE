@@ -20,7 +20,7 @@ jobs:
             - name: Build and Deploy Markbind Site
               uses: markbind/markbind-action@v2
               with:
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.BUG_ANALYSOS }}
                 rootDirectory: './documentation'
                 baseUrl: '/bug_analysis_FE'
                 version: 'latest'
