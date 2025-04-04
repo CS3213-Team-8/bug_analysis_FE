@@ -4,14 +4,48 @@
   pageNav: 3
 ---
 
-# Quick start
+# Quick Start
+--------------------------------------------------------------------------------------------------------------------
 
-<box type="tip">
-This section can be used to help users get started with the application quickly.
+BugSnapper is a web-based analysis bug analysis tool - no installation needed.
+<br />
+
+**Just open the app in your browser and start exploring!**
+
+### Step 1: Open BugSnapper
+
+Launch the [BugSnapper](https://bug-analysis-fe.vercel.app/) app.
+
+<box type="warning">
+Due to GitHub API rate limits, the app might not load immediately on the first try.  
+Please refresh the page once or twice if you encounter a loading error.
 </box>
 
-1. Ensure you have Java `11` and Node.js `v16` and above installed in your Computer.
+### Step 2: Explore Visualisations
 
-1. Open a command terminal and run necessary setup commands like `npm run setup`.
+Use the dashboard to:
+- Compare bugs across **DuckDB**, **TiDB**, and **CockroachDB**.
+- View performance metrics such as **Mean Time-To-Fix (TTF)**.
+- Analyse bug distributions across different categories.
 
-1. Refer to the [Features](Features.html) section for details of the app's features.
+### Step 3: Explore Bug Reports
+
+Use the tab to head to the **Bug List** page.
+
+- Browse individual bugs reported across different DBMSs.
+- Filter bugs by **Category** and **DBMS**.
+- Get possible solutions for each bug.
+
+### Step 4: Expand Analysis
+
+- Add more **DBMSs** or **Categories** to your analysis through the corresponding tabs.
+- Use the **Get Suggest DBMS** button to get suggestions for a DBMS that meets your development needs.
+
+### Step 5 [Optional]: Contribute to BugSnapper
+
+If you are interested in contributing to BugSnapper, head over to the [**Developer Guide**](../developerGuide/DeveloperGuide.md) for more information on how to set up the project locally and start contributing.
+
+<box type="tip">
+Want to learn more about what BugSnapper can do?  
+Head over to the <a href="features.html">Features</a> section for a detailed breakdown of its capabilities.
+</box>

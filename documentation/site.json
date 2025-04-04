@@ -1,7 +1,7 @@
 {
   "baseUrl": "",
   "titlePrefix": "",
-  "titleSuffix": "ProjectEx",
+  "titleSuffix": "",
   "faviconPath": "images/SeEduLogo.png",
   "style": {
     "codeTheme": "light"

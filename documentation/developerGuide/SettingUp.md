@@ -32,7 +32,7 @@ First, **fork** the project repo, and **clone** the fork into your computer.
 1. **Configure files**: Edit config files according to your needs. For example, changing the `appTitle` in `config.js` to match your project name.
 1. **Verify the setup (optional)**:
    1. Run the `build` and `serve` commands, ensuring that the site properly deploys on your local host.
-   1. [Run the tests](Testing.md) to ensure they all pass.
+   1. Run the tests to ensure they all pass.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -54,10 +54,6 @@ First, **fork** the project repo, and **clone** the fork into your computer.
 
 1. **Learn the design**
 
-   When you are ready to start coding, we recommend that you get some sense of the overall design by reading about [ProjectEx’s architecture](Design.md#Architecture).
-
-1. **Do the tutorial**
-
-   The [Tracing Code tutorial](TracingCode.md) can help you get acquainted with the codebase.
+   When you are ready to start coding, we recommend that you get some sense of the overall design by reading about BugSnapper’s architecture.
 
    

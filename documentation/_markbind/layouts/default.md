@@ -4,7 +4,7 @@
 
 <header sticky>
   <navbar type="dark">
-    <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">ProjectEx</a>
+    <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">BugSnapper</a>
     <li><a highlight-on="sibling-or-child" href="{{baseUrl}}/userGuide/UserGuide.html" class="nav-link">User Guide</a></li>
     <li><a highlight-on="sibling-or-child" href="{{baseUrl}}/developerGuide/DeveloperGuide.html" class="nav-link">Developer Guide</a></li>
     <li><a highlight-on="sibling-or-child" href="{{baseUrl}}/team/AboutUs.html" class="nav-link">About Us</a></li>
@@ -29,18 +29,7 @@
   * [FAQ]({{ baseUrl }}/userGuide/FAQ.html)
 * [Developer Guide]({{ baseUrl }}/developerGuide/DeveloperGuide.html) :expanded:
   * [Setting Up]({{ baseUrl }}/developerGuide/SettingUp.html)
-    * [Tutorial: Tracing code]({{ baseUrl }}/developerGuide/TracingCode.html)
-  * [Design]({{ baseUrl }}/developerGuide/Design.html)
-  * [Implementation]({{ baseUrl }}/developerGuide/Implementation.html)
-  * Project Guides
-    * [Documentation]({{ baseUrl }}/developerGuide/Documentation.html)
-    * [Testing]({{ baseUrl }}/developerGuide/Testing.html)
-    * [Configuration]({{ baseUrl }}/developerGuide/Configuration.html)
-    * [DevOps]({{ baseUrl }}/developerGuide/DevOps.html)
-  * Appendix
-    * [Requirements]({{ baseUrl }}/developerGuide/Requirements.html)
-* [About Us]({{ baseUrl }}/team/AboutUs.html) :expanded:
-  * [Contributor Portfolio Template]({{ baseUrl }}/team/johndoe.html)
+* [About Us]({{ baseUrl }}/team/AboutUs.html)
       </site-nav>
     </div>
   </nav>
