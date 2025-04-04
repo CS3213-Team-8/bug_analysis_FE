@@ -1,31 +1,27 @@
 ---
   layout: default.md
-  title: ""
+  title: "BugSnapper"
 ---
 
-# ProjectEx
+# BugSnapper - Bug Analysis Website
 
-[![CI Status](https://github.com/MarkBind/markbind/workflows/CI/badge.svg)](https://github.com/MarkBind/markbind/actions)
-[![codecov](https://codecov.io/gh/MarkBind/markbind/branch/master/graph/badge.svg)](https://codecov.io/gh/MarkBind/markbind)
-
-<pic src="images/SeEduLogo.png" width="200px" style="margin-bottom: 20px;">
-Project Onboarding Screen
+<pic src="images/home.png" style="margin-bottom: 20px;">
+Visualisation Page
 </pic>
 
-**ProjectEx is an example project application used for showcasing a default MarkBind template specifically for project documentation.** 
+**BugSnapper is a bug analysis platform that visualises and categorises bugs found in popular database systems like DuckDB, TiDB, and CockroachDB. Designed as a companion to SQLancer, it helps developers and DBMS maintainers identify testing priorities, track bug patterns, and make data-driven decisions. Whether you are building a database, or simply looking to use one, BugSnapper gives you all the insights you need.**
 
 <box type="info">
-
-Take this template as a _starting point_ for your project documentation, taking reference of what would be in a typical project documentation site, replacing the content with your own.
+BugSnapper helps you visualise, compare, and make sense of bugs in DBMSs, so that you know what to do next, always!
 </box>
 
-* If you are interested in using ProjectEx, head over to the [_Quick Start_ section of the **User Guide**](userGuide/QuickStart.html).
-* If you are interested about contributing to developing ProjectEx, the [**Developer Guide**](developerGuide/DeveloperGuide.html) is a good place to start.
 
-**Acknowledgements**
+* If you are interested in using BugSnapper, head over to the [_Quick Start_ section of the **User Guide**](userGuide/QuickStart.html).
+* If you are interested about contributing to developing BugSnapper, the [**Developer Guide**](developerGuide/DeveloperGuide.html) is a good place to start.
 
-<box type="tip">
-Remember to replace the following with your own acknowledgements.
-</box>
 
-* Libraries used: [JavaFX](https://openjfx.io/), [Jackson](https://github.com/FasterXML/jackson), [JUnit5](https://github.com/junit-team/junit5)
+<hr />
+<div class="text-center medium text-muted my-2">
+  © 2025 BugSnapper • Built by Team 8 for CS3213
+</div>
+<hr />

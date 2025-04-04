@@ -4,11 +4,11 @@
   pageNav: 3
 ---
 
-# ProjectEx User Guide
+# BugSnapper User Guide
 
 --------------------------------------------------------------------------------------------------------------------
 
-ProjectEx is an example project application used for showcasing a default MarkBind template specifically for project documentation. It can be taken as a reference for users to base their own MarkBind sites off of.
+BugSnapper is a bug analysis platform that visualises and categorises bugs found in popular database systems like DuckDB, TiDB, and CockroachDB. If you are a SQLancer developer, a database maintainer, or simply a user of these systems, this guide is tailored for you. It provides step-by-step instructions on how to use BugSnapper effectively, ensuring you can leverage its features to enhance your bug analysis process.
 
 ## Introduction
 

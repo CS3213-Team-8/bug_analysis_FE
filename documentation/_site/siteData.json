@@ -2,75 +2,13 @@
   "enableSearch": true,
   "pages": [
     {
-      "src": "developerGuide/Configuration.md",
-      "title": "Configuration guide",
-      "headings": {
-        "configuration-guide": "Configuration guide"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "developerGuide/Design.md",
-      "title": "Design",
-      "headings": {
-        "design": "Design",
-        "architecture": "Architecture",
-        "component-1": "Component 1",
-        "component-2": "Component 2"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "developerGuide/DevOps.md",
-      "title": "DevOps guide",
-      "headings": {
-        "devops-guide": "DevOps guide",
-        "build-automation": "Build automation",
-        "continuous-integration-ci": "Continuous integration (CI)",
-        "code-coverage": "Code coverage",
-        "repository-wide-checks": "Repository-wide checks",
-        "making-a-release": "Making a release"
-      },
-      "headingKeywords": {}
-    },
-    {
       "src": "developerGuide/DeveloperGuide.md",
       "title": "Developer Guide",
       "headings": {
-        "projectex-developer-guide": "ProjectEx Developer Guide",
+        "bugsnapper-developer-guide": "BugSnapper Developer Guide",
         "introduction": "Introduction",
         "purpose-of-this-guide": "Purpose of this Guide",
         "acknowledgements": "Acknowledgements"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "developerGuide/Documentation.md",
-      "title": "Documentation guide",
-      "headings": {
-        "documentation-guide": "Documentation Guide"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "developerGuide/Implementation.md",
-      "title": "Implementation",
-      "headings": {
-        "implementation": "Implementation",
-        "proposed-featurex-implementation": "[Proposed] FeatureX Implementation",
-        "proposed-data-archiving": "[Proposed] Data archiving"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "developerGuide/Requirements.md",
-      "title": "Requirements",
-      "headings": {
-        "requirements": "Requirements",
-        "product-scope": "Product scope",
-        "user-stories": "User stories",
-        "use-cases": "Use cases",
-        "non-functional-requirements": "Non-Functional Requirements"
       },
       "headingKeywords": {}
     },
@@ -85,31 +23,10 @@
       "headingKeywords": {}
     },
     {
-      "src": "developerGuide/Testing.md",
-      "title": "Testing guide",
-      "headings": {
-        "testing-guide": "Testing guide",
-        "running-tests": "Running tests",
-        "types-of-tests": "Types of tests"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "developerGuide/TracingCode.md",
-      "title": "Tutorial: Tracing code",
-      "headings": {
-        "tutorial-tracing-code": "Tutorial: Tracing code",
-        "before-we-start": "Before we start",
-        "setting-a-breakpoint": "Setting a breakpoint",
-        "tracing-the-execution-path": "Tracing the execution path"
-      },
-      "headingKeywords": {}
-    },
-    {
       "src": "index.md",
-      "title": "",
+      "title": "BugSnapper",
       "headings": {
-        "projectex": "ProjectEx"
+        "bugsnapper-bug-analysis-website": "BugSnapper - Bug Analysis Website"
       },
       "headingKeywords": {}
     },
@@ -158,7 +75,12 @@
       "src": "userGuide/QuickStart.md",
       "title": "Quick Start",
       "headings": {
-        "quick-start": "Quick start"
+        "quick-start": "Quick Start",
+        "step-1-open-bugsnapper": "Step 1: Open BugSnapper",
+        "step-2-explore-visualisations": "Step 2: Explore Visualisations",
+        "step-3-explore-bug-reports": "Step 3: Explore Bug Reports",
+        "step-4-expand-analysis": "Step 4: Expand Analysis",
+        "step-5-optional-contribute-to-bugsnapper": "Step 5 [Optional]: Contribute to BugSnapper"
       },
       "headingKeywords": {}
     },
@@ -166,7 +88,7 @@
       "src": "userGuide/UserGuide.md",
       "title": "User Guide",
       "headings": {
-        "projectex-user-guide": "ProjectEx User Guide",
+        "bugsnapper-user-guide": "BugSnapper User Guide",
         "introduction": "Introduction",
         "purpose-of-this-guide": "Purpose of this Guide"
       },
