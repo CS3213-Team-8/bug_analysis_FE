@@ -8,6 +8,38 @@
 
 ## Features Overview
 
+### Visualisation Page
+* ##### Analyse Mean Time-to-Fix (TTF) Chart across DBMSs
+* ##### View Number of Gugs Found across DBMSs
+* ##### View Bugs Distribution across different Categories
+* ##### Get Suggested DBMS
+* ##### Get Detailed View of each DBMS
+    * ###### View Bugs Distribution across different Categories
+    * ###### Analyse Number of Opened vs Closed Issues per Month
+    * ###### Get Summary of Bugs Found for DBMS
+### Bugs List Page
+  * ##### View List of Bugs found across DBMSs
+    * ##### View Bug Overview
+    * ##### View Detailed Bug Report
+    * ##### <a href="#feature-get-bug-solution" style="text-decoration: none; color: inherit;">Get Bug Solution</a>
+    * ##### View Bug Report on GitHub
+  * ##### Filter Bugs by Category
+  * ##### Filter Bugs by DBMS
+
+### Category Page
+  * ##### View List of Categories
+  * ##### Add New Category
+  * ##### Edit Existing Category
+  * ##### Delete Existing Category
+
+### DBMS Page
+  * ##### View List of DBMSs
+  * ##### Add New DBMS
+  * ##### Delete Existing DBMS
+
+-------
+## Feature Details
+<a id="feature-get-bug-solution"></a>
 ### Feature: Get Bug Solution
 
 This feature allows you to get a solution for the bug you are currently viewing.
