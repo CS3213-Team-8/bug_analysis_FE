@@ -37,8 +37,13 @@ Are you a database user looking for a robust, bug-free database that meets your 
 
 From database researchers to core system developers, BugSnapper’s intuitive interface empowers you to track, analyze, and prioritize bugs effectively — all in one place.
 
-If you’re building or testing database systems and want to **bring structure to your bug analysis workflow**, BugSnapper is the tool for you!
 
+<box type="tip">
+If you’re building or testing database systems and want to bring structure to your bug analysis workflow, BugSnapper is the tool for you!
+</box>
+
+<box type="tip">
 If you're building apps that rely on databases, and want to ensure a bug-free experience for your users, BugSnapper is the tool for you!
+</box>
 
 Access our self-curated [User Guide](UserGuide.md) to learn how you can integrate BugSnapper into your debugging and testing toolkit.

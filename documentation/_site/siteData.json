@@ -8,17 +8,19 @@
         "bugsnapper-developer-guide": "BugSnapper Developer Guide",
         "introduction": "Introduction",
         "purpose-of-this-guide": "Purpose of this Guide",
-        "acknowledgements": "Acknowledgements"
+        "product-overview": "Product Overview",
+        "tech-stack": "Tech Stack",
+        "architecture-overview": "Architecture Overview"
       },
       "headingKeywords": {}
     },
     {
       "src": "developerGuide/SettingUp.md",
-      "title": "Setting up and getting started",
+      "title": "Setting up and Getting Started",
       "headings": {
-        "setting-up-and-getting-started": "Setting up and getting started",
-        "setting-up-the-project-in-your-computer": "Setting up the project in your computer",
-        "before-writing-code": "Before writing code"
+        "setting-up-and-getting-started": "Setting up and Getting Started",
+        "backend-setup": "Backend Setup",
+        "frontend-setup": "Frontend Setup"
       },
       "headingKeywords": {}
     },
@@ -67,6 +69,11 @@
       "headings": {
         "features": "Features",
         "features-overview": "Features Overview",
+        "visualisation-page": "Visualisation Page",
+        "bugs-list-page": "Bugs List Page",
+        "category-page": "Category Page",
+        "dbms-page": "DBMS Page",
+        "feature-details": "Feature Details",
         "feature-get-bug-solution": "Feature: Get Bug Solution"
       },
       "headingKeywords": {}
