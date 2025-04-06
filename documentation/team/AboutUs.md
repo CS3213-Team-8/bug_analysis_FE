@@ -5,67 +5,24 @@
 
 # About Us
 
-<box type="info">
-This section describes the contributors of your app.
-</box>
+We are a team of developers working on BugSnapper, a project undertaken by us under CS3212: Foundations of Software Engineering at NUS.
 
-We are a team based in [Organisation A](#project-team).
+## Project Team
 
-You can reach us at the email `organisationa@gmail.sg`
+### Misra Aditya
+* Role: Backend Lead
 
-## Project team
+### Chng Chia Geng
+* Role: Full Stack Developer
 
-### John Doe
+### Ariella Thirza Callista
+* Role: Frontend Lead
 
-<box type="tip">
+### Daphne Shaine Wilhelmina
+* Role: UI/UX + Frontend Developer
 
-This img uses the `placeholderImage` defined in the `_markbind/variables.md` file.
-</box>
+### Soh Kia Hwee Jocelyn
+* Role: UI/UX + Frontend Developer
 
-{{ placeholderImage }}
-
-[[homepage](http://www.comp.nus.edu.sg/~damithch)]
-[[github](https://github.com/johndoe)]
-[[contributions](johndoe.md)]
-
-* Role: Project Advisor
-
-### Jane Doe
-
-{{ placeholderImage }}
-
-[[github](http://github.com/johndoe)]
-[[contributions](johndoe.md)]
-
-* Role: Team Lead
-* Responsibilities: UI
-
-### Johnny Doe
-
-{{ placeholderImage }}
-
-[[github](http://github.com/johndoe)]
-[[contributions](johndoe.md)]
-
-* Role: Developer
-* Responsibilities: Data
-
-### Jean Doe
-
-{{ placeholderImage }}
-
-[[github](http://github.com/johndoe)]
-[[contributions](johndoe.md)]
-
-* Role: Developer
-* Responsibilities: Dev Ops + Threading
-
-### James Doe
-
-{{ placeholderImage }}
-
-[[github](http://github.com/johndoe)]
-[[contributions](johndoe.md)]
-
-* Role: Developer
-* Responsibilities: UI
+### Stella Lye Si Yu
+* Role: Product Manager

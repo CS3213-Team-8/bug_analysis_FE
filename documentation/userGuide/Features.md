@@ -6,49 +6,33 @@
 
 # Features
 
-<box type="info" seamless>
+## Features Overview
 
-**Notes about the app usage**<br>
+### Feature: Get Bug Solution
 
-* General information about the app's features.
-
-* General tips about how to use the app efficiently.
-
-* Warnings that may lead to issues and how to avoid them.
-</box>
-
-### FeatureX
-
-Description of feature.
-
-<box type="tip">
-A visual representation of the feature can be shown here.
-</box>
-
-* List of primary information about the feature
-* How to use the feature
-* How the feature works
-* Limitations of feature
+This feature allows you to get a solution for the bug you are currently viewing.
 
 <box type="warning" seamless>
-
-**Caution:**
-Things to avoid when using the feature.
+The solution is generated using AI tools, so accuracy is not guaranteed. Always verify the solution before applying it to your code!
 </box>
 
-### Y Feature
-
-Description of feature.
-
-<panel header="Feature Examples">
-Examples of how to use the feature.
-</panel>
-
-<box type="tip" seamless>
-
-**Tip:** Secondary information about feature usage.
+<box type="info">
+<h5 style="color:green; margin-bottom: 5px;">User Story</h5>
+As a DBMS developer, I can view a suggested solution for the bug I am currently viewing based on the bug report, so that I can resolve the bug quickly and reduce debugging time.
 </box>
 
-### Future Feature Z `[coming in v2.0]`
+<pic src="../images/bug_solution.png" style="margin-bottom: 20px;">
+Get Bug Solution feature
+</pic>
 
-_Details coming soon ..._
+Key Capabilities:
+* It uses OpenAI's GPT-4o-mini model to generate an intuitive, yet concise solution for the bug.
+* The solution is generated based on the description of the bug, as provided in the bug report.
+* The solution is displayed in a user-friendly markdown format, making it easy to read and understand.
+
+Steps to Use:
+1. Navigate to the bug you want to view on the **Bugs List** page.
+2. Click on the dropdown on the right side of the bug, to expand details of the bug and view the bug report.
+3. Click on the **Get Solution** button at the top of the bug report.
+4. The solution will be displayed in a pop-up dialog in markdown format.
+5. Click on the **Cancel** button, or anywhere outside the pop-up dialog to close the dialog.

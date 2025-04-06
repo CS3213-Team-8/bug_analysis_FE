@@ -1,0 +1,163 @@
+2025-04-06T03:37:27.118Z - info: Website generation started at 11:37:27 AM
+2025-04-06T03:37:27.131Z - info: Building assets...
+2025-04-06T03:37:27.138Z - info: Assets built
+2025-04-06T03:37:27.138Z - info: Generating pages...
+2025-04-06T03:37:27.272Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-06T03:37:27.272Z - info: Pages built
+2025-04-06T03:37:27.358Z - info: Site data built
+2025-04-06T03:37:27.358Z - info: Website generation complete! Total build time: 0.286s
+2025-04-06T03:37:27.365Z - info: Serving "/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-06T03:37:27.365Z - info: Press CTRL+C to stop ...
+2025-04-06T03:41:47.467Z - info: [11:41:47 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-06T03:41:48.471Z - info: Rebuilding 1 pages
+2025-04-06T03:41:48.507Z - info: Site data built
+2025-04-06T03:41:48.507Z - info: Pages rebuilt
+2025-04-06T03:41:48.507Z - info: Website regeneration complete! Total build time: 0.037s
+2025-04-06T03:42:47.000Z - info: [11:42:47 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-06T03:42:48.002Z - info: Rebuilding 1 pages
+2025-04-06T03:42:48.018Z - info: Site data built
+2025-04-06T03:42:48.018Z - info: Pages rebuilt
+2025-04-06T03:42:48.018Z - info: Website regeneration complete! Total build time: 0.016s
+2025-04-06T03:43:02.091Z - info: [11:43:02 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-06T03:43:03.094Z - info: Rebuilding 1 pages
+2025-04-06T03:43:03.114Z - info: Site data built
+2025-04-06T03:43:03.114Z - info: Pages rebuilt
+2025-04-06T03:43:03.115Z - info: Website regeneration complete! Total build time: 0.022s
+2025-04-06T03:43:16.111Z - info: [11:43:16 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-06T03:43:17.114Z - info: Rebuilding 1 pages
+2025-04-06T03:43:17.141Z - info: Site data built
+2025-04-06T03:43:17.141Z - info: Pages rebuilt
+2025-04-06T03:43:17.142Z - info: Website regeneration complete! Total build time: 0.028s
+2025-04-06T03:43:18.800Z - info: [11:43:18 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-06T03:43:19.803Z - info: Rebuilding 1 pages
+2025-04-06T03:43:19.832Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/userGuide/UserGuide.html' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md'
+2025-04-06T03:43:19.833Z - info: Site data built
+2025-04-06T03:43:19.833Z - info: Pages rebuilt
+2025-04-06T03:43:19.833Z - info: Website regeneration complete! Total build time: 0.032s
+2025-04-06T03:43:29.502Z - info: [11:43:29 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-06T03:43:30.505Z - info: Rebuilding 1 pages
+2025-04-06T03:43:30.515Z - info: Site data built
+2025-04-06T03:43:30.515Z - info: Pages rebuilt
+2025-04-06T03:43:30.515Z - info: Website regeneration complete! Total build time: 0.011s
+2025-04-06T03:44:34.118Z - info: [11:44:34 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:44:35.120Z - info: Rebuilding 1 pages
+2025-04-06T03:44:35.142Z - info: Site data built
+2025-04-06T03:44:35.142Z - info: Pages rebuilt
+2025-04-06T03:44:35.142Z - info: Website regeneration complete! Total build time: 0.022s
+2025-04-06T03:45:41.776Z - info: [11:45:41 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:45:42.778Z - info: Rebuilding 1 pages
+2025-04-06T03:45:42.793Z - info: Site data built
+2025-04-06T03:45:42.794Z - info: Pages rebuilt
+2025-04-06T03:45:42.794Z - info: Website regeneration complete! Total build time: 0.017s
+2025-04-06T03:46:22.568Z - info: [11:46:22 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:46:23.571Z - info: Rebuilding 1 pages
+2025-04-06T03:46:23.592Z - info: Site data built
+2025-04-06T03:46:23.592Z - info: Pages rebuilt
+2025-04-06T03:46:23.592Z - info: Website regeneration complete! Total build time: 0.022s
+2025-04-06T03:46:32.467Z - info: [11:46:32 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:46:33.469Z - info: Rebuilding 1 pages
+2025-04-06T03:46:33.484Z - info: Site data built
+2025-04-06T03:46:33.485Z - info: Pages rebuilt
+2025-04-06T03:46:33.485Z - info: Website regeneration complete! Total build time: 0.016s
+2025-04-06T03:46:43.907Z - info: [11:46:43 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:46:44.909Z - info: Rebuilding 1 pages
+2025-04-06T03:46:44.923Z - info: Site data built
+2025-04-06T03:46:44.923Z - info: Pages rebuilt
+2025-04-06T03:46:44.923Z - info: Website regeneration complete! Total build time: 0.015s
+2025-04-06T03:46:48.244Z - info: [11:46:48 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:46:49.248Z - info: Rebuilding 1 pages
+2025-04-06T03:46:49.273Z - info: Site data built
+2025-04-06T03:46:49.273Z - info: Pages rebuilt
+2025-04-06T03:46:49.273Z - info: Website regeneration complete! Total build time: 0.027s
+2025-04-06T03:47:02.219Z - info: [11:47:02 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:47:03.222Z - info: Rebuilding 1 pages
+2025-04-06T03:47:03.246Z - info: Site data built
+2025-04-06T03:47:03.246Z - info: Pages rebuilt
+2025-04-06T03:47:03.246Z - info: Website regeneration complete! Total build time: 0.025s
+2025-04-06T03:47:08.810Z - info: [11:47:08 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:47:09.813Z - info: Rebuilding 1 pages
+2025-04-06T03:47:09.834Z - info: Site data built
+2025-04-06T03:47:09.834Z - info: Pages rebuilt
+2025-04-06T03:47:09.834Z - info: Website regeneration complete! Total build time: 0.022s
+2025-04-06T03:47:58.742Z - info: [11:47:58 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:47:59.747Z - info: Rebuilding 1 pages
+2025-04-06T03:47:59.770Z - info: Site data built
+2025-04-06T03:47:59.770Z - info: Pages rebuilt
+2025-04-06T03:47:59.770Z - info: Website regeneration complete! Total build time: 0.025s
+2025-04-06T03:48:15.959Z - info: [11:48:15 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:48:16.961Z - info: Rebuilding 1 pages
+2025-04-06T03:48:16.978Z - info: Site data built
+2025-04-06T03:48:16.978Z - info: Pages rebuilt
+2025-04-06T03:48:16.978Z - info: Website regeneration complete! Total build time: 0.017s
+2025-04-06T03:48:22.700Z - info: [11:48:22 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:48:23.703Z - info: Rebuilding 1 pages
+2025-04-06T03:48:23.718Z - info: Site data built
+2025-04-06T03:48:23.718Z - info: Pages rebuilt
+2025-04-06T03:48:23.718Z - info: Website regeneration complete! Total build time: 0.015s
+2025-04-06T03:48:28.018Z - info: [11:48:28 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:48:29.022Z - info: Rebuilding 1 pages
+2025-04-06T03:48:29.041Z - info: Site data built
+2025-04-06T03:48:29.041Z - info: Pages rebuilt
+2025-04-06T03:48:29.041Z - info: Website regeneration complete! Total build time: 0.02s
+2025-04-06T03:48:47.546Z - info: [11:48:47 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:48:48.549Z - info: Rebuilding 1 pages
+2025-04-06T03:48:48.571Z - info: Site data built
+2025-04-06T03:48:48.571Z - info: Pages rebuilt
+2025-04-06T03:48:48.571Z - info: Website regeneration complete! Total build time: 0.023s
+2025-04-06T03:50:19.512Z - info: [11:50:19 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:50:20.514Z - info: Rebuilding 1 pages
+2025-04-06T03:50:20.523Z - info: Site data built
+2025-04-06T03:50:20.524Z - info: Pages rebuilt
+2025-04-06T03:50:20.524Z - info: Website regeneration complete! Total build time: 0.01s
+2025-04-06T03:50:23.448Z - info: [11:50:23 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/team/AboutUs.md
+2025-04-06T03:50:24.449Z - info: Rebuilding 1 pages
+2025-04-06T03:50:24.463Z - info: Site data built
+2025-04-06T03:50:24.464Z - info: Pages rebuilt
+2025-04-06T03:50:24.464Z - info: Website regeneration complete! Total build time: 0.015s
+2025-04-06T03:52:04.520Z - info: [11:52:04 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:52:05.522Z - info: Rebuilding 1 pages
+2025-04-06T03:52:05.547Z - info: Site data built
+2025-04-06T03:52:05.547Z - info: Pages rebuilt
+2025-04-06T03:52:05.547Z - info: Website regeneration complete! Total build time: 0.026s
+2025-04-06T03:53:57.796Z - info: [11:53:57 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:53:58.800Z - info: Rebuilding 1 pages
+2025-04-06T03:53:58.835Z - info: Site data built
+2025-04-06T03:53:58.836Z - info: Pages rebuilt
+2025-04-06T03:53:58.836Z - info: Website regeneration complete! Total build time: 0.037s
+2025-04-06T03:55:57.567Z - info: [11:55:57 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:55:58.571Z - info: Rebuilding 1 pages
+2025-04-06T03:55:58.603Z - info: Site data built
+2025-04-06T03:55:58.603Z - info: Pages rebuilt
+2025-04-06T03:55:58.603Z - info: Website regeneration complete! Total build time: 0.034s
+2025-04-06T03:56:54.234Z - info: [11:56:54 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:56:55.236Z - info: Rebuilding 1 pages
+2025-04-06T03:56:55.257Z - info: Site data built
+2025-04-06T03:56:55.257Z - info: Pages rebuilt
+2025-04-06T03:56:55.257Z - info: Website regeneration complete! Total build time: 0.022s
+2025-04-06T03:57:18.015Z - info: [11:57:18 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:57:19.018Z - info: Rebuilding 1 pages
+2025-04-06T03:57:19.036Z - info: Site data built
+2025-04-06T03:57:19.036Z - info: Pages rebuilt
+2025-04-06T03:57:19.036Z - info: Website regeneration complete! Total build time: 0.019s
+2025-04-06T03:57:55.031Z - info: [11:57:55 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:57:56.033Z - info: Rebuilding 1 pages
+2025-04-06T03:57:56.047Z - info: Site data built
+2025-04-06T03:57:56.047Z - info: Pages rebuilt
+2025-04-06T03:57:56.047Z - info: Website regeneration complete! Total build time: 0.014s
+2025-04-06T03:58:40.557Z - info: [11:58:40 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:58:41.560Z - info: Rebuilding 1 pages
+2025-04-06T03:58:41.580Z - info: Site data built
+2025-04-06T03:58:41.580Z - info: Pages rebuilt
+2025-04-06T03:58:41.580Z - info: Website regeneration complete! Total build time: 0.021s
+2025-04-06T03:59:28.815Z - info: [11:59:28 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:59:29.818Z - info: Rebuilding 1 pages
+2025-04-06T03:59:29.837Z - info: Site data built
+2025-04-06T03:59:29.837Z - info: Pages rebuilt
+2025-04-06T03:59:29.837Z - info: Website regeneration complete! Total build time: 0.019s
+2025-04-06T03:59:36.865Z - info: [11:59:36 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-06T03:59:37.869Z - info: Rebuilding 1 pages
+2025-04-06T03:59:37.895Z - info: Site data built
+2025-04-06T03:59:37.895Z - info: Pages rebuilt
+2025-04-06T03:59:37.895Z - info: Website regeneration complete! Total build time: 0.028s
