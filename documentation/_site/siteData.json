@@ -35,12 +35,13 @@
       "title": "About Us",
       "headings": {
         "about-us": "About Us",
-        "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "project-team": "Project Team",
+        "misra-aditya": "Misra Aditya",
+        "chng-chia-geng": "Chng Chia Geng",
+        "ariella-thirza-callista": "Ariella Thirza Callista",
+        "daphne-shaine-wilhelmina": "Daphne Shaine Wilhelmina",
+        "soh-kia-hwee-jocelyn": "Soh Kia Hwee Jocelyn",
+        "stella-lye-si-yu": "Stella Lye Si Yu"
       },
       "headingKeywords": {}
     },
@@ -65,9 +66,8 @@
       "title": "Features",
       "headings": {
         "features": "Features",
-        "featurex": "FeatureX",
-        "y-feature": "Y Feature",
-        "future-feature-z-coming-in-v2-0": "Future Feature Z [coming in v2.0]"
+        "features-overview": "Features Overview",
+        "feature-get-bug-solution": "Feature: Get Bug Solution"
       },
       "headingKeywords": {}
     },
@@ -90,7 +90,8 @@
       "headings": {
         "bugsnapper-user-guide": "BugSnapper User Guide",
         "introduction": "Introduction",
-        "purpose-of-this-guide": "Purpose of this Guide"
+        "purpose-of-this-guide": "Purpose of this Guide",
+        "product-overview": "Product Overview"
       },
       "headingKeywords": {}
     }
