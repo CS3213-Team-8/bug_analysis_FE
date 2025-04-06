@@ -22,7 +22,7 @@ const MyIcon = ({ variant, ...props }) => {
 
         {/* BUGSNAPPER Text */}
         <Typography fontWeight="bold" color="white" fontSize="6" >
-          BUGSNAPPER
+          BugSnapper
         </Typography>
       </Box>
     );
