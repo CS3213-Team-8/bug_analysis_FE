@@ -10,7 +10,13 @@
         "purpose-of-this-guide": "Purpose of this Guide",
         "product-overview": "Product Overview",
         "tech-stack": "Tech Stack",
-        "architecture-overview": "Architecture Overview"
+        "architecture-overview": "Architecture Overview",
+        "implementation": "Implementation",
+        "scheduler": "Scheduler",
+        "function": "Function",
+        "importance": "Importance",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
       },
       "headingKeywords": {}
     },
@@ -74,7 +80,9 @@
         "dbms-page": "DBMS Page",
         "feature-details": "Feature Details",
         "feature-get-bug-solution": "Feature: Get Bug Solution",
-        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion"
+        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion",
+        "feature-category-management": "Feature: Category Management",
+        "feature-database-dbms-management": "Feature: Database (DBMS) Management"
       },
       "headingKeywords": {}
     },

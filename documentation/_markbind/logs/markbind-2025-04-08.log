@@ -446,3 +446,82 @@
 2025-04-08T13:31:28.589Z - info: Website generation complete! Total build time: 1.057s
 2025-04-08T13:31:28.607Z - info: Serving "/Users/stella/dev/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
 2025-04-08T13:31:28.608Z - info: Press CTRL+C to stop ...
+2025-04-08T13:50:48.417Z - info: Website generation started at 9:50:48 PM
+2025-04-08T13:50:48.467Z - info: Building assets...
+2025-04-08T13:50:48.505Z - info: Assets built
+2025-04-08T13:50:48.506Z - info: Generating pages...
+2025-04-08T13:50:49.156Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/stella/dev/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-08T13:50:49.159Z - info: Pages built
+2025-04-08T13:50:49.351Z - info: Site data built
+2025-04-08T13:50:49.351Z - info: Website generation complete! Total build time: 1.091s
+2025-04-08T13:50:49.373Z - info: Serving "/Users/stella/dev/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-08T13:50:49.373Z - info: Press CTRL+C to stop ...
+2025-04-08T13:51:50.458Z - info: [9:51:50 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T13:51:51.462Z - info: Rebuilding 1 pages
+2025-04-08T13:51:51.658Z - info: Site data built
+2025-04-08T13:51:51.658Z - info: Pages rebuilt
+2025-04-08T13:51:51.659Z - info: Website regeneration complete! Total build time: 0.198s
+2025-04-08T13:52:02.645Z - info: [9:52:02 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T13:52:03.648Z - info: Rebuilding 1 pages
+2025-04-08T13:52:03.761Z - info: Site data built
+2025-04-08T13:52:03.761Z - info: Pages rebuilt
+2025-04-08T13:52:03.761Z - info: Website regeneration complete! Total build time: 0.114s
+2025-04-08T13:52:19.858Z - info: [9:52:19 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T13:52:20.861Z - info: Rebuilding 1 pages
+2025-04-08T13:52:21.038Z - info: Site data built
+2025-04-08T13:52:21.039Z - info: Pages rebuilt
+2025-04-08T13:52:21.039Z - info: Website regeneration complete! Total build time: 0.179s
+2025-04-08T13:54:46.562Z - info: [9:54:46 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/developerGuide/DeveloperGuide.md
+2025-04-08T13:54:47.567Z - info: Rebuilding 1 pages
+2025-04-08T13:54:47.694Z - info: Site data built
+2025-04-08T13:54:47.694Z - info: Pages rebuilt
+2025-04-08T13:54:47.694Z - info: Website regeneration complete! Total build time: 0.129s
+2025-04-08T13:55:05.640Z - info: [9:55:05 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/developerGuide/DeveloperGuide.md
+2025-04-08T13:55:06.643Z - info: Rebuilding 1 pages
+2025-04-08T13:55:06.716Z - info: Site data built
+2025-04-08T13:55:06.716Z - info: Pages rebuilt
+2025-04-08T13:55:06.716Z - info: Website regeneration complete! Total build time: 0.074s
+2025-04-08T14:05:11.922Z - info: [10:05:11 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/category_read.png
+2025-04-08T14:05:12.958Z - info: Assets built
+2025-04-08T14:05:17.717Z - info: [10:05:17 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/vategory_create.png
+2025-04-08T14:05:18.741Z - info: Assets built
+2025-04-08T14:05:22.732Z - info: [10:05:22 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/category_update.png
+2025-04-08T14:05:23.756Z - info: Assets built
+2025-04-08T14:05:25.314Z - info: [10:05:25 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/category_delete.png
+2025-04-08T14:05:26.337Z - info: Assets built
+2025-04-08T14:05:35.764Z - info: [10:05:35 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/dbms_read.png
+2025-04-08T14:05:36.776Z - info: Assets built
+2025-04-08T14:05:38.809Z - info: [10:05:38 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/dbms_create.png
+2025-04-08T14:05:39.829Z - info: Assets built
+2025-04-08T14:05:40.936Z - info: [10:05:40 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/dbms_delete.png
+2025-04-08T14:05:41.946Z - info: Assets built
+2025-04-08T14:06:03.011Z - info: [10:06:03 PM] Reload for file deletion: /Users/stella/dev/bug_analysis_FE/documentation/images/vategory_create.png
+2025-04-08T14:06:03.012Z - info: [10:06:03 PM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/category_create.png
+2025-04-08T14:06:04.023Z - debug: Assets removed
+2025-04-08T14:06:04.030Z - info: Assets built
+2025-04-08T14:08:00.331Z - info: [10:08:00 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T14:08:01.338Z - info: Rebuilding 1 pages
+2025-04-08T14:08:01.529Z - info: Site data built
+2025-04-08T14:08:01.529Z - info: Pages rebuilt
+2025-04-08T14:08:01.529Z - info: Website regeneration complete! Total build time: 0.195s
+2025-04-08T14:16:55.529Z - info: [10:16:55 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T14:16:56.537Z - info: Rebuilding 1 pages
+2025-04-08T14:16:56.703Z - info: Site data built
+2025-04-08T14:16:56.703Z - info: Pages rebuilt
+2025-04-08T14:16:56.704Z - info: Website regeneration complete! Total build time: 0.168s
+2025-04-08T14:18:36.628Z - info: [10:18:36 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T14:18:37.631Z - info: Rebuilding 1 pages
+2025-04-08T14:18:37.745Z - info: Site data built
+2025-04-08T14:18:37.746Z - info: Pages rebuilt
+2025-04-08T14:18:37.746Z - info: Website regeneration complete! Total build time: 0.117s
+2025-04-08T14:19:54.564Z - info: [10:19:54 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T14:19:55.569Z - info: Rebuilding 1 pages
+2025-04-08T14:19:55.692Z - info: Site data built
+2025-04-08T14:19:55.692Z - info: Pages rebuilt
+2025-04-08T14:19:55.692Z - info: Website regeneration complete! Total build time: 0.124s
+2025-04-08T14:23:06.003Z - info: [10:23:06 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/developerGuide/DeveloperGuide.md
+2025-04-08T14:23:07.005Z - info: Rebuilding 1 pages
+2025-04-08T14:23:07.190Z - info: Site data built
+2025-04-08T14:23:07.190Z - info: Pages rebuilt
+2025-04-08T14:23:07.190Z - info: Website regeneration complete! Total build time: 0.186s
