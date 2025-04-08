@@ -1,0 +1,437 @@
+2025-04-08T02:37:04.744Z - info: Website generation started at 10:37:04
+2025-04-08T02:37:04.775Z - info: Building assets...
+2025-04-08T02:37:04.799Z - info: Assets built
+2025-04-08T02:37:04.800Z - info: Generating pages...
+2025-04-08T02:37:05.156Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-08T02:37:05.159Z - info: Pages built
+2025-04-08T02:37:05.238Z - info: Site data built
+2025-04-08T02:37:05.238Z - info: Website generation complete! Total build time: 0.567s
+2025-04-08T02:37:05.263Z - info: Serving "/Users/ariellacallista/CS3213/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-08T02:37:05.265Z - info: Press CTRL+C to stop ...
+2025-04-08T02:37:43.090Z - info: [10:37:43] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:37:44.098Z - info: Rebuilding 1 pages
+2025-04-08T02:37:44.159Z - info: Site data built
+2025-04-08T02:37:44.160Z - info: Pages rebuilt
+2025-04-08T02:37:44.160Z - info: Website regeneration complete! Total build time: 0.063s
+2025-04-08T02:37:59.695Z - info: [10:37:59] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:00.700Z - info: Rebuilding 1 pages
+2025-04-08T02:38:00.772Z - info: Site data built
+2025-04-08T02:38:00.772Z - info: Pages rebuilt
+2025-04-08T02:38:00.772Z - info: Website regeneration complete! Total build time: 0.073s
+2025-04-08T02:38:05.891Z - info: [10:38:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:06.903Z - info: Rebuilding 1 pages
+2025-04-08T02:38:07.091Z - info: Site data built
+2025-04-08T02:38:07.091Z - info: Pages rebuilt
+2025-04-08T02:38:07.091Z - info: Website regeneration complete! Total build time: 0.19s
+2025-04-08T02:38:07.705Z - info: [10:38:07] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:08.709Z - info: Rebuilding 1 pages
+2025-04-08T02:38:08.781Z - info: Site data built
+2025-04-08T02:38:08.781Z - info: Pages rebuilt
+2025-04-08T02:38:08.781Z - info: Website regeneration complete! Total build time: 0.074s
+2025-04-08T02:38:11.696Z - info: [10:38:11] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:12.698Z - info: Rebuilding 1 pages
+2025-04-08T02:38:12.741Z - info: Site data built
+2025-04-08T02:38:12.742Z - info: Pages rebuilt
+2025-04-08T02:38:12.742Z - info: Website regeneration complete! Total build time: 0.044s
+2025-04-08T02:38:13.031Z - info: [10:38:13] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:14.034Z - info: Rebuilding 1 pages
+2025-04-08T02:38:14.096Z - info: Site data built
+2025-04-08T02:38:14.096Z - info: Pages rebuilt
+2025-04-08T02:38:14.096Z - info: Website regeneration complete! Total build time: 0.064s
+2025-04-08T02:38:35.371Z - info: [10:38:35] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:36.373Z - info: Rebuilding 1 pages
+2025-04-08T02:38:36.410Z - info: Site data built
+2025-04-08T02:38:36.410Z - info: Pages rebuilt
+2025-04-08T02:38:36.410Z - info: Website regeneration complete! Total build time: 0.037s
+2025-04-08T02:38:38.319Z - info: [10:38:38] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:39.321Z - info: Rebuilding 1 pages
+2025-04-08T02:38:39.361Z - info: Site data built
+2025-04-08T02:38:39.361Z - info: Pages rebuilt
+2025-04-08T02:38:39.362Z - info: Website regeneration complete! Total build time: 0.042s
+2025-04-08T02:38:44.804Z - info: [10:38:44] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:38:45.811Z - info: Rebuilding 1 pages
+2025-04-08T02:38:45.885Z - info: Site data built
+2025-04-08T02:38:45.885Z - info: Pages rebuilt
+2025-04-08T02:38:45.885Z - info: Website regeneration complete! Total build time: 0.076s
+2025-04-08T02:40:00.000Z - info: [10:40:00] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/stylesheets/main.css
+2025-04-08T02:40:00.000Z - info: [10:40:00] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:40:01.007Z - info: Rebuilding 1 pages
+2025-04-08T02:40:01.040Z - info: Assets built
+2025-04-08T02:40:01.041Z - info: Site data built
+2025-04-08T02:40:01.041Z - info: Pages rebuilt
+2025-04-08T02:40:01.042Z - info: Website regeneration complete! Total build time: 0.035s
+2025-04-08T02:40:05.372Z - info: [10:40:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/_markbind/layouts/default.md
+2025-04-08T02:40:05.373Z - info: [10:40:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/developerGuide/SettingUp.md
+2025-04-08T02:40:05.373Z - info: [10:40:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/developerGuide/DeveloperGuide.md
+2025-04-08T02:40:05.472Z - info: [10:40:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:40:05.473Z - info: [10:40:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/FAQ.md
+2025-04-08T02:40:05.473Z - info: [10:40:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/UserGuide.md
+2025-04-08T02:40:05.474Z - info: [10:40:05] Reload for file add: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/images/backend_context.png
+2025-04-08T02:40:05.475Z - info: [10:40:05] Reload for file add: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/images/frontend_context.png
+2025-04-08T02:40:05.475Z - info: [10:40:05] Reload for file add: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/images/system_context.png
+2025-04-08T02:40:05.475Z - info: [10:40:05] Reload for file add: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/images/tech_stack.png
+2025-04-08T02:40:06.389Z - info: Rebuilding 9 pages
+2025-04-08T02:40:06.711Z - info: Assets built
+2025-04-08T02:40:06.747Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-08T02:40:06.750Z - info: Site data built
+2025-04-08T02:40:06.750Z - info: Pages rebuilt
+2025-04-08T02:40:06.750Z - info: Website regeneration complete! Total build time: 0.361s
+2025-04-08T02:40:35.409Z - info: [10:40:35] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:40:35.410Z - info: [10:40:35] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/stylesheets/main.css
+2025-04-08T02:40:36.411Z - info: Rebuilding 1 pages
+2025-04-08T02:40:36.471Z - info: Site data built
+2025-04-08T02:40:36.471Z - info: Pages rebuilt
+2025-04-08T02:40:36.472Z - info: Website regeneration complete! Total build time: 0.06s
+2025-04-08T02:40:36.472Z - info: Assets built
+2025-04-08T02:40:40.595Z - info: [10:40:40] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:40:41.596Z - info: Rebuilding 1 pages
+2025-04-08T02:40:41.626Z - info: Site data built
+2025-04-08T02:40:41.626Z - info: Pages rebuilt
+2025-04-08T02:40:41.626Z - info: Website regeneration complete! Total build time: 0.03s
+2025-04-08T02:41:11.701Z - info: [10:41:11] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:41:12.703Z - info: Rebuilding 1 pages
+2025-04-08T02:41:12.744Z - info: Site data built
+2025-04-08T02:41:12.744Z - info: Pages rebuilt
+2025-04-08T02:41:12.744Z - info: Website regeneration complete! Total build time: 0.042s
+2025-04-08T02:42:04.718Z - info: [10:42:04] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:05.720Z - info: Rebuilding 1 pages
+2025-04-08T02:42:05.746Z - info: Site data built
+2025-04-08T02:42:05.746Z - info: Pages rebuilt
+2025-04-08T02:42:05.746Z - info: Website regeneration complete! Total build time: 0.027s
+2025-04-08T02:42:09.069Z - info: [10:42:09] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:10.071Z - info: Rebuilding 1 pages
+2025-04-08T02:42:10.106Z - info: Site data built
+2025-04-08T02:42:10.106Z - info: Pages rebuilt
+2025-04-08T02:42:10.106Z - info: Website regeneration complete! Total build time: 0.035s
+2025-04-08T02:42:15.347Z - info: [10:42:15] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:16.351Z - info: Rebuilding 1 pages
+2025-04-08T02:42:16.388Z - info: Site data built
+2025-04-08T02:42:16.388Z - info: Pages rebuilt
+2025-04-08T02:42:16.388Z - info: Website regeneration complete! Total build time: 0.037s
+2025-04-08T02:42:24.859Z - info: [10:42:24] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:25.866Z - info: Rebuilding 1 pages
+2025-04-08T02:42:25.963Z - info: Site data built
+2025-04-08T02:42:25.963Z - info: Pages rebuilt
+2025-04-08T02:42:25.963Z - info: Website regeneration complete! Total build time: 0.098s
+2025-04-08T02:42:26.630Z - info: [10:42:26] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:27.632Z - info: Rebuilding 1 pages
+2025-04-08T02:42:27.703Z - info: Site data built
+2025-04-08T02:42:27.703Z - info: Pages rebuilt
+2025-04-08T02:42:27.703Z - info: Website regeneration complete! Total build time: 0.072s
+2025-04-08T02:42:38.287Z - info: [10:42:38] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:39.289Z - info: Rebuilding 1 pages
+2025-04-08T02:42:39.355Z - info: Site data built
+2025-04-08T02:42:39.355Z - info: Pages rebuilt
+2025-04-08T02:42:39.355Z - info: Website regeneration complete! Total build time: 0.067s
+2025-04-08T02:42:41.051Z - info: [10:42:41] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:42.051Z - info: Rebuilding 1 pages
+2025-04-08T02:42:42.101Z - info: Site data built
+2025-04-08T02:42:42.102Z - info: Pages rebuilt
+2025-04-08T02:42:42.102Z - info: Website regeneration complete! Total build time: 0.051s
+2025-04-08T02:42:44.300Z - info: [10:42:44] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:42:45.305Z - info: Rebuilding 1 pages
+2025-04-08T02:42:45.358Z - info: Site data built
+2025-04-08T02:42:45.359Z - info: Pages rebuilt
+2025-04-08T02:42:45.359Z - info: Website regeneration complete! Total build time: 0.056s
+2025-04-08T02:43:24.801Z - info: [10:43:24] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:43:25.804Z - info: Rebuilding 1 pages
+2025-04-08T02:43:25.876Z - info: Site data built
+2025-04-08T02:43:25.876Z - info: Pages rebuilt
+2025-04-08T02:43:25.876Z - info: Website regeneration complete! Total build time: 0.073s
+2025-04-08T02:43:35.136Z - info: [10:43:35] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:43:36.139Z - info: Rebuilding 1 pages
+2025-04-08T02:43:36.193Z - info: Site data built
+2025-04-08T02:43:36.193Z - info: Pages rebuilt
+2025-04-08T02:43:36.193Z - info: Website regeneration complete! Total build time: 0.055s
+2025-04-08T02:44:22.185Z - info: [10:44:22] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:44:23.188Z - info: Rebuilding 1 pages
+2025-04-08T02:44:23.232Z - info: Site data built
+2025-04-08T02:44:23.232Z - info: Pages rebuilt
+2025-04-08T02:44:23.232Z - info: Website regeneration complete! Total build time: 0.045s
+2025-04-08T02:51:02.558Z - info: [10:51:02] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:03.564Z - info: Rebuilding 1 pages
+2025-04-08T02:51:03.644Z - info: Site data built
+2025-04-08T02:51:03.644Z - info: Pages rebuilt
+2025-04-08T02:51:03.644Z - info: Website regeneration complete! Total build time: 0.082s
+2025-04-08T02:51:04.036Z - info: [10:51:04] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:05.040Z - info: Rebuilding 1 pages
+2025-04-08T02:51:05.089Z - info: Site data built
+2025-04-08T02:51:05.089Z - info: Pages rebuilt
+2025-04-08T02:51:05.089Z - info: Website regeneration complete! Total build time: 0.05s
+2025-04-08T02:51:11.634Z - info: [10:51:11] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:12.636Z - info: Rebuilding 1 pages
+2025-04-08T02:51:12.667Z - info: Site data built
+2025-04-08T02:51:12.668Z - info: Pages rebuilt
+2025-04-08T02:51:12.668Z - info: Website regeneration complete! Total build time: 0.032s
+2025-04-08T02:51:13.065Z - info: [10:51:13] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:14.067Z - info: Rebuilding 1 pages
+2025-04-08T02:51:14.095Z - info: Site data built
+2025-04-08T02:51:14.095Z - info: Pages rebuilt
+2025-04-08T02:51:14.095Z - info: Website regeneration complete! Total build time: 0.029s
+2025-04-08T02:51:24.892Z - info: [10:51:24] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:25.894Z - info: Rebuilding 1 pages
+2025-04-08T02:51:25.945Z - info: Site data built
+2025-04-08T02:51:25.946Z - info: Pages rebuilt
+2025-04-08T02:51:25.946Z - info: Website regeneration complete! Total build time: 0.053s
+2025-04-08T02:51:27.045Z - info: [10:51:27] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:28.045Z - info: Rebuilding 1 pages
+2025-04-08T02:51:28.084Z - info: Site data built
+2025-04-08T02:51:28.085Z - info: Pages rebuilt
+2025-04-08T02:51:28.085Z - info: Website regeneration complete! Total build time: 0.04s
+2025-04-08T02:51:29.989Z - info: [10:51:29] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:30.992Z - info: Rebuilding 1 pages
+2025-04-08T02:51:31.040Z - info: Site data built
+2025-04-08T02:51:31.040Z - info: Pages rebuilt
+2025-04-08T02:51:31.040Z - info: Website regeneration complete! Total build time: 0.048s
+2025-04-08T02:51:33.959Z - info: [10:51:33] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:34.960Z - info: Rebuilding 1 pages
+2025-04-08T02:51:34.990Z - info: Site data built
+2025-04-08T02:51:34.990Z - info: Pages rebuilt
+2025-04-08T02:51:34.990Z - info: Website regeneration complete! Total build time: 0.03s
+2025-04-08T02:51:40.942Z - info: [10:51:40] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:41.944Z - info: Rebuilding 1 pages
+2025-04-08T02:51:41.973Z - info: Site data built
+2025-04-08T02:51:41.973Z - info: Pages rebuilt
+2025-04-08T02:51:41.973Z - info: Website regeneration complete! Total build time: 0.029s
+2025-04-08T02:51:43.884Z - info: [10:51:43] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:44.886Z - info: Rebuilding 1 pages
+2025-04-08T02:51:44.915Z - info: Site data built
+2025-04-08T02:51:44.915Z - info: Pages rebuilt
+2025-04-08T02:51:44.915Z - info: Website regeneration complete! Total build time: 0.03s
+2025-04-08T02:51:50.154Z - info: [10:51:50] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:51.158Z - info: Rebuilding 1 pages
+2025-04-08T02:51:51.200Z - info: Site data built
+2025-04-08T02:51:51.200Z - info: Pages rebuilt
+2025-04-08T02:51:51.200Z - info: Website regeneration complete! Total build time: 0.043s
+2025-04-08T02:51:55.431Z - info: [10:51:55] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:51:56.434Z - info: Rebuilding 1 pages
+2025-04-08T02:51:56.500Z - info: Site data built
+2025-04-08T02:51:56.500Z - info: Pages rebuilt
+2025-04-08T02:51:56.500Z - info: Website regeneration complete! Total build time: 0.067s
+2025-04-08T02:52:16.596Z - info: [10:52:16] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:52:17.600Z - info: Rebuilding 1 pages
+2025-04-08T02:52:17.664Z - info: Site data built
+2025-04-08T02:52:17.664Z - info: Pages rebuilt
+2025-04-08T02:52:17.664Z - info: Website regeneration complete! Total build time: 0.065s
+2025-04-08T02:52:18.760Z - info: [10:52:18] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:52:19.762Z - info: Rebuilding 1 pages
+2025-04-08T02:52:19.809Z - info: Site data built
+2025-04-08T02:52:19.809Z - info: Pages rebuilt
+2025-04-08T02:52:19.809Z - info: Website regeneration complete! Total build time: 0.048s
+2025-04-08T02:52:42.914Z - info: [10:52:42] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:52:43.916Z - info: Rebuilding 1 pages
+2025-04-08T02:52:43.955Z - info: Site data built
+2025-04-08T02:52:43.955Z - info: Pages rebuilt
+2025-04-08T02:52:43.955Z - info: Website regeneration complete! Total build time: 0.04s
+2025-04-08T02:52:49.399Z - info: [10:52:49] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:52:50.401Z - info: Rebuilding 1 pages
+2025-04-08T02:52:50.449Z - info: Site data built
+2025-04-08T02:52:50.449Z - info: Pages rebuilt
+2025-04-08T02:52:50.449Z - info: Website regeneration complete! Total build time: 0.049s
+2025-04-08T02:52:52.563Z - info: [10:52:52] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:52:53.566Z - info: Rebuilding 1 pages
+2025-04-08T02:52:53.630Z - info: Site data built
+2025-04-08T02:52:53.630Z - info: Pages rebuilt
+2025-04-08T02:52:53.631Z - info: Website regeneration complete! Total build time: 0.066s
+2025-04-08T02:52:55.021Z - info: [10:52:55] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:52:56.025Z - info: Rebuilding 1 pages
+2025-04-08T02:52:56.072Z - info: Site data built
+2025-04-08T02:52:56.072Z - info: Pages rebuilt
+2025-04-08T02:52:56.072Z - info: Website regeneration complete! Total build time: 0.048s
+2025-04-08T02:53:21.102Z - info: [10:53:21] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:53:22.108Z - info: Rebuilding 1 pages
+2025-04-08T02:53:22.237Z - info: Site data built
+2025-04-08T02:53:22.237Z - info: Pages rebuilt
+2025-04-08T02:53:22.237Z - info: Website regeneration complete! Total build time: 0.13s
+2025-04-08T02:53:23.831Z - info: [10:53:23] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:53:24.833Z - info: Rebuilding 1 pages
+2025-04-08T02:53:24.891Z - info: Site data built
+2025-04-08T02:53:24.891Z - info: Pages rebuilt
+2025-04-08T02:53:24.891Z - info: Website regeneration complete! Total build time: 0.059s
+2025-04-08T02:53:56.154Z - info: [10:53:56] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:53:57.156Z - info: Rebuilding 1 pages
+2025-04-08T02:53:57.223Z - info: Site data built
+2025-04-08T02:53:57.223Z - info: Pages rebuilt
+2025-04-08T02:53:57.223Z - info: Website regeneration complete! Total build time: 0.068s
+2025-04-08T02:53:59.729Z - info: [10:53:59] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:54:00.731Z - info: Rebuilding 1 pages
+2025-04-08T02:54:00.785Z - info: Site data built
+2025-04-08T02:54:00.785Z - info: Pages rebuilt
+2025-04-08T02:54:00.786Z - info: Website regeneration complete! Total build time: 0.055s
+2025-04-08T02:54:18.854Z - info: [10:54:18] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:54:19.865Z - info: Rebuilding 1 pages
+2025-04-08T02:54:19.964Z - info: Site data built
+2025-04-08T02:54:19.964Z - info: Pages rebuilt
+2025-04-08T02:54:19.964Z - info: Website regeneration complete! Total build time: 0.101s
+2025-04-08T02:55:38.088Z - info: [10:55:38] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:55:39.089Z - info: Rebuilding 1 pages
+2025-04-08T02:55:39.132Z - info: Site data built
+2025-04-08T02:55:39.132Z - info: Pages rebuilt
+2025-04-08T02:55:39.132Z - info: Website regeneration complete! Total build time: 0.043s
+2025-04-08T02:55:39.524Z - info: [10:55:39] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:55:40.526Z - info: Rebuilding 1 pages
+2025-04-08T02:55:40.568Z - info: Site data built
+2025-04-08T02:55:40.568Z - info: Pages rebuilt
+2025-04-08T02:55:40.568Z - info: Website regeneration complete! Total build time: 0.043s
+2025-04-08T02:55:40.760Z - info: [10:55:40] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:55:41.762Z - info: Rebuilding 1 pages
+2025-04-08T02:55:41.810Z - info: Site data built
+2025-04-08T02:55:41.811Z - info: Pages rebuilt
+2025-04-08T02:55:41.811Z - info: Website regeneration complete! Total build time: 0.049s
+2025-04-08T02:55:51.888Z - info: [10:55:51] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:55:52.891Z - info: Rebuilding 1 pages
+2025-04-08T02:55:52.964Z - info: Site data built
+2025-04-08T02:55:52.964Z - info: Pages rebuilt
+2025-04-08T02:55:52.964Z - info: Website regeneration complete! Total build time: 0.074s
+2025-04-08T02:56:10.402Z - info: [10:56:10] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:56:11.406Z - info: Rebuilding 1 pages
+2025-04-08T02:56:11.479Z - info: Site data built
+2025-04-08T02:56:11.480Z - info: Pages rebuilt
+2025-04-08T02:56:11.480Z - info: Website regeneration complete! Total build time: 0.075s
+2025-04-08T02:56:12.679Z - info: [10:56:12] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:56:13.682Z - info: Rebuilding 1 pages
+2025-04-08T02:56:13.731Z - info: Site data built
+2025-04-08T02:56:13.731Z - info: Pages rebuilt
+2025-04-08T02:56:13.731Z - info: Website regeneration complete! Total build time: 0.05s
+2025-04-08T02:56:16.142Z - info: [10:56:16] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:56:17.143Z - info: Rebuilding 1 pages
+2025-04-08T02:56:17.174Z - info: Site data built
+2025-04-08T02:56:17.174Z - info: Pages rebuilt
+2025-04-08T02:56:17.174Z - info: Website regeneration complete! Total build time: 0.031s
+2025-04-08T02:56:21.306Z - info: [10:56:21] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:56:22.309Z - info: Rebuilding 1 pages
+2025-04-08T02:56:22.356Z - info: Site data built
+2025-04-08T02:56:22.356Z - info: Pages rebuilt
+2025-04-08T02:56:22.357Z - info: Website regeneration complete! Total build time: 0.048s
+2025-04-08T02:56:24.061Z - info: [10:56:24] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:56:25.065Z - info: Rebuilding 1 pages
+2025-04-08T02:56:25.115Z - info: Site data built
+2025-04-08T02:56:25.115Z - info: Pages rebuilt
+2025-04-08T02:56:25.115Z - info: Website regeneration complete! Total build time: 0.052s
+2025-04-08T02:56:26.721Z - info: [10:56:26] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:56:27.725Z - info: Rebuilding 1 pages
+2025-04-08T02:56:27.774Z - info: Site data built
+2025-04-08T02:56:27.774Z - info: Pages rebuilt
+2025-04-08T02:56:27.774Z - info: Website regeneration complete! Total build time: 0.051s
+2025-04-08T02:57:04.604Z - info: [10:57:04] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:57:05.607Z - info: Rebuilding 1 pages
+2025-04-08T02:57:05.642Z - info: Site data built
+2025-04-08T02:57:05.642Z - info: Pages rebuilt
+2025-04-08T02:57:05.642Z - info: Website regeneration complete! Total build time: 0.036s
+2025-04-08T02:57:07.350Z - info: [10:57:07] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:57:08.351Z - info: Rebuilding 1 pages
+2025-04-08T02:57:08.420Z - info: Site data built
+2025-04-08T02:57:08.421Z - info: Pages rebuilt
+2025-04-08T02:57:08.421Z - info: Website regeneration complete! Total build time: 0.07s
+2025-04-08T02:57:35.361Z - info: [10:57:35] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:57:36.365Z - info: Rebuilding 1 pages
+2025-04-08T02:57:36.438Z - info: Site data built
+2025-04-08T02:57:36.438Z - info: Pages rebuilt
+2025-04-08T02:57:36.438Z - info: Website regeneration complete! Total build time: 0.075s
+2025-04-08T02:57:37.235Z - info: [10:57:37] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T02:57:38.236Z - info: Rebuilding 1 pages
+2025-04-08T02:57:38.264Z - info: Site data built
+2025-04-08T02:57:38.264Z - info: Pages rebuilt
+2025-04-08T02:57:38.264Z - info: Website regeneration complete! Total build time: 0.028s
+2025-04-08T03:19:19.166Z - info: [11:19:19] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:19:20.171Z - info: Rebuilding 1 pages
+2025-04-08T03:19:20.250Z - info: Site data built
+2025-04-08T03:19:20.250Z - info: Pages rebuilt
+2025-04-08T03:19:20.250Z - info: Website regeneration complete! Total build time: 0.081s
+2025-04-08T03:19:21.750Z - info: [11:19:21] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:19:22.752Z - info: Rebuilding 1 pages
+2025-04-08T03:19:22.825Z - info: Site data built
+2025-04-08T03:19:22.826Z - info: Pages rebuilt
+2025-04-08T03:19:22.826Z - info: Website regeneration complete! Total build time: 0.075s
+2025-04-08T03:20:02.478Z - info: [11:20:02] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:20:03.481Z - info: Rebuilding 1 pages
+2025-04-08T03:20:03.532Z - info: Site data built
+2025-04-08T03:20:03.532Z - info: Pages rebuilt
+2025-04-08T03:20:03.532Z - info: Website regeneration complete! Total build time: 0.052s
+2025-04-08T03:20:05.748Z - info: [11:20:05] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:20:06.761Z - info: Rebuilding 1 pages
+2025-04-08T03:20:07.076Z - info: Site data built
+2025-04-08T03:20:07.077Z - info: Pages rebuilt
+2025-04-08T03:20:07.077Z - info: Website regeneration complete! Total build time: 0.317s
+2025-04-08T03:21:32.875Z - info: [11:21:32] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:21:33.876Z - info: Rebuilding 1 pages
+2025-04-08T03:21:33.907Z - info: Site data built
+2025-04-08T03:21:33.907Z - info: Pages rebuilt
+2025-04-08T03:21:33.907Z - info: Website regeneration complete! Total build time: 0.031s
+2025-04-08T03:22:02.474Z - info: [11:22:02] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:22:03.477Z - info: Rebuilding 1 pages
+2025-04-08T03:22:03.532Z - info: Site data built
+2025-04-08T03:22:03.532Z - info: Pages rebuilt
+2025-04-08T03:22:03.532Z - info: Website regeneration complete! Total build time: 0.056s
+2025-04-08T03:22:04.732Z - info: [11:22:04] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:22:05.735Z - info: Rebuilding 1 pages
+2025-04-08T03:22:05.796Z - info: Site data built
+2025-04-08T03:22:05.796Z - info: Pages rebuilt
+2025-04-08T03:22:05.797Z - info: Website regeneration complete! Total build time: 0.063s
+2025-04-08T03:22:12.845Z - info: [11:22:12] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:22:13.853Z - info: Rebuilding 1 pages
+2025-04-08T03:22:13.950Z - info: Site data built
+2025-04-08T03:22:13.950Z - info: Pages rebuilt
+2025-04-08T03:22:13.950Z - info: Website regeneration complete! Total build time: 0.1s
+2025-04-08T03:22:15.426Z - info: [11:22:15] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:22:16.434Z - info: Rebuilding 1 pages
+2025-04-08T03:22:16.549Z - info: Site data built
+2025-04-08T03:22:16.549Z - info: Pages rebuilt
+2025-04-08T03:22:16.549Z - info: Website regeneration complete! Total build time: 0.118s
+2025-04-08T03:22:17.736Z - info: [11:22:17] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:22:18.739Z - info: Rebuilding 1 pages
+2025-04-08T03:22:18.786Z - info: Site data built
+2025-04-08T03:22:18.786Z - info: Pages rebuilt
+2025-04-08T03:22:18.786Z - info: Website regeneration complete! Total build time: 0.048s
+2025-04-08T03:23:03.594Z - info: [11:23:03] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:04.598Z - info: Rebuilding 1 pages
+2025-04-08T03:23:04.688Z - info: Site data built
+2025-04-08T03:23:04.688Z - info: Pages rebuilt
+2025-04-08T03:23:04.688Z - info: Website regeneration complete! Total build time: 0.09s
+2025-04-08T03:23:07.898Z - info: [11:23:07] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:08.899Z - info: Rebuilding 1 pages
+2025-04-08T03:23:08.929Z - info: Site data built
+2025-04-08T03:23:08.929Z - info: Pages rebuilt
+2025-04-08T03:23:08.929Z - info: Website regeneration complete! Total build time: 0.031s
+2025-04-08T03:23:10.134Z - info: [11:23:10] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:11.139Z - info: Rebuilding 1 pages
+2025-04-08T03:23:11.214Z - info: Site data built
+2025-04-08T03:23:11.214Z - info: Pages rebuilt
+2025-04-08T03:23:11.214Z - info: Website regeneration complete! Total build time: 0.077s
+2025-04-08T03:23:23.727Z - info: [11:23:23] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:24.733Z - info: Rebuilding 1 pages
+2025-04-08T03:23:24.812Z - info: Site data built
+2025-04-08T03:23:24.812Z - info: Pages rebuilt
+2025-04-08T03:23:24.812Z - info: Website regeneration complete! Total build time: 0.08s
+2025-04-08T03:23:37.610Z - info: [11:23:37] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:38.613Z - info: Rebuilding 1 pages
+2025-04-08T03:23:38.685Z - info: Site data built
+2025-04-08T03:23:38.686Z - info: Pages rebuilt
+2025-04-08T03:23:38.686Z - info: Website regeneration complete! Total build time: 0.074s
+2025-04-08T03:23:50.881Z - info: [11:23:50] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:51.884Z - info: Rebuilding 1 pages
+2025-04-08T03:23:51.952Z - info: Site data built
+2025-04-08T03:23:51.953Z - info: Pages rebuilt
+2025-04-08T03:23:51.953Z - info: Website regeneration complete! Total build time: 0.07s
+2025-04-08T03:23:53.759Z - info: [11:23:53] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:23:54.762Z - info: Rebuilding 1 pages
+2025-04-08T03:23:54.854Z - info: Site data built
+2025-04-08T03:23:54.854Z - info: Pages rebuilt
+2025-04-08T03:23:54.854Z - info: Website regeneration complete! Total build time: 0.094s
+2025-04-08T03:24:24.725Z - info: [11:24:24] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:24:25.728Z - info: Rebuilding 1 pages
+2025-04-08T03:24:25.797Z - info: Site data built
+2025-04-08T03:24:25.797Z - info: Pages rebuilt
+2025-04-08T03:24:25.797Z - info: Website regeneration complete! Total build time: 0.07s
+2025-04-08T03:24:36.082Z - info: [11:24:36] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:24:37.083Z - info: Rebuilding 1 pages
+2025-04-08T03:24:37.138Z - info: Site data built
+2025-04-08T03:24:37.138Z - info: Pages rebuilt
+2025-04-08T03:24:37.138Z - info: Website regeneration complete! Total build time: 0.056s
+2025-04-08T03:24:39.852Z - info: [11:24:39] Reload for file change: /Users/ariellacallista/CS3213/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T03:24:40.855Z - info: Rebuilding 1 pages
+2025-04-08T03:24:40.904Z - info: Site data built
+2025-04-08T03:24:40.904Z - info: Pages rebuilt
+2025-04-08T03:24:40.904Z - info: Website regeneration complete! Total build time: 0.051s
