@@ -435,3 +435,14 @@
 2025-04-08T03:24:40.904Z - info: Site data built
 2025-04-08T03:24:40.904Z - info: Pages rebuilt
 2025-04-08T03:24:40.904Z - info: Website regeneration complete! Total build time: 0.051s
+2025-04-08T13:31:27.686Z - info: Website generation started at 9:31:27 PM
+2025-04-08T13:31:27.730Z - info: Building assets...
+2025-04-08T13:31:27.765Z - info: Assets built
+2025-04-08T13:31:27.766Z - info: Generating pages...
+2025-04-08T13:31:28.400Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/stella/dev/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-08T13:31:28.404Z - info: Pages built
+2025-04-08T13:31:28.588Z - info: Site data built
+2025-04-08T13:31:28.589Z - info: Website generation complete! Total build time: 1.057s
+2025-04-08T13:31:28.607Z - info: Serving "/Users/stella/dev/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-08T13:31:28.608Z - info: Press CTRL+C to stop ...
