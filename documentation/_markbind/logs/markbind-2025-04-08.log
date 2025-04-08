@@ -435,3 +435,624 @@
 2025-04-08T03:24:40.904Z - info: Site data built
 2025-04-08T03:24:40.904Z - info: Pages rebuilt
 2025-04-08T03:24:40.904Z - info: Website regeneration complete! Total build time: 0.051s
+2025-04-08T05:04:13.058Z - info: Website generation started at 1:04:13 PM
+2025-04-08T05:04:13.070Z - info: Building assets...
+2025-04-08T05:04:13.085Z - info: Assets built
+2025-04-08T05:04:13.085Z - info: Generating pages...
+2025-04-08T05:04:13.244Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-08T05:04:13.245Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:04:13.245Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:04:13.245Z - info: Pages built
+2025-04-08T05:04:13.367Z - info: Site data built
+2025-04-08T05:04:13.368Z - info: Website generation complete! Total build time: 0.357s
+2025-04-08T05:04:13.375Z - info: Serving "/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-08T05:04:13.375Z - info: Press CTRL+C to stop ...
+2025-04-08T05:08:47.548Z - info: [1:08:47 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:08:48.562Z - info: Rebuilding 1 pages
+2025-04-08T05:08:48.625Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:08:48.626Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:08:48.626Z - info: Site data built
+2025-04-08T05:08:48.626Z - info: Pages rebuilt
+2025-04-08T05:08:48.627Z - info: Website regeneration complete! Total build time: 0.071s
+2025-04-08T05:09:40.635Z - info: [1:09:40 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:09:41.641Z - info: Rebuilding 1 pages
+2025-04-08T05:09:41.674Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:09:41.674Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:09:41.675Z - info: Site data built
+2025-04-08T05:09:41.675Z - info: Pages rebuilt
+2025-04-08T05:09:41.675Z - info: Website regeneration complete! Total build time: 0.035s
+2025-04-08T05:10:02.264Z - info: [1:10:02 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:10:03.268Z - info: Rebuilding 1 pages
+2025-04-08T05:10:03.330Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:10:03.330Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:10:03.331Z - info: Site data built
+2025-04-08T05:10:03.331Z - info: Pages rebuilt
+2025-04-08T05:10:03.331Z - info: Website regeneration complete! Total build time: 0.064s
+2025-04-08T05:10:42.704Z - info: [1:10:42 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:10:43.709Z - info: Rebuilding 1 pages
+2025-04-08T05:10:43.762Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:10:43.762Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:10:43.763Z - info: Site data built
+2025-04-08T05:10:43.763Z - info: Pages rebuilt
+2025-04-08T05:10:43.763Z - info: Website regeneration complete! Total build time: 0.055s
+2025-04-08T05:12:25.198Z - info: [1:12:25 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:12:26.201Z - info: Rebuilding 1 pages
+2025-04-08T05:12:26.229Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:12:26.229Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:12:26.230Z - info: Site data built
+2025-04-08T05:12:26.230Z - info: Pages rebuilt
+2025-04-08T05:12:26.230Z - info: Website regeneration complete! Total build time: 0.03s
+2025-04-08T05:13:27.747Z - info: [1:13:27 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:13:28.753Z - info: Rebuilding 1 pages
+2025-04-08T05:13:28.807Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:13:28.807Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:13:28.808Z - info: Site data built
+2025-04-08T05:13:28.808Z - info: Pages rebuilt
+2025-04-08T05:13:28.808Z - info: Website regeneration complete! Total build time: 0.057s
+2025-04-08T05:13:42.624Z - info: [1:13:42 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:13:43.626Z - info: Rebuilding 1 pages
+2025-04-08T05:13:43.694Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:13:43.694Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:13:43.695Z - info: Site data built
+2025-04-08T05:13:43.695Z - info: Pages rebuilt
+2025-04-08T05:13:43.695Z - info: Website regeneration complete! Total build time: 0.07s
+2025-04-08T05:13:59.314Z - info: [1:13:59 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:14:00.317Z - info: Rebuilding 1 pages
+2025-04-08T05:14:00.364Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:14:00.364Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:14:00.365Z - info: Site data built
+2025-04-08T05:14:00.365Z - info: Pages rebuilt
+2025-04-08T05:14:00.365Z - info: Website regeneration complete! Total build time: 0.049s
+2025-04-08T05:14:42.011Z - info: [1:14:42 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:14:43.016Z - info: Rebuilding 1 pages
+2025-04-08T05:14:43.059Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:14:43.059Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:14:43.060Z - info: Site data built
+2025-04-08T05:14:43.060Z - info: Pages rebuilt
+2025-04-08T05:14:43.060Z - info: Website regeneration complete! Total build time: 0.045s
+2025-04-08T05:15:31.067Z - info: [1:15:31 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:15:32.093Z - info: Rebuilding 1 pages
+2025-04-08T05:15:32.138Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:15:32.138Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:15:32.138Z - info: Site data built
+2025-04-08T05:15:32.138Z - info: Pages rebuilt
+2025-04-08T05:15:32.139Z - info: Website regeneration complete! Total build time: 0.046s
+2025-04-08T05:16:12.567Z - info: [1:16:12 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:16:13.568Z - info: Rebuilding 1 pages
+2025-04-08T05:16:13.602Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:16:13.602Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:16:13.602Z - info: Site data built
+2025-04-08T05:16:13.603Z - info: Pages rebuilt
+2025-04-08T05:16:13.603Z - info: Website regeneration complete! Total build time: 0.035s
+2025-04-08T05:16:19.038Z - info: [1:16:19 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:16:20.043Z - info: Rebuilding 1 pages
+2025-04-08T05:16:20.091Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:16:20.091Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:16:20.091Z - info: Site data built
+2025-04-08T05:16:20.091Z - info: Pages rebuilt
+2025-04-08T05:16:20.091Z - info: Website regeneration complete! Total build time: 0.05s
+2025-04-08T05:16:54.831Z - info: [1:16:54 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:16:55.839Z - info: Rebuilding 1 pages
+2025-04-08T05:16:55.893Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:16:55.893Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:16:55.893Z - info: Site data built
+2025-04-08T05:16:55.893Z - info: Pages rebuilt
+2025-04-08T05:16:55.893Z - info: Website regeneration complete! Total build time: 0.056s
+2025-04-08T05:17:14.393Z - info: [1:17:14 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:17:15.396Z - info: Rebuilding 1 pages
+2025-04-08T05:17:15.454Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:17:15.454Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:17:15.459Z - info: Site data built
+2025-04-08T05:17:15.459Z - info: Pages rebuilt
+2025-04-08T05:17:15.459Z - info: Website regeneration complete! Total build time: 0.064s
+2025-04-08T05:17:34.830Z - info: [1:17:34 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:17:35.831Z - info: Rebuilding 1 pages
+2025-04-08T05:17:35.863Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:17:35.863Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:17:35.864Z - info: Site data built
+2025-04-08T05:17:35.864Z - info: Pages rebuilt
+2025-04-08T05:17:35.864Z - info: Website regeneration complete! Total build time: 0.033s
+2025-04-08T05:17:42.520Z - info: [1:17:42 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:17:43.524Z - info: Rebuilding 1 pages
+2025-04-08T05:17:43.568Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:17:43.568Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:17:43.568Z - info: Site data built
+2025-04-08T05:17:43.568Z - info: Pages rebuilt
+2025-04-08T05:17:43.568Z - info: Website regeneration complete! Total build time: 0.046s
+2025-04-08T05:19:00.994Z - info: [1:19:00 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:19:02.000Z - info: Rebuilding 1 pages
+2025-04-08T05:19:02.070Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:19:02.070Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:19:02.071Z - info: Site data built
+2025-04-08T05:19:02.071Z - info: Pages rebuilt
+2025-04-08T05:19:02.071Z - info: Website regeneration complete! Total build time: 0.072s
+2025-04-08T05:19:38.637Z - info: [1:19:38 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:19:39.644Z - info: Rebuilding 1 pages
+2025-04-08T05:19:39.714Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:19:39.714Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:19:39.715Z - info: Site data built
+2025-04-08T05:19:39.715Z - info: Pages rebuilt
+2025-04-08T05:19:39.715Z - info: Website regeneration complete! Total build time: 0.073s
+2025-04-08T05:20:55.262Z - info: [1:20:55 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:20:56.267Z - info: Rebuilding 1 pages
+2025-04-08T05:20:56.305Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:20:56.305Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:20:56.305Z - info: Site data built
+2025-04-08T05:20:56.305Z - info: Pages rebuilt
+2025-04-08T05:20:56.305Z - info: Website regeneration complete! Total build time: 0.039s
+2025-04-08T05:20:59.853Z - info: [1:20:59 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:21:00.856Z - info: Rebuilding 1 pages
+2025-04-08T05:21:00.921Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:21:00.921Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:21:00.922Z - info: Site data built
+2025-04-08T05:21:00.922Z - info: Pages rebuilt
+2025-04-08T05:21:00.922Z - info: Website regeneration complete! Total build time: 0.067s
+2025-04-08T05:21:20.025Z - info: [1:21:20 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:21:21.031Z - info: Rebuilding 1 pages
+2025-04-08T05:21:21.091Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:21:21.091Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:21:21.092Z - info: Site data built
+2025-04-08T05:21:21.092Z - info: Pages rebuilt
+2025-04-08T05:21:21.092Z - info: Website regeneration complete! Total build time: 0.062s
+2025-04-08T05:21:34.903Z - info: [1:21:34 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:21:35.903Z - info: Rebuilding 1 pages
+2025-04-08T05:21:35.945Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:21:35.945Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:21:35.946Z - info: Site data built
+2025-04-08T05:21:35.947Z - info: Pages rebuilt
+2025-04-08T05:21:35.947Z - info: Website regeneration complete! Total build time: 0.044s
+2025-04-08T05:22:05.639Z - info: [1:22:05 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:22:06.644Z - info: Rebuilding 1 pages
+2025-04-08T05:22:06.709Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:22:06.709Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:22:06.710Z - info: Site data built
+2025-04-08T05:22:06.710Z - info: Pages rebuilt
+2025-04-08T05:22:06.710Z - info: Website regeneration complete! Total build time: 0.068s
+2025-04-08T05:22:24.044Z - info: [1:22:24 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:22:25.047Z - info: Rebuilding 1 pages
+2025-04-08T05:22:25.093Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:22:25.093Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:22:25.093Z - info: Site data built
+2025-04-08T05:22:25.093Z - info: Pages rebuilt
+2025-04-08T05:22:25.093Z - info: Website regeneration complete! Total build time: 0.046s
+2025-04-08T05:22:28.755Z - info: [1:22:28 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:22:29.758Z - info: Rebuilding 1 pages
+2025-04-08T05:22:29.807Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:22:29.807Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:22:29.808Z - info: Site data built
+2025-04-08T05:22:29.808Z - info: Pages rebuilt
+2025-04-08T05:22:29.808Z - info: Website regeneration complete! Total build time: 0.051s
+2025-04-08T05:23:12.761Z - info: [1:23:12 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:23:13.766Z - info: Rebuilding 1 pages
+2025-04-08T05:23:13.815Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:13.815Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:13.815Z - info: Site data built
+2025-04-08T05:23:13.815Z - info: Pages rebuilt
+2025-04-08T05:23:13.816Z - info: Website regeneration complete! Total build time: 0.051s
+2025-04-08T05:23:15.303Z - info: [1:23:15 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:23:16.305Z - info: Rebuilding 1 pages
+2025-04-08T05:23:16.355Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:16.355Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:16.356Z - info: Site data built
+2025-04-08T05:23:16.356Z - info: Pages rebuilt
+2025-04-08T05:23:16.356Z - info: Website regeneration complete! Total build time: 0.052s
+2025-04-08T05:23:32.764Z - info: [1:23:32 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:23:33.767Z - info: Rebuilding 1 pages
+2025-04-08T05:23:33.812Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:33.812Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:33.813Z - info: Site data built
+2025-04-08T05:23:33.813Z - info: Pages rebuilt
+2025-04-08T05:23:33.813Z - info: Website regeneration complete! Total build time: 0.047s
+2025-04-08T05:23:42.725Z - info: [1:23:42 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:23:43.732Z - info: Rebuilding 1 pages
+2025-04-08T05:23:43.783Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:43.784Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:23:43.784Z - info: Site data built
+2025-04-08T05:23:43.784Z - info: Pages rebuilt
+2025-04-08T05:23:43.784Z - info: Website regeneration complete! Total build time: 0.053s
+2025-04-08T05:24:01.010Z - info: [1:24:01 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:24:02.012Z - info: Rebuilding 1 pages
+2025-04-08T05:24:02.045Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:24:02.045Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:24:02.046Z - info: Site data built
+2025-04-08T05:24:02.046Z - info: Pages rebuilt
+2025-04-08T05:24:02.046Z - info: Website regeneration complete! Total build time: 0.035s
+2025-04-08T05:24:22.982Z - info: [1:24:22 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:24:23.984Z - info: Rebuilding 1 pages
+2025-04-08T05:24:24.022Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:24:24.022Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:24:24.022Z - info: Site data built
+2025-04-08T05:24:24.022Z - info: Pages rebuilt
+2025-04-08T05:24:24.022Z - info: Website regeneration complete! Total build time: 0.038s
+2025-04-08T05:25:18.031Z - info: [1:25:18 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:25:19.035Z - info: Rebuilding 1 pages
+2025-04-08T05:25:19.082Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:25:19.082Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:25:19.083Z - info: Site data built
+2025-04-08T05:25:19.083Z - info: Pages rebuilt
+2025-04-08T05:25:19.083Z - info: Website regeneration complete! Total build time: 0.049s
+2025-04-08T05:25:23.401Z - info: [1:25:23 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:25:24.404Z - info: Rebuilding 1 pages
+2025-04-08T05:25:24.464Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:25:24.464Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:25:24.465Z - info: Site data built
+2025-04-08T05:25:24.465Z - info: Pages rebuilt
+2025-04-08T05:25:24.465Z - info: Website regeneration complete! Total build time: 0.062s
+2025-04-08T05:26:39.020Z - info: [1:26:39 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:26:40.026Z - info: Rebuilding 1 pages
+2025-04-08T05:26:40.095Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:26:40.095Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:26:40.096Z - info: Site data built
+2025-04-08T05:26:40.096Z - info: Pages rebuilt
+2025-04-08T05:26:40.096Z - info: Website regeneration complete! Total build time: 0.071s
+2025-04-08T05:27:17.495Z - info: [1:27:17 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:27:18.498Z - info: Rebuilding 1 pages
+2025-04-08T05:27:18.555Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:27:18.555Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:27:18.556Z - info: Site data built
+2025-04-08T05:27:18.556Z - info: Pages rebuilt
+2025-04-08T05:27:18.556Z - info: Website regeneration complete! Total build time: 0.059s
+2025-04-08T05:28:12.419Z - info: [1:28:12 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:28:13.426Z - info: Rebuilding 1 pages
+2025-04-08T05:28:13.490Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:28:13.490Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:28:13.491Z - info: Site data built
+2025-04-08T05:28:13.491Z - info: Pages rebuilt
+2025-04-08T05:28:13.491Z - info: Website regeneration complete! Total build time: 0.066s
+2025-04-08T05:29:36.841Z - info: [1:29:36 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:29:37.846Z - info: Rebuilding 1 pages
+2025-04-08T05:29:37.902Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:29:37.902Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:29:37.902Z - info: Site data built
+2025-04-08T05:29:37.902Z - info: Pages rebuilt
+2025-04-08T05:29:37.902Z - info: Website regeneration complete! Total build time: 0.058s
+2025-04-08T05:31:58.488Z - info: [1:31:58 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:31:59.493Z - info: Rebuilding 1 pages
+2025-04-08T05:31:59.534Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:31:59.534Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:31:59.534Z - info: Site data built
+2025-04-08T05:31:59.534Z - info: Pages rebuilt
+2025-04-08T05:31:59.534Z - info: Website regeneration complete! Total build time: 0.042s
+2025-04-08T05:32:07.411Z - info: [1:32:07 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:32:08.412Z - info: Rebuilding 1 pages
+2025-04-08T05:32:08.457Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:32:08.457Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:32:08.460Z - info: Site data built
+2025-04-08T05:32:08.460Z - info: Pages rebuilt
+2025-04-08T05:32:08.460Z - info: Website regeneration complete! Total build time: 0.048s
+2025-04-08T05:33:00.740Z - info: [1:33:00 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:33:01.742Z - info: Rebuilding 1 pages
+2025-04-08T05:33:01.776Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:33:01.776Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:33:01.776Z - info: Site data built
+2025-04-08T05:33:01.776Z - info: Pages rebuilt
+2025-04-08T05:33:01.776Z - info: Website regeneration complete! Total build time: 0.034s
+2025-04-08T05:33:16.756Z - info: [1:33:16 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:33:17.760Z - info: Rebuilding 1 pages
+2025-04-08T05:33:17.831Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:33:17.832Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:33:17.833Z - info: Site data built
+2025-04-08T05:33:17.833Z - info: Pages rebuilt
+2025-04-08T05:33:17.833Z - info: Website regeneration complete! Total build time: 0.074s
+2025-04-08T05:39:37.292Z - info: [1:39:37 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:39:38.305Z - info: Rebuilding 1 pages
+2025-04-08T05:39:38.367Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:39:38.367Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:39:38.367Z - info: Site data built
+2025-04-08T05:39:38.367Z - info: Pages rebuilt
+2025-04-08T05:39:38.367Z - info: Website regeneration complete! Total build time: 0.069s
+2025-04-08T05:40:12.186Z - info: [1:40:12 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:40:13.189Z - info: Rebuilding 1 pages
+2025-04-08T05:40:13.253Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:40:13.253Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:40:13.254Z - info: Site data built
+2025-04-08T05:40:13.254Z - info: Pages rebuilt
+2025-04-08T05:40:13.254Z - info: Website regeneration complete! Total build time: 0.066s
+2025-04-08T05:40:48.571Z - info: [1:40:48 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:40:49.576Z - info: Rebuilding 1 pages
+2025-04-08T05:40:49.629Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:40:49.629Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:40:49.629Z - info: Site data built
+2025-04-08T05:40:49.629Z - info: Pages rebuilt
+2025-04-08T05:40:49.629Z - info: Website regeneration complete! Total build time: 0.054s
+2025-04-08T05:42:02.277Z - info: [1:42:02 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:42:03.282Z - info: Rebuilding 1 pages
+2025-04-08T05:42:03.323Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:03.323Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:03.324Z - info: Site data built
+2025-04-08T05:42:03.324Z - info: Pages rebuilt
+2025-04-08T05:42:03.324Z - info: Website regeneration complete! Total build time: 0.043s
+2025-04-08T05:42:25.117Z - info: [1:42:25 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:42:26.119Z - info: Rebuilding 1 pages
+2025-04-08T05:42:26.155Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:26.155Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:26.155Z - info: Site data built
+2025-04-08T05:42:26.155Z - info: Pages rebuilt
+2025-04-08T05:42:26.155Z - info: Website regeneration complete! Total build time: 0.036s
+2025-04-08T05:42:30.532Z - info: [1:42:30 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:42:31.536Z - info: Rebuilding 1 pages
+2025-04-08T05:42:31.595Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:31.595Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:31.596Z - info: Site data built
+2025-04-08T05:42:31.596Z - info: Pages rebuilt
+2025-04-08T05:42:31.596Z - info: Website regeneration complete! Total build time: 0.062s
+2025-04-08T05:42:37.329Z - info: [1:42:37 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:42:38.332Z - info: Rebuilding 1 pages
+2025-04-08T05:42:38.374Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:38.374Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:38.374Z - info: Site data built
+2025-04-08T05:42:38.374Z - info: Pages rebuilt
+2025-04-08T05:42:38.374Z - info: Website regeneration complete! Total build time: 0.042s
+2025-04-08T05:42:47.083Z - info: [1:42:47 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:42:48.086Z - info: Rebuilding 1 pages
+2025-04-08T05:42:48.153Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:48.153Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:42:48.154Z - info: Site data built
+2025-04-08T05:42:48.154Z - info: Pages rebuilt
+2025-04-08T05:42:48.154Z - info: Website regeneration complete! Total build time: 0.069s
+2025-04-08T05:43:53.805Z - info: [1:43:53 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:43:54.808Z - info: Rebuilding 1 pages
+2025-04-08T05:43:54.864Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:43:54.864Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:43:54.865Z - info: Site data built
+2025-04-08T05:43:54.865Z - info: Pages rebuilt
+2025-04-08T05:43:54.865Z - info: Website regeneration complete! Total build time: 0.058s
+2025-04-08T05:43:58.503Z - info: [1:43:58 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:43:59.508Z - info: Rebuilding 1 pages
+2025-04-08T05:43:59.579Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:43:59.579Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:43:59.579Z - info: Site data built
+2025-04-08T05:43:59.579Z - info: Pages rebuilt
+2025-04-08T05:43:59.579Z - info: Website regeneration complete! Total build time: 0.073s
+2025-04-08T05:44:23.682Z - info: [1:44:23 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:44:24.684Z - info: Rebuilding 1 pages
+2025-04-08T05:44:24.736Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:44:24.736Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:44:24.736Z - info: Site data built
+2025-04-08T05:44:24.736Z - info: Pages rebuilt
+2025-04-08T05:44:24.736Z - info: Website regeneration complete! Total build time: 0.052s
+2025-04-08T05:44:45.908Z - info: [1:44:45 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:44:46.913Z - info: Rebuilding 1 pages
+2025-04-08T05:44:46.969Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:44:46.970Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:44:46.970Z - info: Site data built
+2025-04-08T05:44:46.971Z - info: Pages rebuilt
+2025-04-08T05:44:46.971Z - info: Website regeneration complete! Total build time: 0.059s
+2025-04-08T05:44:50.244Z - info: [1:44:50 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:44:51.246Z - info: Rebuilding 1 pages
+2025-04-08T05:44:51.298Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:44:51.298Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:44:51.299Z - info: Site data built
+2025-04-08T05:44:51.299Z - info: Pages rebuilt
+2025-04-08T05:44:51.299Z - info: Website regeneration complete! Total build time: 0.053s
+2025-04-08T05:45:17.751Z - info: [1:45:17 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T05:45:18.755Z - info: Rebuilding 1 pages
+2025-04-08T05:45:18.833Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:45:18.833Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T05:45:18.833Z - info: Site data built
+2025-04-08T05:45:18.833Z - info: Pages rebuilt
+2025-04-08T05:45:18.833Z - info: Website regeneration complete! Total build time: 0.078s
+2025-04-08T06:01:13.388Z - info: Website generation started at 2:01:13 PM
+2025-04-08T06:01:13.400Z - info: Building assets...
+2025-04-08T06:01:13.415Z - info: Assets built
+2025-04-08T06:01:13.415Z - info: Generating pages...
+2025-04-08T06:01:13.601Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-08T06:01:13.601Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:01:13.601Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:01:13.602Z - info: Pages built
+2025-04-08T06:01:13.687Z - info: Site data built
+2025-04-08T06:01:13.687Z - info: Website generation complete! Total build time: 0.348s
+2025-04-08T06:01:13.693Z - info: Serving "/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-08T06:01:13.694Z - info: Press CTRL+C to stop ...
+2025-04-08T06:02:14.069Z - info: [2:02:14 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:02:15.071Z - info: Rebuilding 1 pages
+2025-04-08T06:02:15.146Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:02:15.146Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:02:15.147Z - info: Site data built
+2025-04-08T06:02:15.147Z - info: Pages rebuilt
+2025-04-08T06:02:15.147Z - info: Website regeneration complete! Total build time: 0.076s
+2025-04-08T06:02:15.876Z - info: [2:02:15 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:02:16.880Z - info: Rebuilding 1 pages
+2025-04-08T06:02:16.951Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:02:16.951Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:02:16.952Z - info: Site data built
+2025-04-08T06:02:16.952Z - info: Pages rebuilt
+2025-04-08T06:02:16.952Z - info: Website regeneration complete! Total build time: 0.074s
+2025-04-08T06:02:29.989Z - info: [2:02:29 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:02:30.992Z - info: Rebuilding 1 pages
+2025-04-08T06:02:31.048Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:02:31.048Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:02:31.048Z - info: Site data built
+2025-04-08T06:02:31.049Z - info: Pages rebuilt
+2025-04-08T06:02:31.049Z - info: Website regeneration complete! Total build time: 0.058s
+2025-04-08T06:03:04.592Z - info: [2:03:04 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:03:05.597Z - info: Rebuilding 1 pages
+2025-04-08T06:03:05.658Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:03:05.658Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:03:05.658Z - info: Site data built
+2025-04-08T06:03:05.658Z - info: Pages rebuilt
+2025-04-08T06:03:05.658Z - info: Website regeneration complete! Total build time: 0.063s
+2025-04-08T06:05:32.760Z - info: [2:05:32 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:05:33.763Z - info: Rebuilding 1 pages
+2025-04-08T06:05:33.831Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:05:33.832Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:05:33.832Z - info: Site data built
+2025-04-08T06:05:33.832Z - info: Pages rebuilt
+2025-04-08T06:05:33.832Z - info: Website regeneration complete! Total build time: 0.07s
+2025-04-08T06:06:37.923Z - info: [2:06:37 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:06:38.926Z - info: Rebuilding 1 pages
+2025-04-08T06:06:39.019Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:06:39.019Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:06:39.020Z - info: Site data built
+2025-04-08T06:06:39.020Z - info: Pages rebuilt
+2025-04-08T06:06:39.020Z - info: Website regeneration complete! Total build time: 0.095s
+2025-04-08T06:07:46.017Z - info: [2:07:46 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:07:47.020Z - info: Rebuilding 1 pages
+2025-04-08T06:07:47.086Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:07:47.086Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:07:47.087Z - info: Site data built
+2025-04-08T06:07:47.087Z - info: Pages rebuilt
+2025-04-08T06:07:47.087Z - info: Website regeneration complete! Total build time: 0.068s
+2025-04-08T06:09:21.807Z - info: [2:09:21 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:09:22.810Z - info: Rebuilding 1 pages
+2025-04-08T06:09:22.875Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:09:22.875Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:09:22.875Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/dbms_summary.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:09:22.876Z - info: Site data built
+2025-04-08T06:09:22.876Z - info: Pages rebuilt
+2025-04-08T06:09:22.876Z - info: Website regeneration complete! Total build time: 0.067s
+2025-04-08T06:14:55.908Z - info: [2:14:55 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:14:56.913Z - info: Rebuilding 1 pages
+2025-04-08T06:14:56.962Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:14:56.962Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:14:56.962Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/dbms_summary.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:14:56.963Z - info: Site data built
+2025-04-08T06:14:56.963Z - info: Pages rebuilt
+2025-04-08T06:14:56.963Z - info: Website regeneration complete! Total build time: 0.05s
+2025-04-08T06:18:07.759Z - info: [2:18:07 PM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-08T06:18:08.762Z - info: Rebuilding 1 pages
+2025-04-08T06:18:08.831Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/num_of_bugs.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:18:08.831Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/categories_distribution.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:18:08.831Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/dbms_summary.png' found in file '/Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-08T06:18:08.831Z - info: Site data built
+2025-04-08T06:18:08.831Z - info: Pages rebuilt
+2025-04-08T06:18:08.832Z - info: Website regeneration complete! Total build time: 0.071s

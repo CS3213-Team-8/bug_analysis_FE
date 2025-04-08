@@ -73,8 +73,14 @@
         "category-page": "Category Page",
         "dbms-page": "DBMS Page",
         "feature-details": "Feature Details",
-        "feature-get-bug-solution": "Feature: Get Bug Solution",
-        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion"
+        "feature-analyse-mean-time-to-fix-ttf-across-dbmss": "Feature: Analyse Mean Time-to-Fix (TTF) across DBMSs",
+        "feature-view-number-of-bugs-found-across-dbmss": "Feature: View Number of Bugs Found across DBMSs",
+        "feature-view-bugs-distribution-across-different-categories": "Feature: View Bugs Distribution across different Categories",
+        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion",
+        "feature-dbms-specific-view-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View Bugs Distribution across different Categories",
+        "feature-dbms-specific-analyse-number-of-opened-vs-closed-issues-per-month": "Feature: [DBMS-Specific] Analyse Number of Opened vs Closed Issues per Month",
+        "feature-dbms-specific-get-summary-of-bugs-found-for-dbms": "Feature: [DBMS-Specific] Get Summary of Bugs Found for DBMS",
+        "feature-get-bug-solution": "Feature: Get Bug Solution"
       },
       "headingKeywords": {}
     },
