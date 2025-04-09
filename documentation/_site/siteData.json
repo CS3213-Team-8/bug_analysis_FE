@@ -80,8 +80,6 @@
         "dbms-page": "DBMS Page",
         "stakeholders-overview": "Stakeholders Overview",
         "feature-details": "Feature Details",
-        "feature-get-bug-solution": "Feature: Get Bug Solution",
-        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion",
         "bugs-list-page-2": "Bugs List Page",
         "view-list-of-bugs-found-across-dbmss-2": "View List of Bugs found across DBMSs",
         "feature-view-bug-overview": "Feature: View Bug Overview",
@@ -93,6 +91,14 @@
         "feature-filter-bugs-by-dbms": "Feature: Filter Bugs by DBMS",
         "feature-category-management": "Feature: Category Management",
         "feature-database-dbms-management": "Feature: Database (DBMS) Management"
+        "feature-analyse-mean-time-to-fix-ttf-across-dbmss": "Feature: Analyse Mean Time-to-Fix (TTF) across DBMSs",
+        "feature-view-number-of-bugs-found-across-dbmss": "Feature: View Number of Bugs Found across DBMSs",
+        "feature-view-bugs-distribution-across-different-categories": "Feature: View Bugs Distribution across different Categories",
+        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion",
+        "feature-dbms-specific-view-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View Bugs Distribution across different Categories",
+        "feature-dbms-specific-analyse-number-of-opened-vs-closed-issues-per-month": "Feature: [DBMS-Specific] Analyse Number of Opened vs Closed Issues per Month",
+        "feature-dbms-specific-get-summary-of-bugs-found-for-dbms": "Feature: [DBMS-Specific] Get Summary of Bugs Found for DBMS",
+        "feature-get-bug-solution": "Feature: Get Bug Solution"
       },
       "headingKeywords": {}
     },
