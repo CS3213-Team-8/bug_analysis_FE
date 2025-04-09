@@ -40,7 +40,7 @@ import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
  * @param {string} props.url - The URL to the GitHub issue
  * @param {string} props.repoInfo - The repository information (org/repo)
  */
-const CustomizedCard = ({ issueId, iconVariant, title, timeToFix, category, description, url, repoInfo, getIssueSolution }) => {
+const CustomizedCard = ({ issueId, iconVariant, title, timeToFix, category, description, url, repoInfo, isSqlancer, getIssueSolution }) => {
   const [copySuccess, setCopySuccess] = useState(false);
   const [isSolutionClicked, setIsSolutionClicked] = useState(false);
   const [solution, setSolution] = useState('');
@@ -398,7 +398,8 @@ const CustomizedCard = ({ issueId, iconVariant, title, timeToFix, category, desc
               <Box sx={{ 
                 display: "flex", 
                 alignItems: "center", 
-                mb: 1
+                mb: 1,
+                flexWrap: "wrap" // Added to allow wrapping on smaller screens
               }}>
                 {repoInfo && (
                   <Typography 
@@ -407,13 +408,16 @@ const CustomizedCard = ({ issueId, iconVariant, title, timeToFix, category, desc
                       color: "rgba(255, 255, 255, 0.6)", 
                       fontSize: "12px", 
                       display: 'inline-flex',
-                      alignItems: 'center',
-                      mr: 1
+                      alignItems: 'center'
                     }}
                   >
                     Source: {repoInfo}
                   </Typography>
                 )}
+
+                {/* Spacer */}
+                <Box sx={{ width: '8px' }} />
+
                 <Tooltip title="View on GitHub">
                   <IconButton 
                     component="a"
@@ -430,6 +434,26 @@ const CustomizedCard = ({ issueId, iconVariant, title, timeToFix, category, desc
                     <GitHubIcon fontSize="small" />
                   </IconButton>
                 </Tooltip>
+
+                {/* Add a spacer */}
+                <Box sx={{ width: '24px' }} />
+
+                {/* SQLancer badge - only shown if it's a SQLancer issue */}
+                {isSqlancer && (
+                  <Typography 
+                    component="span"
+                    sx={{ 
+                      color: "rgba(255, 255, 255, 0.9)", 
+                      fontSize: "12px", 
+                      backgroundColor: "rgba(148, 78, 157, 0.33)", 
+                      padding: "2px 8px", 
+                      borderRadius: "10px",
+                      display: 'inline-block'
+                    }}
+                  >
+                    SQLancer
+                  </Typography>
+                )}
               </Box>
             )}
             

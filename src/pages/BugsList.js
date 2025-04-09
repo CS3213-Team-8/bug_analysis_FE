@@ -32,6 +32,7 @@ const BugsList = () => {
   const [categoryLoading, setCategoryLoading] = useState(false);
 
   // States for selection fields
+  const [sqlancerSelection, setSqlancerSelection] = useState('');
   const [dbmsSelection, setDbmsSelection] = useState('');
   const [categorySelection, setCategorySelection] = useState('');
 
@@ -86,8 +87,14 @@ const BugsList = () => {
   }, []);
 
   // Apply all filters at once
-  const applyAllFilters = (dbms = dbmsSelection, category = categorySelection, search = searchValue) => {
+  const applyAllFilters = (sqlancer = sqlancerSelection, dbms = dbmsSelection, category = categorySelection, search = searchValue) => {
     let filteredResults = [...allIssues];
+
+    // Apply SQLancer filter if selected
+    if (sqlancer && sqlancer !== 'all') {
+      const isSqlancer = sqlancer === 'true';
+      filteredResults = filteredResults.filter(issue => issue.is_sqlancer === isSqlancer);
+    }
     
     // Apply DBMS filter if selected
     if (dbms && dbms !== "all") {
@@ -110,23 +117,29 @@ const BugsList = () => {
     setIssues(filteredResults);
   };
 
+  const handleSqlancerChange = (event) => {
+    const selectedSqlancerOption = event.target.value;
+    setSqlancerSelection(selectedSqlancerOption);
+    applyAllFilters(selectedSqlancerOption, dbmsSelection, categorySelection, searchValue);
+  };
+
   const handleDbmsChange = (event) => {
     const selectedDbms = event.target.value;
     setDbmsSelection(selectedDbms);
-    applyAllFilters(selectedDbms, categorySelection, searchValue);
+    applyAllFilters(sqlancerSelection, selectedDbms, categorySelection, searchValue);
   };
 
   const handleCategoryChange = (event) => {
     const selectedCategory = event.target.value;
     setCategorySelection(selectedCategory);
-    applyAllFilters(dbmsSelection, selectedCategory, searchValue);
+    applyAllFilters(sqlancerSelection, dbmsSelection, selectedCategory, searchValue);
   };
 
   // Search handler
   const handleSearch = (value) => {
     console.log('Searching for:', value);
     setSearchValue(value);
-    applyAllFilters(dbmsSelection, categorySelection, value);
+    applyAllFilters(sqlancerSelection, dbmsSelection, categorySelection, value);
   };
 
   // Function to fetch GitHub issues
@@ -153,6 +166,7 @@ const BugsList = () => {
         setIssues(fetchedIssues);
         
         // Reset filters
+        setSqlancerSelection('');
         setDbmsSelection('');
         setCategorySelection('');
         setSearchValue('');
@@ -161,15 +175,23 @@ const BugsList = () => {
         setAllIssues(prevIssues => [...prevIssues, ...fetchedIssues]);
         // Apply current filters to new data before updating issues state
         const currentFilters = {
+          sqlancer: sqlancerSelection,
           dbms: dbmsSelection,
           category: categorySelection,
           search: searchValue
         };
         
         // Only apply filters if any are active
-        if (currentFilters.dbms || currentFilters.category || currentFilters.search.trim()) {
+        if (currentFilters.sqlancer || currentFilters.dbms || currentFilters.category || currentFilters.search.trim()) {
           // Apply filters to the newly fetched issues
           let filteredNewIssues = [...fetchedIssues];
+
+          if (currentFilters.sqlancer && currentFilters.sqlancer !== 'all') {
+            const isSqlancer = currentFilters.sqlancer === 'true';
+            filteredNewIssues = filteredNewIssues.filter(issue => 
+              issue.is_sqlancer === isSqlancer
+            );
+          }
           
           if (currentFilters.dbms && currentFilters.dbms !== "all") {
             filteredNewIssues = filteredNewIssues.filter(issue => 
@@ -276,8 +298,16 @@ const BugsList = () => {
       {/* Filter Selection Fields (Side by Side) */}
       <Box display="flex" gap={3} mb={5} mr={70} alignItems="center">
         <SelectionField
+          label="Filter by SQLancer Issues"
+          // 1. Set SQLancer selection fields accordingly
+          selectionArray={["all", "true", "false"]}
+          displayArray={["All", "SQLancer Issues", "Non-SQLancer Issues"]}
+          value={sqlancerSelection}
+          onChange={handleSqlancerChange}
+        />
+        <SelectionField
           label="Filter by DBMS"
-          //1. Set DBMS selection fields accordingly 
+          //2. Set DBMS selection fields accordingly 
           selectionArray={["all", ...dbmsOptions.map(option => option.id)]}
           displayArray={["All", ...dbmsOptions.map(option => option.name)]}
           value={dbmsSelection}
@@ -286,7 +316,7 @@ const BugsList = () => {
         />
         <SelectionField
           label="Filter by Category"
-          //2. Set Category selection fields accordingly 
+          //3. Set Category selection fields accordingly 
           selectionArray={["all", ...categoryOptions.map(option => option.id)]}
           displayArray={["All", ...categoryOptions.map(option => option.category_name)]}
           value={categorySelection}
@@ -318,6 +348,7 @@ const BugsList = () => {
                 description={issue.body || "No description available."}
                 url={issue.html_url} 
                 repoInfo={`${issue.org_name}/${issue.repo_name}`} 
+                isSqlancer={issue.is_sqlancer}
                 getIssueSolution={getIssueSolution}
               />
             ))}
