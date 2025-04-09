@@ -9,7 +9,7 @@
 ### Visualisation Page
 
 - ##### Analyse Mean Time-to-Fix (TTF) Chart across DBMSs
-- ##### View Number of Gugs Found across DBMSs
+- ##### View Number of Bugs Found across DBMSs
 - ##### View Bugs Distribution across different Categories
 - ##### <a href="#feature-get-dbms-suggestion" style="text-decoration: none; color: inherit;">Get DBMS Suggestion</a>
 - ##### Get Detailed View of each DBMS
@@ -20,12 +20,15 @@
 ### Bugs List Page
 
 - ##### View List of Bugs found across DBMSs
-  - ##### View Bug Overview
-  - ##### View Detailed Bug Report
+  - ##### <a href="#feature-buglistpage" style="text-decoration: none; color: inherit;">View Bug Overview</a>
+  - ##### <a href="#feature-bugdetail" style="text-decoration: none; color: inherit;">View Detailed Bug Report</a>
   - ##### <a href="#feature-get-bug-solution" style="text-decoration: none; color: inherit;">Get Bug Solution</a>
-  - ##### View Bug Report on GitHub
-- ##### Filter Bugs by Category
-- ##### Filter Bugs by DBMS
+  - ##### <a href="#feature-bugGithub" style="text-decoration: none; color: inherit;">View Bug Report on GitHub</a>
+- ##### Filter Bugs
+  - ##### <a href="#feature-bugsFilter" style="text-decoration: none; color: inherit;">Filter Bugs Tips</a>
+  - ##### <a href="#feature-filterSqlancer" style="text-decoration: none; color: inherit;">Filter SQLancer found bugs</a>
+  - ##### <a href="#feature-filterCategory" style="text-decoration: none; color: inherit;">GFilter Bugs by Category</a>
+  - ##### <a href="#feature-filterDBMS" style="text-decoration: none; color: inherit;">Filter Bugs by DBMS</a>
 
 ### <a href="#feature-category-management" style="text-decoration: none; color: inherit;">Category Page</a>
 
@@ -41,6 +44,14 @@
 - ##### <a href="#feature-dbms-delete" style="text-decoration: none; color: inherit;">Delete Existing DBMS</a>
 
 ---
+
+## Stakeholders Overview
+
+| **Stakeholders**   | **Definition**                                                                 |
+| ------------------ | ------------------------------------------------------------------------------ |
+| SQLancer Developer | Developers of SQLancer interested in the progress and improvement of SQLancer  |
+| Backend Developer  | Users interested in selecting DBMS for use in projects                         |
+| Database Developer | Owners/Developers of the DBMS interested in debugging bugs found in their DBMS |
 
 ## Feature Details
 
@@ -140,11 +151,290 @@ The system will suggest a DBMS along with a rationale for its selection. Review 
 
 <br><br>
 
+<a id="feature-buglistpage"></a>
+
+### Bugs List Page
+
+### View List of Bugs found across DBMSs
+
+### Feature: View Bug Overview
+
+This feature allows you to view the list of bug issues fetched from Github.
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> Database and Backend Developers who wants to have a centralised and consolidated view of the DBMS bug reports. SQLancer developers who wants to the bugs found by sqlancer. </li>
+</ul>
+</box>
+
+<box type="warning" seamless>
+Currently, the number of bug issues displayed is limited to a subset of all issues available on GitHub.
+</box>
+
+<box type="tip" seamless>
+In each bug issue card section, there are the following components:
+
+1. **Bug issue status**
+   - Open: Indicated by a mint-colored circle
+   - Closed: Indicated by a purple checkmark
+2. **Bug Issue Title**
+   - Displayed prominently in bold
+3. **Bug issue Source**
+   - Shows the GitHub organization and repository name
+4. **Github icon**
+   - Clickable icon linking directly to the issue on GitHub
+5. **Issue Time Information**
+   - Open Issues: Shows the duration since the issue was created
+   - Closed Issues: Shows the time taken to resolve the issue
+6. **Bug issue category label**
+   - Automatically classified into one of the following categories:(**Predicate Evaluation, Join Processing, Query Optimisation, Others, Security Vulnerabilities, Performance Bugs, Suggestions or Build Issues**)
+7. **Bug Issue Sqlancer label**
+   - Labels whether the bug issue is found by sqlancer.
+8. **Pagination**
+   - Each page displays 50 issues. Use the **"LOAD MORE"** button to reveal additional issues.
+     </box>
+
+<pic src="../images/buglistpage.png" style="margin-bottom: 20px;">
+Bugs List Page Overview
+</pic>
+
+**Key Capabilities**:
+
+- Displays a consolidated list of bug issues from multiple GitHub repositories, allowing for streamlined monitoring and analysis.
+- Each issue card provides detailed metadata, including source repository, status, category, and timestamps—making it easy to scan and prioritize at a glance.
+- BugSnapper makes use of AI to categorise each bug into specific categories.
+- The use of Scheduler will allow automatic fetching of bug issues every set time interval.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Bugs List** Page.
+2. Browse through the list to get a summary of each bug’s key details.
+3. To explore more issues, click on the **"LOAD MORE"** button at the bottom of the page.
+  <div style="text-align: center;">
+  <pic src="../images/bugpaging.png" style="width: 600px"></pic>
+  </div>
+  <br> 
+</panel>
+
+<hr />
+
+<a id="feature-bugdetail"></a>
+
+### Feature: View Detailed Bug Report
+
+This feature allows you to view the comprehensive information for each individual bug issue.
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> Database and Backend Developers who wants in-depth understanding of database system bugs to aid debugging, analysis, and resolution. </li>
+</ul>
+</box>
+
+<box type="tip" seamless>
+Click on any bug card to expand it and view a detailed breakdown of the issue. This includes a bug summary, steps to reproduce, DBMS version information, and other relevant technical information. 
+</box>
+
+<pic src="../images/buglistpage.png" style="margin-bottom: 20px;">
+Detailed Bug Report
+</pic>
+
+**Key Capabilities**:
+
+- Provide access to detailed bug descriptions, including summaries, reproduction steps, affected DBMS versions, and context.
+- Include reproduction steps and environment detail to allow quick replicate bugs for debugging and testing.
+- Understand which versions of the DBMS are impacted, aiding in regression tracking and version-specific debugging efforts.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Bugs List** Page.
+2. Click on any bug card to expand it and view detailed bug information.
+  <div style="text-align: center;">
+  <pic src="../images/bugdetail.png" style="width: 600px"></pic>
+  </div>
+  <br> 
+</panel>
+
+<hr />
+
+<a id="feature-bugGithub"></a>
+
+### Feature: View Bug Report on Github
+
+This feature allows you to access the original bug report on GitHub.
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> Database and Backend Developers who want direct access to the original GitHub issue for further investigation, collaboration, or updates.</li>
+</ul>
+</box>
+
+**Key Capabilities**:
+
+- The embedded GitHub icon for each bug issue allows access the source of the bug.
+- This allows developers to view the complete conversation thread, including comments from contributors, maintainers, and the original reporter, for better understanding of the issue's history and progress.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Bugs List** Page.
+2. Locate the bug you're interested in.
+3. Click on the GitHub icon within the bug card to be redirected to the original GitHub issue.
+  <div style="text-align: center;">
+  <pic src="../images/bugGithub.png" style="width: 600px"></pic>
+  </div>
+  <br> 
+</panel>
+
+<hr />
+
+<a id="feature-bugsFilter"></a>
+
+### Feature: Bugs filtering
+
+This feature allows you to filter bug reports based on:
+
+- Whether they were discovered by SQLancer
+- Category
+- DBMS
+  (read the following feature sections for more details)
+
+<box type="tip" seamless>
+
+##### Tips for Using Search and Filters Effectively
+
+1. **Use the top search bar** to locate specific bug issues by entering relevant keywords.
+
+2. **Search filters are persistent**—when loading more issues, your search is retained automatically.
+
+3. **All filters remain active** across paginated results. When you click **"LOAD MORE"**, newly loaded issues will also respect the current filters.
+
+4. If no results appear for your selected filter(s), try clicking **"LOAD MORE"** to fetch additional relevant issues.
+
+5. Selecting **"All"** will reset all filters and display the complete list of bug reports.
+
+6. **Combine multiple filters** for more refined results—e.g., filter by _Category_, _DBMS_, and whether it was found by _SQLancer_.
+
+</box>
+
+<a id="feature-filterSqlancer"></a>
+
+### Feature: Filter SQLancer found bugs
+
+This feature allows you to filter the displayed bug reports based on whether they were discovered by SQLancer.
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> SQLancer Developers who want to evaluate SQLancer's bug-finding effectiveness across different DBMS types, categories, and issue volumes.</li>
+</ul>
+</box>
+
+<box type="tip" seamless>
+Selecting "SQLancer" in the filter includes only bugs labeled as found by SQLancer. 
+</box>
+
+**Key Capabilities**:
+
+- Allows isolation and analysis of bugs found specifically by SQLancer, helping in measuring SQLancer's test coverage and effectiveness.
+- Gain visibility into the cateegory of bugs and DBMSs found by SQLancer which supports ongoing evaluation and refinement of SQLancer.
+- Enables toggling between viewing SQLancer-found, non-SQLancer, or all bugs, enabling comparative analysis and focused debugging.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Bugs List** Page.
+2. Locate the filter dropdown at the top of the page.
+3. Choose from the following options:
+   - **SQLancer** – View only bugs discovered by SQLancer
+   - **Not SQLancer** – View bugs found through other means
+   - **All** – Display all bug reports without filtering
+     <div style="text-align: center;">
+     <pic src="../images/bugSqlancer.png" style="width: 600px"></pic>
+     </div>
+     <br> 
+   </panel>
+
+<hr />
+
+<a id="feature-filterCategory"></a>
+
+### Feature: Filter Bugs by Category
+
+This feature allows you to filter bug reports based on BugSnapper's predefined categories.
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> SQLancer Developer who wants to compare the categories of database bugs reported across different DBMS. </li>
+<li> Database and Backend Developers who want to focus on specific types of issues relevant to their area of expertise or current debugging efforts. </li>
+</ul>
+</box>
+
+**Key Capabilities**:
+
+- Filter bugs into meaningful categories which helps users quickly drill down into specific problem areas.
+- Provides comparision of bug types across DBMSs or isolate categories to assist in triaging and fixing issues relevant to user's domain.
+- For SQLancer developers, this feature helps uncover testing gaps by showing which types of bugs are most commonly found or missed by automated testing.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Bugs List** Page.
+2. Locate the cateogry filter dropdown at the top of the page.
+3. Choose from the following options: **Predicate Evaluation, Join Processing, Query Optimisation, Others, Security Vulnerabilities, Performance Bugs, Suggestions, Build Issues or All**
+  <div style="text-align: center;">
+  <pic src="../images/bugCategory.png" style="width: 600px"></pic>
+  </div>
+  <br> 
+</panel>
+
+<hr />
+
+<a id="feature-filterDBMS"></a>
+
+### Feature: Filter Bugs by DBMS
+
+This feature allows you to filter and view bug reports based on the Database Management System (DBMS) in which the bugs were reported
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> SQLancer Developer who want to assess and compare SQLancer's bug detection performance across various DBMSs.</li>
+<li> Database and Backend Developers who want to investigate or debug issues related to specific DBMSs relevant to their projects.</li>
+</ul>
+</box>
+
+**Key Capabilities**:
+
+- Allows for targeted debugging to narrow down the list of bugs to only those affecting a specific DBMS, enabling more relevant and efficient troubleshooting.
+- Easily compare the types and frequency of bugs reported across different database systems to identify common weaknesses or inconsistencies.
+- For SQLancer users, this filter helps visualize which DBMSs are more thoroughly tested or where bug detection might need improvement.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Bugs List** Page.
+2. Locate the DBMS filter dropdown at the top of the page.
+3. Choose from the following options: **Cockroach DB, Duck DB, TiDB or All**
+  <div style="text-align: center;">
+  <pic src="../images/bugDbms.png" style="width: 600px"></pic>
+  </div>
+  <br> 
+</panel>
+
+<hr />
+
 <a id="feature-category-management"></a>
 
 ### Feature: Category Management
 
 This is an admin-only feature used to manage and maintain all BugSnapper generated categories for bug issues.
+
+<div style="text-align: center;">
+<pic src="../images/category_read.png" style="margin-bottom: 20px;">
+Category Page [Admin Use Only]
+</pic>  
+</div>
+<br>
 
 **Key Capabilities:**
 
@@ -163,10 +453,6 @@ This is an admin-only feature used to manage and maintain all BugSnapper generat
 1. Navigate to the **Category** page.
 
 2. A list of category names (in bold) and their descriptions will be displayed.
-<div style="text-align: center;">
-<pic src="../images/category_read.png" style="width: 600px"></pic>  
-</div>
-<br>
 
 <a id="feature-category-create"></a> 3. To **create** a new category, click on the **"CREATE CATEGORY"** button in the top-right corner.
 
@@ -202,6 +488,13 @@ This is an admin-only feature used to manage and maintain all BugSnapper generat
 
 This is an admin-only feature used to manage and maintain the list of database (DBMS) that BugSnapper supports, which are **DuckDB, TiDB and CrockroachDB**.
 
+<div style="text-align: center;">
+<pic src="../images/dbms_read.png" style="margin-bottom: 20px;">
+DBMS Page [Admin Use Only]
+</pic>  
+</div>
+<br>
+
 **Key Capabilities:**
 
 - Display of all types of DBMS that BugSnapper supports.
@@ -214,10 +507,6 @@ This is an admin-only feature used to manage and maintain the list of database (
 1. Navigate to the **DBMS** page.
 
 2. A list of DBMS supported by BugSnapper will be displayed.
-<div style="text-align: center;">
-<pic src="../images/dbms_read.png" style="width: 600px"></pic>  
-</div>
-<br>
 
 <a id="feature-dbms-create"></a>
 
