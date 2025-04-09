@@ -190,7 +190,7 @@ In each bug issue card section, there are the following components:
 6. **Bug issue category label**
    - Automatically classified into one of the following categories:(**Predicate Evaluation, Join Processing, Query Optimisation, Others, Security Vulnerabilities, Performance Bugs, Suggestions or Build Issues**)
 7. **Bug Issue Sqlancer label**
-   - Labels whether the bug issue is found by sqlancer.
+   - Only issues labelled with "SQLancer" are found by sqlancer
 8. **Pagination**
    - Each page displays 50 issues. Use the **"LOAD MORE"** button to reveal additional issues.
      </box>
@@ -236,7 +236,7 @@ This feature allows you to view the comprehensive information for each individua
 Click on any bug card to expand it and view a detailed breakdown of the issue. This includes a bug summary, steps to reproduce, DBMS version information, and other relevant technical information. 
 </box>
 
-<pic src="../images/buglistpage.png" style="margin-bottom: 20px;">
+<pic src="../images/buglistDetail.png" style="margin-bottom: 20px;">
 Detailed Bug Report
 </pic>
 
@@ -318,6 +318,10 @@ This feature allows you to filter bug reports based on:
 
 </box>
 
+<pic src="../images/bugFilters.png" style="margin-bottom: 20px;">
+Bugs Issue Filter Components
+</pic>
+
 <a id="feature-filterSqlancer"></a>
 
 ### Feature: Filter SQLancer found bugs
@@ -346,14 +350,24 @@ Selecting "SQLancer" in the filter includes only bugs labeled as found by SQLanc
 1. Go to the **Bugs List** Page.
 2. Locate the filter dropdown at the top of the page.
 3. Choose from the following options:
-   - **SQLancer** – View only bugs discovered by SQLancer
-   - **Not SQLancer** – View bugs found through other means
+
+   - **SQLancer Issues** – View only bugs discovered by SQLancer
+   - **Non-SQLancer Issues** – View bugs found through other means
    - **All** – Display all bug reports without filtering
-     <div style="text-align: center;">
-     <pic src="../images/bugSqlancer.png" style="width: 600px"></pic>
-     </div>
-     <br> 
-   </panel>
+       <div style="text-align: center;">
+       <pic src="../images/bugSqlancer.png" style="width: 600px"></pic>
+       </div>
+
+        <div style="text-align: center;">
+       <pic src="../images/sqlancer.png" style="width: 600px">Filter by SQLancer Issues</pic>
+       </div>
+
+        <div style="text-align: center;">
+       <pic src="../images/general.png" style="width: 600px">Filter by Non-SQLancer Issues</pic>
+       </div>
+       
+       <br> 
+     </panel>
 
 <hr />
 
@@ -382,8 +396,12 @@ This feature allows you to filter bug reports based on BugSnapper's predefined c
 1. Go to the **Bugs List** Page.
 2. Locate the cateogry filter dropdown at the top of the page.
 3. Choose from the following options: **Predicate Evaluation, Join Processing, Query Optimisation, Others, Security Vulnerabilities, Performance Bugs, Suggestions, Build Issues or All**
+<div style="text-align: center;">
+<pic src="../images/bugCategory.png" style="width: 600px"></pic>
+</div>
+
   <div style="text-align: center;">
-  <pic src="../images/bugCategory.png" style="width: 600px"></pic>
+  <pic src="../images/categoryIssues.png" style="width: 600px">Filter by category issues</pic>
   </div>
   <br> 
 </panel>
@@ -415,8 +433,12 @@ This feature allows you to filter and view bug reports based on the Database Man
 1. Go to the **Bugs List** Page.
 2. Locate the DBMS filter dropdown at the top of the page.
 3. Choose from the following options: **Cockroach DB, Duck DB, TiDB or All**
+<div style="text-align: center;">
+<pic src="../images/bugDbms.png" style="width: 600px"></pic>
+</div>
+
   <div style="text-align: center;">
-  <pic src="../images/bugDbms.png" style="width: 600px"></pic>
+  <pic src="../images/dbIssues.png" style="width: 600px">Filter by DBMS issues</pic>
   </div>
   <br> 
 </panel>
