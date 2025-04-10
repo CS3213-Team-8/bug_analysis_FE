@@ -9,14 +9,15 @@
 <hr />
 
 ### Visualisation Page
-* ##### <a href="#feature-analyse-mean-ttf" style="text-decoration: none; color: inherit;">Analyse Mean Time-to-Fix (TTF) across DBMSs</a>
-* ##### <a href="#feature-num-of-bugs" style="text-decoration: none; color: inherit;">View Number of Gugs Found across DBMSs</a>
-* ##### <a href="#feature-categories-distr" style="text-decoration: none; color: inherit;">View Bugs Distribution across different Categories</a>
-* ##### <a href="#feature-get-dbms-suggestion" style="text-decoration: none; color: inherit;">Get DBMS Suggestion</a>
-* ##### Get Detailed View of each DBMS
-    * ###### <a href="#feature-cat-distr-dbms" style="text-decoration: none; color: inherit;">View Bugs Distribution across different Categories</a>
-    * ###### <a href="#feature-num-open-close" style="text-decoration: none; color: inherit;">Analyse Number of Opened vs Closed Issues per Month</a>
-    * ###### <a href="#feature-dbms-summary" style="text-decoration: none; color: inherit;">Get Summary of Bugs Found for DBMS</a>
+
+- ##### <a href="#feature-analyse-mean-ttf" style="text-decoration: none; color: inherit;">Analyse Mean Time-to-Fix (TTF) across DBMSs</a>
+- ##### <a href="#feature-num-of-bugs" style="text-decoration: none; color: inherit;">View Number of Bugs Found across DBMSs</a>
+- ##### <a href="#feature-categories-distr" style="text-decoration: none; color: inherit;">View Bugs Distribution across different Categories</a>
+- ##### <a href="#feature-get-dbms-suggestion" style="text-decoration: none; color: inherit;">Get DBMS Suggestion</a>
+- ##### Get Detailed View of each DBMS
+  - ###### <a href="#feature-cat-distr-dbms" style="text-decoration: none; color: inherit;">View Bugs Distribution across different Categories</a>
+  - ###### <a href="#feature-num-open-close" style="text-decoration: none; color: inherit;">Analyse Number of Opened vs Closed Issues per Month</a>
+  - ###### <a href="#feature-dbms-summary" style="text-decoration: none; color: inherit;">Get Summary of Bugs Found for DBMS</a>
 
 ### Bugs List Page
 
@@ -78,20 +79,21 @@ Mean-TTF Feature
 </pic>
 
 **Key Capabilities**:
-* It displays the TTF for each DBMS in a bar chart format, making it easy to compare the TTF across different DBMSs.
-* The TTF is calculated using the issue creation and resolution dates from the GitHub API.
-* The TTF is displayed in hours, providing a clear and comparable metric for each DBMS.
+
+- It displays the TTF for each DBMS in a bar chart format, making it easy to compare the TTF across different DBMSs.
+- The TTF is calculated using the issue creation and resolution dates from the GitHub API.
+- The TTF is displayed in hours, providing a clear and comparable metric for each DBMS.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Visualization** Page.  
-  2. View the bar chart displaying the Mean TTF for each DBMS.  
-  <div style="text-align: center;">
-    <pic src="../images/ttf_1.png" style="width: 600px"></pic>
-  </div>  
-  <br>
+1. Go to the **Visualization** Page.
+2. View the bar chart displaying the Mean TTF for each DBMS.
+<div style="text-align: center;">
+  <pic src="../images/ttf_1.png" style="width: 600px"></pic>
+</div>  
+<br>
 
-  3. Hover over each bar to see the exact Mean TTF value for that DBMS.
+3. Hover over each bar to see the exact Mean TTF value for that DBMS.
   <div style="text-align: center;">
   <pic src="../images/ttf_2.png" style="width: 600px"></pic>
   </div>
@@ -123,19 +125,20 @@ Number of Bugs Across DBMSs
 </pic>
 
 **Key Capabilities**:
-* It displays the number of bugs found across different DBMSs in a bar chart format, making it easy to compare the number of bugs across different DBMSs.
-* The number of bugs is calculated using the issue data from the GitHub API.
+
+- It displays the number of bugs found across different DBMSs in a bar chart format, making it easy to compare the number of bugs across different DBMSs.
+- The number of bugs is calculated using the issue data from the GitHub API.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Visualization** Page.  
-  2. View the bar chart displaying the number of bugs found across different DBMSs.  
-  <div style="text-align: center;">
-    <pic src="../images/num-bugs_1.png" style="width: 600px"></pic>
-  </div>  
-  <br>
+1. Go to the **Visualization** Page.
+2. View the bar chart displaying the number of bugs found across different DBMSs.
+<div style="text-align: center;">
+  <pic src="../images/num-bugs_1.png" style="width: 600px"></pic>
+</div>  
+<br>
 
-  3. Hover over each bar to see the exact number of bugs for that DBMS.
+3. Hover over each bar to see the exact number of bugs for that DBMS.
   <div style="text-align: center;">
   <pic src="../images/num-bugs_2.png" style="width: 600px"></pic>
   </div>
@@ -169,20 +172,21 @@ Bugs Distribution across Categories
 </pic>
 
 **Key Capabilities**:
-* It displays the distribution of bugs across different categories for each DBMS, making it easy to compare the distribution of bugs across different categories.
-* The distribution is displayed in a multi-bar chart format, with each group representing a category and each bar representing a DBMS.
-* The distribution is calculated using the issue data from the GitHub API, and the classification of bugs into categories by AI tools.
+
+- It displays the distribution of bugs across different categories for each DBMS, making it easy to compare the distribution of bugs across different categories.
+- The distribution is displayed in a multi-bar chart format, with each group representing a category and each bar representing a DBMS.
+- The distribution is calculated using the issue data from the GitHub API, and the classification of bugs into categories by AI tools.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Visualization** Page.  
-  2. View the multi-bar chart displaying the distribution of bugs across difference categories for each DBMS.  
-  <div style="text-align: center;">
-    <pic src="../images/cat-distr_1.png" style="width: 600px"></pic>
-  </div>  
-  <br>
+1. Go to the **Visualization** Page.
+2. View the multi-bar chart displaying the distribution of bugs across difference categories for each DBMS.
+<div style="text-align: center;">
+  <pic src="../images/cat-distr_1.png" style="width: 600px"></pic>
+</div>  
+<br>
 
-  3. Hover over each bar to see the exact number of bugs for that category and DBMS.
+3. Hover over each bar to see the exact number of bugs for that category and DBMS.
   <div style="text-align: center;">
   <pic src="../images/cat-distr_2.png" style="width: 600px"></pic>
   </div>
@@ -260,6 +264,7 @@ The system will suggest a DBMS along with a rationale for its selection. Review 
 
 This feature allows you to view the distribution of bugs across different categories, for a specific DBMS.
 <box type="warning"  icon="👤">
+
 <h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
 <ul>
 <li> DBMS Developers who want to identify common vulnerabilities in their DBMS to improve testing efforts. </li>
@@ -275,22 +280,23 @@ Bugs Distribution across Categories
 </pic>
 
 **Key Capabilities**:
-* It displays the distribution of bugs across different categories for a specific DBMS, making it easy to compare common vulnerabilities.
+
+- It displays the distribution of bugs across different categories for a specific DBMS, making it easy to compare common vulnerabilities.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Visualization** Page.
-  2. Use the tabs to navigate to the page of the DBMS you want to view. 
-  <div style="text-align: center;">
-    <pic src="../images/catd_1.png" style="width: 600px"></pic>
-  </div>  
-  <br>
-  3. View the bar chart displaying the distribution of bugs across different categories.
-  <div style="text-align: center;">
-  <pic src="../images/catd_2.png" style="width: 600px"></pic>
-  </div>
-  <br>
-  4. Hover over each bar to see the exact number of bugs for that category.
+1. Go to the **Visualization** Page.
+2. Use the tabs to navigate to the page of the DBMS you want to view.
+<div style="text-align: center;">
+  <pic src="../images/catd_1.png" style="width: 600px"></pic>
+</div>  
+<br>
+3. View the bar chart displaying the distribution of bugs across different categories.
+<div style="text-align: center;">
+<pic src="../images/catd_2.png" style="width: 600px"></pic>
+</div>
+<br>
+4. Hover over each bar to see the exact number of bugs for that category.
 <div style="text-align: center;">
   <pic src="../images/catd_3.png" style="width: 600px"></pic>
   </div>
@@ -305,6 +311,7 @@ Bugs Distribution across Categories
 
 This feature allows you to view the number of opened vs closed issues per month for a specific DBMS.
 <box type="warning"  icon="👤">
+
 <h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
 <ul>
 <li> DBMS Developers who want to visualise the state of bug resolution in their organisation. </li>
@@ -316,24 +323,25 @@ Opened and Closed Issues per Month
 </pic>
 
 **Key Capabilities**:
-* It displays the number of opened vs closed issues per month for a specific DBMS, making it easy to get an overview of the state of bug resolution.
-* The number of opened and closed issues is calculated using the issue data from the GitHub API.
-* The data is displayed in a line chart format, making it easy to compare the trend of opened vs closed issues over time.
+
+- It displays the number of opened vs closed issues per month for a specific DBMS, making it easy to get an overview of the state of bug resolution.
+- The number of opened and closed issues is calculated using the issue data from the GitHub API.
+- The data is displayed in a line chart format, making it easy to compare the trend of opened vs closed issues over time.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Visualization** Page.
-  2. Use the tabs to navigate to the page of the DBMS you want to view.
-  <div style="text-align: center;">
-  <pic src="../images/catd_1.png" style="width: 600px"></pic>
-  </div>
-  <br> 
-  3. View the line chart displaying the number of opened vs closed issues per month for the DBMS.
-  <div style="text-align: center;">
-  <pic src="../images/oc_1.png" style="width: 600px"></pic>
-  </div>
-  <br> 
-  4. Hover over each point to see the exact number of opened and closed issues for that month.
+1. Go to the **Visualization** Page.
+2. Use the tabs to navigate to the page of the DBMS you want to view.
+<div style="text-align: center;">
+<pic src="../images/catd_1.png" style="width: 600px"></pic>
+</div>
+<br>
+3. View the line chart displaying the number of opened vs closed issues per month for the DBMS.
+<div style="text-align: center;">
+<pic src="../images/oc_1.png" style="width: 600px"></pic>
+</div>
+<br>
+4. Hover over each point to see the exact number of opened and closed issues for that month.
   <div style="text-align: center;">
   <pic src="../images/oc_2.png" style="width: 600px"></pic>
   </div>
@@ -348,6 +356,7 @@ Opened and Closed Issues per Month
 
 This feature allows you to view a summary of bugs found for a specific DBMS.
 <box type="warning"  icon="👤">
+
 <h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
 <ul>
 <li> SQlancer and Database Developers who want to get an overview of the state of bugs in a specific DBMS. </li>
@@ -362,18 +371,19 @@ DBMS Summary Feature
 </pic>
 
 **Key Capabilities**:
-* It displays a summary of bugs found for a specific DBMS, making use of the data on number of bugs, categories, and resolution times.
-* The summary is generated using AI tools, providing a concise overview of the state of bugs in the DBMS.
+
+- It displays a summary of bugs found for a specific DBMS, making use of the data on number of bugs, categories, and resolution times.
+- The summary is generated using AI tools, providing a concise overview of the state of bugs in the DBMS.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Visualisation** Page. 
-  2. Use the tabs to navigate to the page of the DBMS you want to view.
-  <div style="text-align: center;">
-  <pic src="../images/catd_1.png" style="width: 600px"></pic>
-  </div>
-  <br> 
-  3. View the bugs summary for the DBMS under <strong>Summary Statistics</strong>.
+1. Go to the **Visualisation** Page.
+2. Use the tabs to navigate to the page of the DBMS you want to view.
+<div style="text-align: center;">
+<pic src="../images/catd_1.png" style="width: 600px"></pic>
+</div>
+<br>
+3. View the bugs summary for the DBMS under <strong>Summary Statistics</strong>.
   <div style="text-align: center;">
   <pic src="../images/sum_1.png" style="width: 600px"></pic>
   </div>
@@ -381,7 +391,6 @@ DBMS Summary Feature
 </panel>
 
 <hr />
-
 
 <a id="feature-buglistpage"></a>
 
@@ -515,30 +524,31 @@ Get Bug Solution feature
 </pic>
 
 **Key Capabilities**:
-* It uses OpenAI's GPT-4o-mini model to generate an intuitive, yet concise solution for the bug.
-* The solution is generated based on the description of the bug, as provided in the bug report.
-* The solution is displayed in a user-friendly markdown format, making it easy to read and understand.
+
+- It uses OpenAI's GPT-4o-mini model to generate an intuitive, yet concise solution for the bug.
+- The solution is generated based on the description of the bug, as provided in the bug report.
+- The solution is displayed in a user-friendly markdown format, making it easy to read and understand.
 
 <panel header="**Steps to use**" type="success" expanded>
 
-  1. Go to the **Bugs List** Page. 
-  2. Navigate to the bug you want to view.
-  <div style="text-align: center;">
-  <pic src="../images/sol_1.png" style="width: 600px"></pic>
-  </div>
-  <br> 
-  3. Click on the dropdown on the right side of the bug, to expand details of the bug and view the bug report.
-  <div style="text-align: center;">
-  <pic src="../images/sol_2.png" style="width: 600px"></pic>
-  </div>
-  <br> 
-  4. Click on the <strong>Get Solution</strong> button at the top of the bug report. 
-  <div style="text-align: center;">
-  <pic src="../images/sol_3.png" style="width: 600px"></pic>
-  </div>
-  <br> 
-  5. The solution will be displayed in a pop-up dialog in markdown format.<br>
-  6. Click on the <strong>Cancel</strong> button, or anywhere outside the pop-up dialog to close the dialog.
+1. Go to the **Bugs List** Page.
+2. Navigate to the bug you want to view.
+<div style="text-align: center;">
+<pic src="../images/sol_1.png" style="width: 600px"></pic>
+</div>
+<br>
+3. Click on the dropdown on the right side of the bug, to expand details of the bug and view the bug report.
+<div style="text-align: center;">
+<pic src="../images/sol_2.png" style="width: 600px"></pic>
+</div>
+<br>
+4. Click on the <strong>Get Solution</strong> button at the top of the bug report.
+<div style="text-align: center;">
+<pic src="../images/sol_3.png" style="width: 600px"></pic>
+</div>
+<br>
+5. The solution will be displayed in a pop-up dialog in markdown format.<br>
+6. Click on the <strong>Cancel</strong> button, or anywhere outside the pop-up dialog to close the dialog.
   <div style="text-align: center;">
   <pic src="../images/sol_4.png" style="width: 600px"></pic>
   </div>

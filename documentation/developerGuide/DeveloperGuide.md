@@ -164,7 +164,7 @@ The Scheduler is a backend feature that automates Github bug data fetching and u
 
 ### Function
 
-1. **Auto Fetch GitHub Issues**: Periodically pulls new issues from GitHub repositories and updates the **Bug List Page**.
+1. **Auto Fetch GitHub Issues**: Periodically pulls new issues from GitHub repositories and updates the **Bugs List Page**.
 
 2. **Sync Updates to Existing Issues**: Refreshes existing bug data, such as:
 
