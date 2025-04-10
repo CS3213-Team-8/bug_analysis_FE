@@ -5,7 +5,9 @@ import BugsBarChart from './BugsBarChart'
 import BugsLineChart from './BugsLineChart'
 
 const ChartGrid = ({ data, selectedTab, tabs }) => {
-  if (!data || Object.entries(data)
+  if (
+    !data ||
+    Object.entries(data)
       .slice(0, 2) // Only check the first two objects
       .every(([_, value]) => value.length === 0)
   ) {
@@ -139,7 +141,7 @@ const ChartGrid = ({ data, selectedTab, tabs }) => {
               xAxisKey='category'
               xLabel='Category'
               yLabel='Number of Bugs'
-              chartTitle='DBMSs Bugs Distribution Across Categories'
+              chartTitle='Bugs Found by SQLancer and Others Across Categories'
             />
           </GreyContainer>
           <GreyContainer gridArea='b' p='1.5rem 1rem'>
