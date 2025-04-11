@@ -26,7 +26,11 @@
       "headings": {
         "setting-up-and-getting-started": "Setting up and Getting Started",
         "backend-setup": "Backend Setup",
-        "frontend-setup": "Frontend Setup"
+        "prerequisites": "Prerequisites",
+        "steps-to-set-up-the-backend": "Steps to Set Up the Backend",
+        "frontend-setup": "Frontend Setup",
+        "prerequisites-2": "Prerequisites",
+        "steps-to-set-up-the-frontend": "Steps to Set Up the Frontend"
       },
       "headingKeywords": {}
     },
@@ -85,9 +89,9 @@
         "feature-view-bugs-distribution-across-different-categories": "Feature: View Bugs Distribution across different Categories",
         "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion",
         "feature-dbms-specific-view-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View Bugs Distribution across different Categories",
+        "feature-dbms-specific-view-sqlancer-specific-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View SQLancer-specific Bugs Distribution across different Categories",
         "feature-dbms-specific-analyse-number-of-opened-vs-closed-issues-per-month": "Feature: [DBMS-Specific] Analyse Number of Opened vs Closed Issues per Month",
         "feature-dbms-specific-get-summary-of-bugs-found-for-dbms": "Feature: [DBMS-Specific] Get Summary of Bugs Found for DBMS",
-        "bugs-list-page-2": "Bugs List Page",
         "view-list-of-bugs-found-across-dbmss-2": "View List of Bugs found across DBMSs",
         "feature-view-bug-overview": "Feature: View Bug Overview",
         "feature-view-detailed-bug-report": "Feature: View Detailed Bug Report",
