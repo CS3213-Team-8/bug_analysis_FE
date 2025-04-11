@@ -8,11 +8,10 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Label,
 } from 'recharts'
 
 function CustomizedTick(props) {
-  const { x, y, stroke, payload } = props
+  const { x, y, payload } = props
 
   // Split the payload value into words and create tspans for each word
   const tspans = payload.value.split(' ').map((value, index) => (
@@ -31,56 +30,80 @@ function CustomizedTick(props) {
 }
 
 const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    console.log('payload: ', payload)
+  if (!active || !payload?.length) return null
 
-    // Filter out unwanted entries (e.g., DuckDB, CockroachDB)
-    const filteredPayload = payload.filter((item) => item.name === label)
-
-    return (
-      <div
-        style={{
-          backgroundColor: 'rgb(206, 194, 194)',
-          border: 'solid 1px #000',
-          borderRadius: '8px',
-          color: '#000',
-          fontSize: '18px',
-          fontWeight: '600',
-          padding: '10px',
-        }}
-      >
-        <p>
-          <strong>{label}</strong>
-        </p>
-        {filteredPayload.map((item, index) => (
-          <p key={index} style={{ color: item.color }}>
-            {`${item.name}: ${item.value}`}
-          </p>
-        ))}
-      </div>
-    )
+  const renameMap = {
+    sqlancer: 'SQLancer',
+    nonSqlancer: 'Others',
   }
-  return null
+
+  // Detect if it's the SQLancer vs Others format
+  const isSqlancerVsOthers = payload.some((item) =>
+    ['sqlancer', 'nonSqlancer'].includes(item.name),
+  )
+
+  const entriesToShow = isSqlancerVsOthers
+    ? payload // Show all for SQLancer vs Others format
+    : payload.filter((item) => item.name === label) // Filter for regular single-bar case
+
+  return (
+    <div
+      style={{
+        backgroundColor: 'rgb(206, 194, 194)',
+        border: 'solid 1px #000',
+        borderRadius: '8px',
+        color: '#000',
+        fontSize: '18px',
+        fontWeight: '600',
+        padding: '10px',
+      }}
+    >
+      <p>
+        <strong>{label}</strong>
+      </p>
+      {entriesToShow.map((item, index) => (
+        <p key={index} style={{ color: item.color }}>
+          {`${renameMap[item.name] || item.name}: ${item.value}`}
+        </p>
+      ))}
+    </div>
+  )
 }
 
 const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
   const classes = useStyles()
-  const multiChartColors = {
+
+  // Color scheme for the DBMS-based multi-bar chart
+  const dbmsColorScheme = {
     'TIDB': '#38B5A9', // Teal for TIDB
     'Duck DB': '#FF7043', // Coral for DuckDB
     'Cockroach DB': '#3384C4', // Light blue for CockroachDB
   }
 
-  const singleChartColors = ['#FF7043', '#38B5A9', '#3384c4']
+  // Color scheme for single bar chart
+  const singleBarColors = ['#FF7043', '#38B5A9', '#3384c4']
 
-  const isMultiBarChart = data?.some(
+  // Color scheme for SQLancer vs Others chart (SQLancer and Others)
+  const sqlancerVsOthersColors = {
+    sqlancer: '#746CE3', // Purple for SQLancer found bugs
+    nonSqlancer: '#E1665A', // Terracotta for non-SQLancer found bugs
+  }
+
+  // Check if the chart is a multi-bar chart based on DBMS names
+  const isDbmsBasedChart = data?.some(
     (item) =>
       item?.values &&
-      Object.keys(item.values).some((key) => key in multiChartColors),
+      Object.keys(item.values).some((key) => key in dbmsColorScheme),
   )
-  console.log('BugsBarChart isMultiBarChart: ', isMultiBarChart)
 
-  const dbmsKeys = isMultiBarChart
+  // Check if the chart follows the SQLancer vs Others format
+  const isSqlancerVsOthersFormat = data?.some(
+    (item) => 'sqlancer' in item && 'nonSqlancer' in item,
+  )
+
+  const dbmsKeys = isSqlancerVsOthersFormat
+    ? Object.keys(sqlancerVsOthersColors) // SQLancer vs Others format: keys are sqlancer and nonSqlancer
+    : isDbmsBasedChart
     ? Array.from(
         new Set(
           data.flatMap((item) =>
@@ -88,44 +111,51 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           ) || [],
         ),
       )
-    : data.map((item) => item[xAxisKey]) // For single-bar chart, use x-axis values as keys
+    : data.map((item) => item[xAxisKey]) // Single bar chart with DBMS names
 
   const filteredData =
     data?.map((item, index) => {
-      if (isMultiBarChart) {
+      // Handle multi-bar chart with different DBMS name
+      if (isDbmsBasedChart) {
         return {
           ...item,
           values: item.values,
         }
       }
+      // Handle multi-bar with SQLancer vs Others chart format
+      if (isSqlancerVsOthersFormat) {
+        return {
+          category: item.category,
+          sqlancer: item.sqlancer,
+          nonSqlancer: item.nonSqlancer,
+        }
+      }
+
+      // Handle single-bar chart with different DBMS name
       return {
         db: item.db,
         value: item.values,
-        fill: singleChartColors[index % singleChartColors.length],
+        fill: singleBarColors[index % singleBarColors.length],
       }
     }) || []
-
-  console.log('BugsBarChart filteredData: ', filteredData)
-  console.log('BugsBarChart dbmsKeys: ', dbmsKeys)
-  console.log('BugsBarChart Data:', data)
 
   return (
     <div className={classes.chartContainer}>
       {chartTitle && <div className={classes.chartTitle}>{chartTitle}</div>}
-      <ResponsiveContainer width='100%' height="87%">
+      <ResponsiveContainer width='100%' height='87%'>
         <BarChart
           data={filteredData}
           height='80%'
-          margin={{ top: 5 , bottom: 10}}
+          margin={{ top: 5, bottom: 10 }}
           {...{
             overflow: 'visible',
           }}
-          barGap={isMultiBarChart ? undefined : -1}
+          barGap={isDbmsBasedChart ? 5 : isSqlancerVsOthersFormat ? 5 : -1}
         >
           <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey={xAxisKey} tick={<CustomizedTick />} angle={-35} />
           <YAxis />
-          {isMultiBarChart ? (
+          {isDbmsBasedChart ? (
             <Tooltip
               contentStyle={{
                 backgroundColor: 'rgb(206, 194, 194)',
@@ -139,14 +169,22 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
           ) : (
             <Tooltip content={<CustomTooltip />} />
           )}
-
-          {isMultiBarChart
+          {isSqlancerVsOthersFormat
+            ? dbmsKeys.map((key) => (
+                <Bar
+                  key={key}
+                  dataKey={key}
+                  name={key}
+                  fill={sqlancerVsOthersColors[key]}
+                />
+              ))
+            : isDbmsBasedChart
             ? dbmsKeys.map((key) => (
                 <Bar
                   key={key}
                   dataKey={`values.${key}`}
                   name={key}
-                  fill={multiChartColors[key] || '#8884d8'}
+                  fill={dbmsColorScheme[key] || '#8884d8'}
                 />
               ))
             : filteredData.map((item, index) => (
@@ -166,7 +204,7 @@ const BugsBarChart = ({ data = [], xAxisKey, xLabel, yLabel, chartTitle }) => {
 const useStyles = makeStyles(() => ({
   chartContainer: {
     textAlign: 'center',
-    height: "100%"
+    height: '100%',
   },
   chartTitle: {
     marginBottom: '10px',
