@@ -16,21 +16,22 @@
 - ##### <a href="#feature-get-dbms-suggestion" style="text-decoration: none; color: inherit;">Get DBMS Suggestion</a>
 - ##### Get Detailed View of each DBMS
   - ###### <a href="#feature-cat-distr-dbms" style="text-decoration: none; color: inherit;">View Bugs Distribution across different Categories</a>
+  - ###### <a href="#feature-categories-distr-sql" style="text-decoration: none; color: inherit;">View SQLancer-specific Bugs Distribution across different Categories</a>
   - ###### <a href="#feature-num-open-close" style="text-decoration: none; color: inherit;">Analyse Number of Opened vs Closed Issues per Month</a>
   - ###### <a href="#feature-dbms-summary" style="text-decoration: none; color: inherit;">Get Summary of Bugs Found for DBMS</a>
 
 ### Bugs List Page
 
 - ##### View List of Bugs found across DBMSs
-  - ##### <a href="#feature-buglistpage" style="text-decoration: none; color: inherit;">View Bug Overview</a>
-  - ##### <a href="#feature-bugdetail" style="text-decoration: none; color: inherit;">View Detailed Bug Report</a>
-  - ##### <a href="#feature-get-bug-solution" style="text-decoration: none; color: inherit;">Get Bug Solution</a>
-  - ##### <a href="#feature-bugGithub" style="text-decoration: none; color: inherit;">View Bug Report on GitHub</a>
+  - ###### <a href="#feature-buglistpage" style="text-decoration: none; color: inherit;">View Bug Overview</a>
+  - ###### <a href="#feature-bugdetail" style="text-decoration: none; color: inherit;">View Detailed Bug Report</a>
+  - ###### <a href="#feature-get-bug-solution" style="text-decoration: none; color: inherit;">Get Bug Solution</a>
+  - ###### <a href="#feature-bugGithub" style="text-decoration: none; color: inherit;">View Bug Report on GitHub</a>
 - ##### Filter Bugs
-  - ##### <a href="#feature-bugsFilter" style="text-decoration: none; color: inherit;">Filter Bugs Tips</a>
-  - ##### <a href="#feature-filterSqlancer" style="text-decoration: none; color: inherit;">Filter SQLancer found bugs</a>
-  - ##### <a href="#feature-filterCategory" style="text-decoration: none; color: inherit;">GFilter Bugs by Category</a>
-  - ##### <a href="#feature-filterDBMS" style="text-decoration: none; color: inherit;">Filter Bugs by DBMS</a>
+  - ###### <a href="#feature-bugsFilter" style="text-decoration: none; color: inherit;">Filter Bugs Tips</a>
+  - ###### <a href="#feature-filterSqlancer" style="text-decoration: none; color: inherit;">Filter SQLancer found bugs</a>
+  - ###### <a href="#feature-filterCategory" style="text-decoration: none; color: inherit;">GFilter Bugs by Category</a>
+  - ###### <a href="#feature-filterDBMS" style="text-decoration: none; color: inherit;">Filter Bugs by DBMS</a>
 
 ### <a href="#feature-category-management" style="text-decoration: none; color: inherit;">Category Page</a>
 
@@ -55,7 +56,11 @@
 | Backend Developer  | Users interested in selecting DBMS for use in projects                         |
 | Database Developer | Owners/Developers of the DBMS interested in debugging bugs found in their DBMS |
 
+<hr />
+
 ## Feature Details
+
+<hr />
 
 <a id="feature-analyse-mean-ttf"></a>
 
@@ -275,7 +280,7 @@ This feature allows you to view the distribution of bugs across different catego
 This feature is a DBMS-specific version of the <a href="#feature-categories-distr">View Bugs Distribution across different Categories</a> feature.
 </box>
 
-<pic src="../images/catd.png" style="margin-bottom: 20px;">
+<pic src="../images/cate-1.png" style="margin-bottom: 20px;">
 Bugs Distribution across Categories
 </pic>
 
@@ -293,12 +298,61 @@ Bugs Distribution across Categories
 <br>
 3. View the bar chart displaying the distribution of bugs across different categories.
 <div style="text-align: center;">
-<pic src="../images/catd_2.png" style="width: 600px"></pic>
+<pic src="../images/cate-2.png" style="width: 600px"></pic>
 </div>
 <br>
 4. Hover over each bar to see the exact number of bugs for that category.
 <div style="text-align: center;">
-  <pic src="../images/catd_3.png" style="width: 600px"></pic>
+  <pic src="../images/cat-dist-sql_2.png" style="width: 600px"></pic>
+  </div>
+  <br> 
+</panel>
+
+<hr />
+
+<a id="feature-categories-distr-sql"></a>
+
+### Feature: [DBMS-Specific] View SQLancer-specific Bugs Distribution across different Categories
+
+This feature allows you to view the distribution of SQLancer-specific bugs across different categories, for each DBMS.
+
+<box type="warning"  icon="👤">
+<h6 style="color: black; margin-bottom: 2px;">Who is it for?</h6>
+<ul>
+<li> SQLancer Developer who wants to compare the types/categories of database bugs reported by SQLancer, across different DBMS, to understand the state and progress of SQLancer testing. </li>
+</ul>
+</box>
+
+<box type="warning" seamless>
+Currently, the notion of a "SQLancer-specific" bug is captured manually. Therefore, there may be some SQLancer-specific issues that might have been missed during our analysis.
+</box>
+
+<pic src="../images/cat-dist-sql.png" style="margin-bottom: 20px;">
+SQlancer-specific Bugs Distribution across Categories
+</pic>
+
+**Key Capabilities**:
+
+- It displays the distribution of SQLancer-specific bugs across different categories for each DBMS, making it easy to compare different vulnerabilities targetted by SQLancer.
+
+<panel header="**Steps to use**" type="success" expanded>
+
+1. Go to the **Visualization** Page.
+2. Use the tabs to navigate to the page of the DBMS you want to view.
+<div style="text-align: center;">
+  <pic src="../images/catd_1.png" style="width: 600px"></pic>
+</div>  
+<br>
+
+3. View the bar chart displaying the distribution of SQLancer-specific bugs across different categories.
+<div style="text-align: center;">
+<pic src="../images/cat-dist-sql_1.png" style="width: 600px"></pic>
+</div>
+<br>
+
+4. Hover over each bar to see the exact number of SQLancer-specific bugs for that category.
+<div style="text-align: center;">
+  <pic src="../images/cat-dist-sql_2.png" style="width: 600px"></pic>
   </div>
   <br> 
 </panel>
@@ -318,7 +372,7 @@ This feature allows you to view the number of opened vs closed issues per month 
 </ul>
 </box>
 
-<pic src="../images/oc.png" style="margin-bottom: 20px;">
+<pic src="../images/oc_3.png" style="margin-bottom: 20px;">
 Opened and Closed Issues per Month
 </pic>
 
@@ -338,12 +392,12 @@ Opened and Closed Issues per Month
 <br>
 3. View the line chart displaying the number of opened vs closed issues per month for the DBMS.
 <div style="text-align: center;">
-<pic src="../images/oc_1.png" style="width: 600px"></pic>
+<pic src="../images/oc_5.png" style="width: 600px"></pic>
 </div>
 <br>
 4. Hover over each point to see the exact number of opened and closed issues for that month.
   <div style="text-align: center;">
-  <pic src="../images/oc_2.png" style="width: 600px"></pic>
+  <pic src="../images/oc_6.png" style="width: 600px"></pic>
   </div>
   <br> 
 </panel>
@@ -366,7 +420,7 @@ This feature allows you to view a summary of bugs found for a specific DBMS.
 The summary is generated using AI tools, so accuracy is not guaranteed. Always verify the summary based on your own understanding of the data!
 </box>
 
-<pic src="../images/sum.png" style="margin-bottom: 20px;">
+<pic src="../images/sum1.png" style="margin-bottom: 20px;">
 DBMS Summary Feature
 </pic>
 
@@ -385,7 +439,7 @@ DBMS Summary Feature
 <br>
 3. View the bugs summary for the DBMS under <strong>Summary Statistics</strong>.
   <div style="text-align: center;">
-  <pic src="../images/sum_1.png" style="width: 600px"></pic>
+  <pic src="../images/sum2.png" style="width: 600px"></pic>
   </div>
   <br> 
 </panel>
@@ -393,8 +447,6 @@ DBMS Summary Feature
 <hr />
 
 <a id="feature-buglistpage"></a>
-
-### Bugs List Page
 
 ### View List of Bugs found across DBMSs
 
