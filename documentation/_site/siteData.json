@@ -10,7 +10,13 @@
         "purpose-of-this-guide": "Purpose of this Guide",
         "product-overview": "Product Overview",
         "tech-stack": "Tech Stack",
-        "architecture-overview": "Architecture Overview"
+        "architecture-overview": "Architecture Overview",
+        "implementation": "Implementation",
+        "scheduler": "Scheduler",
+        "function": "Function",
+        "importance": "Importance",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
       },
       "headingKeywords": {}
     },
@@ -72,6 +78,7 @@
         "bugs-list-page": "Bugs List Page",
         "category-page": "Category Page",
         "dbms-page": "DBMS Page",
+        "stakeholders-overview": "Stakeholders Overview",
         "feature-details": "Feature Details",
         "feature-analyse-mean-time-to-fix-ttf-across-dbmss": "Feature: Analyse Mean Time-to-Fix (TTF) across DBMSs",
         "feature-view-number-of-bugs-found-across-dbmss": "Feature: View Number of Bugs Found across DBMSs",
@@ -80,7 +87,18 @@
         "feature-dbms-specific-view-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View Bugs Distribution across different Categories",
         "feature-dbms-specific-analyse-number-of-opened-vs-closed-issues-per-month": "Feature: [DBMS-Specific] Analyse Number of Opened vs Closed Issues per Month",
         "feature-dbms-specific-get-summary-of-bugs-found-for-dbms": "Feature: [DBMS-Specific] Get Summary of Bugs Found for DBMS",
-        "feature-get-bug-solution": "Feature: Get Bug Solution"
+        "bugs-list-page-2": "Bugs List Page",
+        "view-list-of-bugs-found-across-dbmss-2": "View List of Bugs found across DBMSs",
+        "feature-view-bug-overview": "Feature: View Bug Overview",
+        "feature-view-detailed-bug-report": "Feature: View Detailed Bug Report",
+        "feature-get-bug-solution": "Feature: Get Bug Solution",
+        "feature-view-bug-report-on-github": "Feature: View Bug Report on Github",
+        "feature-bugs-filtering": "Feature: Bugs filtering",
+        "feature-filter-sqlancer-found-bugs": "Feature: Filter SQLancer found bugs",
+        "feature-filter-bugs-by-category": "Feature: Filter Bugs by Category",
+        "feature-filter-bugs-by-dbms": "Feature: Filter Bugs by DBMS",
+        "feature-category-management": "Feature: Category Management",
+        "feature-database-dbms-management": "Feature: Database (DBMS) Management"
       },
       "headingKeywords": {}
     },
