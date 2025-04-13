@@ -73,22 +73,6 @@ const NavBar = () => {
         >
           DBMS
         </Button>
-        <Button
-          color="inherit"
-          component={Link}
-          to="/dummy"
-          sx={{
-            textTransform: 'none',
-            fontSize: '16px',
-            fontWeight: 'bold',
-            color: location.pathname === '/dummy' ? 'white' : '#546379',
-            '&:hover': {
-              color: 'rgba(255, 255, 255, 0.8)',
-            },
-          }}
-        >
-          Dummy
-        </Button>
       </Toolbar>
     </AppBar>
   );
