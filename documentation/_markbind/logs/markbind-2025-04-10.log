@@ -1,0 +1,43 @@
+2025-04-09T16:19:30.356Z - info: Website generation started at 12:19:30 AM
+2025-04-09T16:19:30.411Z - info: Building assets...
+2025-04-09T16:19:30.492Z - info: Assets built
+2025-04-09T16:19:30.494Z - info: Generating pages...
+2025-04-09T16:19:31.260Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/stella/dev/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-09T16:19:31.267Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/images/bugCategory.png' found in file '/Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md'
+2025-04-09T16:19:31.269Z - info: Pages built
+2025-04-09T16:19:31.584Z - info: Site data built
+2025-04-09T16:19:31.584Z - info: Website generation complete! Total build time: 1.391s
+2025-04-09T16:19:31.611Z - info: Serving "/Users/stella/dev/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-09T16:19:31.612Z - info: Press CTRL+C to stop ...
+2025-04-09T16:20:53.797Z - info: [12:20:53 AM] Reload for file deletion: /Users/stella/dev/bug_analysis_FE/documentation/images/bugCategory,png.png
+2025-04-09T16:20:53.806Z - info: [12:20:53 AM] Reload for file add: /Users/stella/dev/bug_analysis_FE/documentation/images/bugCategory.png
+2025-04-09T16:20:54.807Z - debug: Assets removed
+2025-04-09T16:20:54.816Z - info: Assets built
+2025-04-09T16:20:59.886Z - info: [12:20:59 AM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-09T16:21:00.889Z - info: Rebuilding 1 pages
+2025-04-09T16:21:01.206Z - info: Site data built
+2025-04-09T16:21:01.206Z - info: Pages rebuilt
+2025-04-09T16:21:01.207Z - info: Website regeneration complete! Total build time: 0.318s
+2025-04-10T04:43:29.840Z - info: Website generation started at 12:43:29 PM
+2025-04-10T04:43:29.892Z - info: Building assets...
+2025-04-10T04:43:30.007Z - info: Assets built
+2025-04-10T04:43:30.008Z - info: Generating pages...
+2025-04-10T04:43:31.080Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/stella/dev/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-10T04:43:31.090Z - info: Pages built
+2025-04-10T04:43:31.333Z - info: Site data built
+2025-04-10T04:43:31.333Z - info: Website generation complete! Total build time: 1.707s
+2025-04-10T04:43:31.360Z - info: Serving "/Users/stella/dev/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-10T04:43:31.361Z - info: Press CTRL+C to stop ...
+2025-04-10T04:49:03.334Z - info: [12:49:03 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/developerGuide/DeveloperGuide.md
+2025-04-10T04:49:04.351Z - info: Rebuilding 1 pages
+2025-04-10T04:49:04.572Z - info: Site data built
+2025-04-10T04:49:04.572Z - info: Pages rebuilt
+2025-04-10T04:49:04.572Z - info: Website regeneration complete! Total build time: 0.223s
+2025-04-10T04:49:08.460Z - info: [12:49:08 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-10T04:49:09.462Z - info: Rebuilding 1 pages
+2025-04-10T04:49:09.896Z - info: Site data built
+2025-04-10T04:49:09.897Z - info: Pages rebuilt
+2025-04-10T04:49:09.897Z - info: Website regeneration complete! Total build time: 0.435s

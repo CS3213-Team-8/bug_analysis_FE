@@ -1,0 +1,26 @@
+2025-04-11T17:08:07.382Z - info: [1:08:07 AM] Reload for file change: /Users/adityamisra/Desktop/Study/bug_analysis_FE/documentation/developerGuide/SettingUp.md
+2025-04-11T17:08:08.451Z - info: Rebuilding 1 pages
+2025-04-11T17:08:08.508Z - info: Site data built
+2025-04-11T17:08:08.508Z - info: Pages rebuilt
+2025-04-11T17:08:08.508Z - info: Website regeneration complete! Total build time: 0.071s
+2025-04-12T09:59:33.334Z - info: Website generation started at 5:59:33 PM
+2025-04-12T09:59:33.407Z - info: Building assets...
+2025-04-12T09:59:33.653Z - info: Assets built
+2025-04-12T09:59:33.654Z - info: Generating pages...
+2025-04-12T09:59:34.514Z - warn: You might have an invalid intra-link! Ignore this warning if it was intended.
+'/userGuide/features.html' found in file '/Users/stella/dev/bug_analysis_FE/documentation/userGuide/QuickStart.md'
+2025-04-12T09:59:34.519Z - info: Pages built
+2025-04-12T09:59:34.736Z - info: Site data built
+2025-04-12T09:59:34.737Z - info: Website generation complete! Total build time: 1.691s
+2025-04-12T09:59:34.765Z - info: Serving "/Users/stella/dev/bug_analysis_FE/documentation/_site" at http://127.0.0.1:8080
+2025-04-12T09:59:34.766Z - info: Press CTRL+C to stop ...
+2025-04-12T09:59:47.353Z - info: [5:59:47 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/userGuide/Features.md
+2025-04-12T09:59:48.361Z - info: Rebuilding 1 pages
+2025-04-12T09:59:48.886Z - info: Site data built
+2025-04-12T09:59:48.886Z - info: Pages rebuilt
+2025-04-12T09:59:48.886Z - info: Website regeneration complete! Total build time: 0.526s
+2025-04-12T10:01:34.045Z - info: [6:01:34 PM] Reload for file change: /Users/stella/dev/bug_analysis_FE/documentation/developerGuide/DeveloperGuide.md
+2025-04-12T10:01:35.046Z - info: Rebuilding 1 pages
+2025-04-12T10:01:35.144Z - info: Site data built
+2025-04-12T10:01:35.144Z - info: Pages rebuilt
+2025-04-12T10:01:35.144Z - info: Website regeneration complete! Total build time: 0.099s

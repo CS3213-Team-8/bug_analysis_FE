@@ -1,0 +1,134 @@
+{
+  "enableSearch": true,
+  "pages": [
+    {
+      "src": "developerGuide/DeveloperGuide.md",
+      "title": "Developer Guide",
+      "headings": {
+        "bugsnapper-developer-guide": "BugSnapper Developer Guide",
+        "introduction": "Introduction",
+        "purpose-of-this-guide": "Purpose of this Guide",
+        "product-overview": "Product Overview",
+        "tech-stack": "Tech Stack",
+        "architecture-overview": "Architecture Overview",
+        "implementation": "Implementation",
+        "scheduler": "Scheduler",
+        "function": "Function",
+        "importance": "Importance",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "developerGuide/SettingUp.md",
+      "title": "Setting up and Getting Started",
+      "headings": {
+        "setting-up-and-getting-started": "Setting up and Getting Started",
+        "backend-setup": "Backend Setup",
+        "prerequisites": "Prerequisites",
+        "steps-to-set-up-the-backend": "Steps to Set Up the Backend",
+        "frontend-setup": "Frontend Setup",
+        "prerequisites-2": "Prerequisites",
+        "steps-to-set-up-the-frontend": "Steps to Set Up the Frontend"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "index.md",
+      "title": "BugSnapper",
+      "headings": {
+        "bugsnapper-bug-analysis-website": "BugSnapper - Bug Analysis Website"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/AboutUs.md",
+      "title": "About Us",
+      "headings": {
+        "about-us": "About Us",
+        "project-team": "Project Team",
+        "misra-aditya": "Misra Aditya",
+        "chng-chia-geng": "Chng Chia Geng",
+        "ariella-thirza-callista": "Ariella Thirza Callista",
+        "daphne-shaine-wilhelmina": "Daphne Shaine Wilhelmina",
+        "soh-kia-hwee-jocelyn": "Soh Kia Hwee Jocelyn",
+        "stella-lye-si-yu": "Stella Lye Si Yu"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/johndoe.md",
+      "title": "Portfolio Page",
+      "headings": {
+        "project-projectex": "Project: ProjectEx"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "userGuide/FAQ.md",
+      "title": "FAQ",
+      "headings": {
+        "faq": "FAQ"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "userGuide/Features.md",
+      "title": "Features",
+      "headings": {
+        "features": "Features",
+        "visualisation-page": "Visualisation Page",
+        "bugs-list-page": "Bugs List Page",
+        "category-page": "Category Page",
+        "dbms-page": "DBMS Page",
+        "stakeholders-overview": "Stakeholders Overview",
+        "feature-details": "Feature Details",
+        "feature-analyse-mean-time-to-fix-ttf-across-dbmss": "Feature: Analyse Mean Time-to-Fix (TTF) across DBMSs",
+        "feature-view-number-of-bugs-found-across-dbmss": "Feature: View Number of Bugs Found across DBMSs",
+        "feature-view-bugs-distribution-across-different-categories": "Feature: View Bugs Distribution across different Categories",
+        "feature-get-dbms-suggestion": "Feature: Get DBMS Suggestion",
+        "feature-dbms-specific-view-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View Bugs Distribution across different Categories",
+        "feature-dbms-specific-view-sqlancer-specific-bugs-distribution-across-different-categories": "Feature: [DBMS-Specific] View SQLancer-specific Bugs Distribution across different Categories",
+        "feature-dbms-specific-analyse-number-of-opened-vs-closed-issues-per-month": "Feature: [DBMS-Specific] Analyse Number of Opened vs Closed Issues per Month",
+        "feature-dbms-specific-get-summary-of-bugs-found-for-dbms": "Feature: [DBMS-Specific] Get Summary of Bugs Found for DBMS",
+        "view-list-of-bugs-found-across-dbmss-2": "View List of Bugs found across DBMSs",
+        "feature-view-bug-overview": "Feature: View Bug Overview",
+        "feature-view-detailed-bug-report": "Feature: View Detailed Bug Report",
+        "feature-get-bug-solution": "Feature: Get Bug Solution",
+        "feature-view-bug-report-on-github": "Feature: View Bug Report on Github",
+        "feature-bugs-filtering": "Feature: Bugs filtering",
+        "feature-filter-sqlancer-found-bugs": "Feature: Filter SQLancer found bugs",
+        "feature-filter-bugs-by-category": "Feature: Filter Bugs by Category",
+        "feature-filter-bugs-by-dbms": "Feature: Filter Bugs by DBMS",
+        "feature-category-management": "Feature: Category Management",
+        "feature-database-dbms-management": "Feature: Database (DBMS) Management"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "userGuide/QuickStart.md",
+      "title": "Quick Start",
+      "headings": {
+        "quick-start": "Quick Start",
+        "step-1-open-bugsnapper": "Step 1: Open BugSnapper",
+        "step-2-explore-visualisations": "Step 2: Explore Visualisations",
+        "step-3-explore-bug-reports": "Step 3: Explore Bug Reports",
+        "step-4-expand-analysis": "Step 4: Expand Analysis",
+        "step-5-optional-contribute-to-bugsnapper": "Step 5 [Optional]: Contribute to BugSnapper"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "userGuide/UserGuide.md",
+      "title": "User Guide",
+      "headings": {
+        "bugsnapper-user-guide": "BugSnapper User Guide",
+        "introduction": "Introduction",
+        "purpose-of-this-guide": "Purpose of this Guide",
+        "product-overview": "Product Overview"
+      },
+      "headingKeywords": {}
+    }
+  ]
+}
