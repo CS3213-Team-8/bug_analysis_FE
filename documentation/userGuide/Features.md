@@ -217,6 +217,11 @@ This feature recommends the most suitable DBMS based on your project’s require
     Tip: The accuracy of DBMS suggestions improves with more specific and detailed prompts.
 </box>
 
+<pic src="../images/get-suggest-1.png" style="margin-bottom: 20px;">
+Suggested DBMS
+</pic>
+
+
 **Key Capabilities:**
 
 - The suggested DBMS takes into account the existing analyses conducted on our website.
