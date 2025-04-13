@@ -254,3 +254,13 @@ Currently, BugSnapper uses a fixed set of bug categories. The goal is to:
 - Enable admins to manage and curate categories more flexibly
 
 This enables deeper insights into specific issue types, improves filtering options, and helps users quickly zero in on areas of concern.
+
+#### 5. Enhancing the User Interface
+
+At present, BugSnapper's line chart visualization can suffer from cluttered axis labels—particularly along the month and year axis—when displaying a large number of data points within a single, static view. This makes it difficult for users to clearly interpret the timeline and trends over extended periods.
+
+<div style="text-align: center;">
+<pic src="../images/visualisation.png" style="width: 600px">Visualisation Chart</pic>  
+</div>
+
+As a future enhancement, we aim to improve the chart's usability by introducing a scrollable timeline or zoomable interface, allowing users to interactively explore the data in more manageable segments. This enhancement will not only improve readability but also enable more detailed and focused analysis, ensuring a smoother and more intuitive user experience when tracking bug trends over time.

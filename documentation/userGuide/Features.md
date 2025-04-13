@@ -30,7 +30,7 @@
 - ##### Filter Bugs
   - ###### <a href="#feature-bugsFilter" style="text-decoration: none; color: inherit;">Filter Bugs Tips</a>
   - ###### <a href="#feature-filterSqlancer" style="text-decoration: none; color: inherit;">Filter SQLancer found bugs</a>
-  - ###### <a href="#feature-filterCategory" style="text-decoration: none; color: inherit;">GFilter Bugs by Category</a>
+  - ###### <a href="#feature-filterCategory" style="text-decoration: none; color: inherit;">Filter Bugs by Category</a>
   - ###### <a href="#feature-filterDBMS" style="text-decoration: none; color: inherit;">Filter Bugs by DBMS</a>
 
 ### <a href="#feature-category-management" style="text-decoration: none; color: inherit;">Category Page</a>
